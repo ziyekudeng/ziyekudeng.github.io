@@ -17,9 +17,9 @@ favicon: favicon.png
 
 repository: ziyekudeng/ziyekudeng.github.io
 github_url: https://github.com/ziyekudeng
-#cnblog_url: http://www.cnblogs.com/ziyekudeng
+cnblog_url: https://github.com/ziyekudeng
 url: https://ziyekudeng.github.io
-#enforce_ssl: ziyekudeng.com
+enforce_ssl: github.com/ziyekudeng
 
 ## Gem
 plugins:
