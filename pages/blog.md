@@ -24,27 +24,14 @@ permalink: /blog
 
 ## 我的故事
 
-- [救人一命是怎样的体验？](https://ziyekudeng.github.io/life/2017/06/25/save-a-life.html)  
-- [老板和易筋经的故事](https://ziyekudeng.github.io/blog/2017/09/17/boss-anxious.html)  
-- [高中毕业，我想出去看看](https://ziyekudeng.github.io/life/2017/07/03/pingjing-life.html)  
-- [思维的局限](https://ziyekudeng.github.io/life/2017/05/19/Limitations-of-thinking.html)
+
 - [如何在微信公众号优雅的展示代码](https://ziyekudeng.github.io/other/2017/05/15/wechat-markdown.html)
-- [给你1000万你可以把生活过的更好吗？](https://ziyekudeng.github.io/life/2017/05/05/1000-and-life.html)
-- [你看那个人他像一条狗](https://ziyekudeng.github.io/career/2017/03/26/programmer-confused.html)
-- [那些年，我们租过的房子](https://ziyekudeng.github.io/life/2017/04/21/house-rented.html)
-- [六年程序生涯](https://ziyekudeng.github.io/%E5%85%AD%E5%B9%B4/2016/11/20/%E5%85%AD%E5%B9%B4%E7%A8%8B%E5%BA%8F%E7%94%9F%E6%B6%AF.html)
-- [程序员该用哪种姿势来理财](https://ziyekudeng.github.io/%E7%94%9F%E6%B4%BB/2016/05/08/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%AF%A5%E7%94%A8%E5%93%AA%E7%A7%8D%E5%A7%BF%E5%8A%BF%E6%9D%A5%E7%90%86%E8%B4%A2.html)
-- [2016颠倒梦想,2017静心前行](https://ziyekudeng.github.io/%E7%94%9F%E6%B4%BB/2017/01/01/2016%E9%A2%A0%E5%80%92%E6%A2%A6%E6%83%B3,2017%E9%9D%99%E5%BF%83%E5%89%8D%E8%A1%8C.html)
-- [发现另外一个世界-网盘关闭背后](https://ziyekudeng.github.io/%E7%94%9F%E6%B4%BB/2017/01/18/%E5%8F%91%E7%8E%B0%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AA%E4%B8%96%E7%95%8C.html)
-- [我开通了微信公众号](https://ziyekudeng.github.io/life/2017/04/26/open-wechat.html)
-- [大案](https://ziyekudeng.github.io/life/2017/07/06/big-case.html)  
-- [谁说国产无好片](https://ziyekudeng.github.io/movie/2017/08/06/china-good-movie.html)  
-- [童年趣事](https://ziyekudeng.github.io/life/2017/07/29/childhood-fun.html)  
+
 
 
 ## spring boot 
 
-- [Spring Boot 精选达人课程，欢迎关注！](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)  
+
 - [springboot(一)：入门篇](https://ziyekudeng.github.io/springboot/2016/01/06/springboot(%E4%B8%80)-%E5%85%A5%E9%97%A8%E7%AF%87.html)
 - [springboot(二)：web综合开发](https://ziyekudeng.github.io/springboot/2016/02/03/springboot(%E4%BA%8C)-web%E7%BB%BC%E5%90%88%E5%BC%80%E5%8F%91.html)
 - [springboot(三)：Spring boot中Redis的使用](https://ziyekudeng.github.io/springboot/2016/03/06/springboot(%E4%B8%89)-Spring-Boot%E4%B8%ADRedis%E7%9A%84%E4%BD%BF%E7%94%A8.html)
