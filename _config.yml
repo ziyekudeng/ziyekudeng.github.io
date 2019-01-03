@@ -19,7 +19,7 @@ repository: ziyekudeng/ziyekudeng.github.io
 github_url: https://github.com/ziyekudeng
 cnblog_url: http://www.cnblogs.com/ziyekudeng
 url: https://ziyekudeng.github.io
-enforce_ssl: ziyekudeng.com
+enforce_ssl: ziyekudeng.github.io
 
 ## Gem
 plugins:
