@@ -125,7 +125,6 @@ public interface HelloRemote {
 [微服务框架Spring Cloud介绍 Part5: 在微服务系统中使用Hystrix, Hystrix Dashboard与Turbine](http://skaka.me/blog/2016/09/04/springcloud5/)
 
 -------------
-**作者：子夜枯灯**  
-**出处：[https://ziyekudeng.github.io/](https://ziyekudeng.github.io/springcloud/2017/05/16/springcloud-hystrix.html)**      
+**作者：纯洁的微笑**  
 **版权归作者所有，转载请注明出处** 
 

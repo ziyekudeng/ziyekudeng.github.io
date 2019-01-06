@@ -400,6 +400,5 @@ public class MuliDatabaseTest {
 
 -------------
 
-**作者：子夜枯灯**  
-**出处：[https://ziyekudeng.github.io/](https://ziyekudeng.github.io/springboot/2017/05/08/springboot-mongodb.html)**      
+**作者：纯洁的微笑**  
 **版权归作者所有，转载请注明出处** 

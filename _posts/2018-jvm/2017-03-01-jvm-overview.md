@@ -206,6 +206,5 @@ Sun JDK监控和故障处理命令有jps jstat jmap jhat jstack jinfo
 
 -------------
 
-**作者：子夜枯灯**  
-**出处：[https://ziyekudeng.github.io/](https://ziyekudeng.github.io/java/2017/03/01/jvm-overview.html)**      
+**作者：纯洁的微笑**  
 **版权归作者所有，转载请注明出处** 

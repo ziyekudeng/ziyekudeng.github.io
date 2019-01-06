@@ -331,6 +331,6 @@ public interface UserMapper {
 
 -------------
 
-**作者：子夜枯灯**  
-**出处：[www.ityouknow.com](https://ziyekudeng.github.io)**   
+**作者：纯洁的微笑**  
+ 
 **版权所有，欢迎保留原文链接进行转载：)**

@@ -299,6 +299,5 @@ java -jar spring-cloud-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer3
 
 -------------
 
-**作者：子夜枯灯**  
-**出处：[https://ziyekudeng.github.io/](https://ziyekudeng.github.io/springcloud/2017/05/10/springcloud-eureka.html)**      
+**作者：纯洁的微笑**  
 **版权归作者所有，转载请注明出处** 
