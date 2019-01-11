@@ -111,6 +111,9 @@ labels:
     href: /docker.html
     name: Docker
 
+  - href: /drools.html
+      name: Drools
+
   -
     href: /open-source.html
     name: Code   
