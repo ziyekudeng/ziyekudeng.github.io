@@ -112,7 +112,7 @@ labels:
     name: Docker
 
   - href: /drools.html
-      name: Drools
+    name: Drools
 
   -
     href: /open-source.html
@@ -139,6 +139,10 @@ classes:
     href: /docker.html
     name: Docker系列文章
     describe: 新一代 容器技术
+   -
+    href: /mysql.html
+    name: Mysql系列文章
+    describe: 数据库语法集合
 
 # ---------------- #
 #       RSS        #
