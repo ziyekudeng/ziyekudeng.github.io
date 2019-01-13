@@ -111,8 +111,8 @@ labels:
     href: /docker.html
     name: Docker
 
-  - href: /drools.html
-    name: Drools
+  - href: /mysql.html
+    name: Mysql
 
   -
     href: /open-source.html
