@@ -25,7 +25,7 @@ tags: [springcloud]
 
 Dubbo作为一款高性能RPC框架，通过良好的扩展机制，已经形成了丰富的核心RPC生态。
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/dubboAndCloud/1.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0113/dubboAndCloud/1.jpg)
 
 
 
@@ -56,7 +56,7 @@ Dubbo作为一款高性能RPC框架，通过良好的扩展机制，已经形成
 
 但这里面有一些问题，开发者只接触到API，以及服务注册和配置这一层，接触不到大部分底层生态的组件，因此无法直接享受到这些底层组件的技术能力。
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/dubboAndCloud/2.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0113/dubboAndCloud/2.jpg)
 
 
 
@@ -76,7 +76,7 @@ Dubbo作为一款高性能RPC框架，通过良好的扩展机制，已经形成
 因此，我们对Dubbo的定位做过一次更新，Dubbo is more than a RPC framwork. Dubbo不仅仅是RPC框架，而是一个微服务框架，以帮助开发者快速构建高性能的微服务应用。
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/dubboAndCloud/3.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0113/dubboAndCloud/3.jpg)
 
 
 
@@ -107,7 +107,7 @@ Dubbo作为一款高性能RPC框架，通过良好的扩展机制，已经形成
 作为一个微服务生态，它需要各个方面的组件共同组成。首先，我们需要明确一个微服务生态包含哪些组件才能称得上生态，以及各自的分工和重要程度。经过梳理，有了以下的Dubbo Ecosystem的层级结构图，包含从L0、L1、L2和L3的4个层级。
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/dubboAndCloud/4.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0113/dubboAndCloud/4.jpg)
 
 
 
@@ -161,7 +161,7 @@ L3层的组件则更加开放一些。Scheduling、Event Driven、Authenthentica
 
 在运维侧，Dubbo Ecosystem的数据会互相打通，各组件统一暴露Observability能力，最终通过Dubbo OPS进行展示和管控。例如，可以通过Dubbo OPS看到Dubbo Ecosystem中的熔断限流组件提供的熔断和限流数据，并对限流阈值进行管控等。
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/dubboAndCloud/5.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0113/dubboAndCloud/5.jpg)
 
 
 
@@ -185,7 +185,7 @@ L3层的组件则更加开放一些。Scheduling、Event Driven、Authenthentica
 经常会有开发者会拿Dubbo和Spring Cloud进行对比，在这里我们再次强调一下二者之前并没有竞争关系。Dubbo可以通过纯API、Spring容器启动（XML）和Spring-boot启动（注解）等多种方式启动，从Dubbo开源以来，和Spring一直有着紧密的集成。Spring Cloud也是开发者们赖以进行微服务开发的编程方式，帮助开发者快速搭建微服务应用是Dubbo的宗旨，因此Dubbo会尽可能的集成到Spring Cloud开发模式当中，开发者可以使用Spring Cloud轻松开发Dubbo微服务应用。
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/dubboAndCloud/6.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0113/dubboAndCloud/6.jpg)
 
 
 
