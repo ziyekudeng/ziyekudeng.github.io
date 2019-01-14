@@ -74,7 +74,7 @@ tags: [other]
 典型场景一：数据库主从同步
 
 <div align="center">
-  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/1.webp.jpg
+  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/1.jpg
 ">
 </div>
 数据库的主从架构，上游分别发起了op1,op2,op3三个操作，主库master来序列化所有的SQL写操作op3,op1,op2，然后把相同的序列发送给从库slave执行，以保证所有数据库数据的一致性，就是利用“单点序列化”这个思路。
@@ -83,7 +83,7 @@ tags: [other]
 
 典型场景二：GFS中文件的一致性
 <div align="center">
-  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/2.webp.jpg
+  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/2.jpg
 ">
 </div>
 
@@ -112,7 +112,7 @@ msg2{sender:A, seq:20, receiver:B, msg:content2}
 msg3{sender:A, seq:30, receiver:B, msg:content3}
 
 <div align="center">
-  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/3.webp.jpg
+  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/3.jpg
 ">
 </div>
  
@@ -135,7 +135,7 @@ msg3{sender:A, seq:30, receiver:B, msg:content3}
 
 （2）于是，可以利用服务器的单点做序列化。
 <div align="center">
-  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/4.webp.jpg
+  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/4.jpg
 ">
 </div>
 
@@ -165,7 +165,7 @@ msg3{sender:A, seq:30, receiver:B, msg:content3}
 
 群消息其实也不用保证全局消息序列有序，而只要保证一个群内的消息有序即可，这样的话，“id串行化”就成了一个很好的思路。
 <div align="center">
-  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/5.webp.jpg
+  <img src="https://ziyekudeng.github.io/assets/images/2019/0106/message-sequence/5.jpg
 ">
 </div>
 

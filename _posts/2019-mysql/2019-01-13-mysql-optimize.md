@@ -17,7 +17,7 @@ tags: [mysql]
 
 下面来个简单的示例，标注（1、2、3、4、5）我们要重点关注的数据：
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/1.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/1.jpg)
 
 
 
@@ -132,7 +132,7 @@ _select colname … from A表 Left join B表 on where a.id = b.id where b.id is 
 
 取出的结果集如下图表示，A表不在B表中的数据：
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/2.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/2.jpg)
 
 
 
@@ -166,7 +166,7 @@ _select id,name from product where id> 866612 limit 20_
 
 如下图这个SQL语句，扫描的行数成百万级以上的时候就可以使用分段查询：
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/3.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/3.jpg)
 
 
 
@@ -195,7 +195,7 @@ _select id,name from product where id> 866612 limit 20_
 
 如下图所示，虽然给secret字段添加了索引，但在explain结果并没有使用：
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/4.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/4.jpg)
 
 
 
@@ -281,7 +281,7 @@ where子句中出现column字段的类型和传入的参数类型不一致的时
 
 **19、关于JOIN优化**
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/5.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/5.jpg)
 
 
 
@@ -322,7 +322,7 @@ select * from A left join B on B.name = A.namewhere B.name is nullunion allselec
 4）利用小表去驱动大表：
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/6.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/6.jpg)
 
 
 
@@ -337,7 +337,7 @@ select * from A left join B on B.name = A.namewhere B.name is nullunion allselec
 
 inner join是由MySQL选择驱动表，但是有些特殊情况需要选择另个表作为驱动表，比如有group by、order by等「Using filesort」、「Using temporary」时。STRAIGHT_JOIN来强制连接顺序，在STRAIGHT_JOIN左边的表名就是驱动表，右边则是被驱动表。在使用STRAIGHT_JOIN有个前提条件是该查询是内连接，也就是inner join。其他链接不推荐使用STRAIGHT_JOIN，否则可能造成查询结果不准确。
 
-![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/7.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/01113/mysql/7.jpg)
 
 
 
