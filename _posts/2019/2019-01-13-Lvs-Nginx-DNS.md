@@ -6,12 +6,12 @@ tags: [java]
 ---
 
 
-**引言**
+## 引言
 负载均衡，大家可能听过什么3层负载均衡、4层负载均衡、7层负载均衡什么的？那这是怎么分的呢，ok，是根据osi七层网络模型来分的，例如nginx是工作在应用层，应用层刚好是在第7层，因此nginx又可以称为7层负载均衡。
 直接讲负载均衡架构的演进
 
-**正文**
-**DNS**
+## 正文
+## DNS
 开始呢，我们的应用只有一台web-server。那么你希望:
 输入guduyan.com就能定位该server!
 
@@ -23,7 +23,7 @@ tags: [java]
 好，现在呢，多了一台web-server，你就可以通过在DNS里加一条配置，以DNS轮询方式进行负载均衡。如下图所示
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0113/LvsNginxDNS/2.jpg)
-**Nginx+DNS**
+## Nginx+DNS
 现在假设，我们多了一些需求啊。你的系统按照功能模块拆成两个系统:用户系统和订单系统。那么你希望
 输入guduyan.com/user/的时候定位到用户系统。输入guduyan.com/order/的时候定位到订单系统。
 
@@ -38,7 +38,7 @@ ps:nginx还可以做动静分离哦，大家应该懂的！
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0113/LvsNginxDNS/4.jpg)
 
-**Lvs+Nginx+DNS**
+## Lvs+Nginx+DNS
 接下来随着系统规模的继续增大，你会慢慢的发现nginx也扛不住了！nginx工作在网络的第7层，所以它可以针对http应用本身来做分流策略，比如针对域名、目录结构等。
 而Lvs工作在网络4层，抗负载能力强，性能高，能达到F5的60%，对内存和CPU资源消耗比较低，且稳定，可靠性高。它利用linux的内核进行转发，不产生流量。它能撑的并发量取决于机器的内存大小，一般来说撑个几十万并发问题不大！现在基本上都是nginx+Lvs的负载均衡架构!
 ps:好好思考为什么会出现nginx+Lvs被同时使用，注意看我演变的过程，面试必问！注意了，如果是比较小的网站（日pv<1000万），用nginx就完全可以了。
@@ -48,7 +48,7 @@ ps:好好思考为什么会出现nginx+Lvs被同时使用，注意看我演变�
 ![](https://ziyekudeng.github.io/assets/images/2019/0113/LvsNginxDNS/5.jpg)
 
 可能有个疑问，为什么nginx层不用keepalived做热备？
-主要原因是:
+## 主要原因是:
 在这种架构下，nginx不是单台，如果nginx挂了，Lvs会帮你转发到其他可用的nginx上！
 
 最后，为了应对亿级的PV，一般会在DNS端配多个Lvs集群的地址。如下所示

@@ -7,7 +7,7 @@ tags: [mysql]
 
 
 
-1、**EXPLAIN**
+## 1、EXPLAIN
 
 
 
@@ -35,7 +35,7 @@ extra列，详细说明。注意，常见的不太友好的值，如下：Using 
 
 
 
-**2、SQL语句中IN包含的值不应过多**
+## 2、SQL语句中IN包含的值不应过多
 
 
 
@@ -43,7 +43,7 @@ MySQL对于IN做了相应的优化，即将IN中的常量全部存储在一个�
 
 
 
-**3、SELECT语句务必指明字段名称**
+## 3、SELECT语句务必指明字段名称
 
 
 
@@ -51,7 +51,7 @@ SELECT*增加很多不必要的消耗（CPU、IO、内存、网络带宽）；�
 
 
 
-**4、当只需要一条数据的时候，使用limit 1**
+## 4、当只需要一条数据的时候，使用limit 1
 
 
 
@@ -59,11 +59,11 @@ SELECT*增加很多不必要的消耗（CPU、IO、内存、网络带宽）；�
 
 
 
-**5、如果排序字段没有用到索引，就尽量少排序**
+## 5、如果排序字段没有用到索引，就尽量少排序
 
 
 
-**6、如果限制条件中其他字段没有索引，尽量少用or**
+## 6、如果限制条件中其他字段没有索引，尽量少用or
 
 
 
@@ -71,7 +71,7 @@ or两边的字段中，如果有一个不是索引字段，而其他条件也不
 
 
 
-**7、尽量用union all代替union**
+## 7、尽量用union all代替union
 
 
 
@@ -79,7 +79,7 @@ union和union all的差异主要是前者需要将结果集合并后再进行唯
 
 
 
-**8、不使用ORDER BY RAND()**
+## 8、不使用ORDER BY RAND()
 
 
 
@@ -94,7 +94,7 @@ _select id from `dynamic` t1 join (select rand() * (select max(id) from `dynamic
 
 
 
-**9、区分in和exists、not in和not exists**
+## 9、区分in和exists、not in和not exists
 
 
 
@@ -138,7 +138,7 @@ _select colname … from A表 Left join B表 on where a.id = b.id where b.id is 
 
 
 
-**10、使用合理的分页方式以提高分页的效率**
+## 10、使用合理的分页方式以提高分页的效率
 
 
 
@@ -156,7 +156,7 @@ _select id,name from product limit 866613, 20_
 _select id,name from product where id> 866612 limit 20_
 
 
-**11、分段查询**
+## 11、分段查询
 
 
 
@@ -173,7 +173,7 @@ _select id,name from product where id> 866612 limit 20_
 
 
 
-**12、避免在where子句中对字段进行null值判断**
+## 12、避免在where子句中对字段进行null值判断
 
 
 
@@ -181,7 +181,7 @@ _select id,name from product where id> 866612 limit 20_
 
 
 
-**13、不建议使用%前缀模糊查询**
+## 13、不建议使用%前缀模糊查询
 
 
 
@@ -228,7 +228,7 @@ select id,fnum,fdst from dynamic_201606 where match(user_name) against('zhangsan
 
 
 
-**14、避免在where子句中对字段进行表达式操作**
+## 14、避免在where子句中对字段进行表达式操作
 
 
 
@@ -247,7 +247,7 @@ select user_id,user_project from user_base where age*2=36;
 select user_id,user_project from user_base where age=36/2;
 
 
-**15、避免隐式类型转换**
+## 15、避免隐式类型转换
 
 
 
@@ -255,7 +255,7 @@ where子句中出现column字段的类型和传入的参数类型不一致的时
 
 
 
-**16、对于联合索引来说，要遵守最左前缀法则**
+## 16、对于联合索引来说，要遵守最左前缀法则
 
 
 
@@ -263,7 +263,7 @@ where子句中出现column字段的类型和传入的参数类型不一致的时
 
 
 
-**17、必要时可以使用force index来强制查询走某个索引**
+## 17、必要时可以使用force index来强制查询走某个索引
 
 
 
@@ -271,7 +271,7 @@ where子句中出现column字段的类型和传入的参数类型不一致的时
 
 
 
-**18、注意范围查询语句**
+## 18、注意范围查询语句
 
 
 
@@ -279,7 +279,7 @@ where子句中出现column字段的类型和传入的参数类型不一致的时
 
 
 
-**19、关于JOIN优化**
+## 19、关于JOIN优化
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0113/mysql/5.jpg)
 
@@ -291,7 +291,7 @@ LEFT JOIN A表为驱动表，INNER JOIN MySQL会自动找出那个数据少的�
 
 
 
-注意：
+## 注意：
 
 
 

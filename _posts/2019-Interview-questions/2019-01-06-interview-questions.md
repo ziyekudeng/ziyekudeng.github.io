@@ -4,12 +4,12 @@ title: 消息顺序性为何这么难？
 category: interview_questions
 tags: [interview_questions]
 ---
-**面试题：Kafka、ActiveMQ、RabbitMQ、RocketMQ 有什么优缺点**
+# 面试题：Kafka、ActiveMQ、RabbitMQ、RocketMQ 有什么优缺点
 
 
 
 
-**面试题**
+## 面试题
 
 
 1.为什么使用消息队列？
@@ -20,7 +20,7 @@ tags: [interview_questions]
 
 
 
-**面试官心理分析**
+## 面试官心理分析
 
 
 
@@ -47,7 +47,7 @@ tags: [interview_questions]
 
 
 
-**面试题剖析**
+## 面试题剖析
 
 
 
@@ -65,7 +65,7 @@ tags: [interview_questions]
 
 
 
-**解耦**
+## 解耦
 
 
 
@@ -89,7 +89,7 @@ tags: [interview_questions]
 
 
 
-**总结：通过一个 MQ，Pub/Sub 发布订阅消息这么一个模型，A 系统就跟其它系统彻底解耦了。**
+## 总结：通过一个 MQ，Pub/Sub 发布订阅消息这么一个模型，A 系统就跟其它系统彻底解耦了。
 
 面试技巧：你需要去考虑一下你负责的系统中是否有类似的场景，就是一个系统或者一个模块，调用了多个系统或者模块，互相之间的调用很复杂，维护起来很麻烦。但是其实这个调用是不需要直接同步调用接口的，如果用 MQ 给它异步化解耦，也是可以的，你就需要去考虑在你的项目里，是不是可以运用这个 MQ 去进行系统的解耦。在简历中体现出来这块东西，用 MQ 作解耦。
 
@@ -119,7 +119,7 @@ tags: [interview_questions]
 
 
 
-**削峰**
+## 削峰
 <div align="center">
   <img src="https://ziyekudeng.github.io/assets/images/2019/0106/interview-questions/5.webp
 ">
@@ -145,13 +145,13 @@ tags: [interview_questions]
 
 
 
-**消息队列有什么优缺点**
+## 消息队列有什么优缺点
 
 
 
 优点上面已经说了，就是在特殊场景下有其对应的好处，解耦、异步、削峰。
 
-**缺点有以下几个：**
+## 缺点有以下几个：
 
 1.系统可用性降低
 系统引入的外部依赖越多，越容易挂掉。本来你就是 A 系统调用 BCD 三个系统的接口就好了，人 ABCD 四个系统好好的，没啥问题，你偏加个 MQ 进来，万一 MQ 挂了咋整，MQ 一挂，整套系统崩溃的，你不就完了？
@@ -172,7 +172,7 @@ A 系统处理完了直接返回成功了，人都以为你这个请求就成功
 
 
 
-**Kafka、ActiveMQ、RabbitMQ、RocketMQ 有什么优缺点？**
+## Kafka、ActiveMQ、RabbitMQ、RocketMQ 有什么优缺点？
 <div align="center">
   <img src="https://ziyekudeng.github.io/assets/images/2019/0106/interview-questions/7.webp
 ">
