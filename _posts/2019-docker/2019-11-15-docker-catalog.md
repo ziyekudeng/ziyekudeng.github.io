@@ -177,7 +177,7 @@ Container（容器）
 
 容器（Container）的定义和镜像（Image）几乎一模一样，也是一堆层的统一视角，唯一区别在于容器的最上面那一层是可读可写的。
 
- 
+ ![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/4.webp.jpg)
 
 
 
@@ -238,7 +238,7 @@ Docker Registry 公有仓库是开放给用户使用、允许用户管理镜像�
 
 我们从下图可以直观地看到 Docker 的架构： 
 
-
+ ![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/5.webp.jpg)
 
 
 
@@ -247,7 +247,7 @@ Docker 使用 C/S 结构，即客户端/服务器体系结构。Docker 客户端
 
 Docker 客户端和服务端可以运行在一台机器上，也可以通过 RESTful 、 Stock 或网络接口与远程 Docker 服务端进行通信。 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/6.webp.jpg)
 
 
 
@@ -314,7 +314,7 @@ CentOS 7.4 64 位
 
 由于 Docker-CE 支持 64 位版本的 CentOS 7 ，并且要求内核版本不低于 3.10，首先我们需要卸载掉旧版本的 Docker：
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/7.webp.jpg)
 
 
 $ sudo yum remove docker                   docker-client                   docker-client-latest                   docker-common                   docker-latest                   docker-latest-logrotate                   docker-logrotate                   docker-selinux                   docker-engine-selinux                   docker-engine
@@ -334,7 +334,7 @@ $ sudo yum install -y yum-utils            device-mapper-persistent-data        
 
 这里我事先已经安装过了，所以提示我已经安装了最新版本： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/8.webp.jpg)
 
 ## 安装 Docker
 
@@ -360,7 +360,7 @@ curl -fsSL get.docker.com -o get-docker.shsh get-docker.sh
 
 安装完成后，运行下面的命令，验证是否安装成功：
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/9.webp.jpg)
 
 docker versionordocker info
 
@@ -394,7 +394,7 @@ docker pull library/hello-world
 
 docker pull images 是抓取 image 文件，library/hello-world 是 image 文件在仓库里面的位置，其中 library 是 image 文件所在的组，hello-world 是 image 文件的名字。 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/10.webp.jpg)
 
 抓取成功以后，就可以在本机看到这个 image 文件了：
 
@@ -406,7 +406,7 @@ docker images
 
 我们可以看到如下结果： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/11.webp.jpg)
 
 现在，我们可以运行 hello-world 这个 image 文件：
 
@@ -418,6 +418,7 @@ docker run hello-world
 
 我们可以看到如下结果： 
 
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/12.webp.jpg)
 
 
 输出这段提示以后，hello world 就会停止运行，容器自动终止。有些容器不会自动终止，因为提供的是服务，比如 MySQL 镜像等。
@@ -432,7 +433,7 @@ Docker 提供了一套简单实用的命令来创建和更新镜像，我们可�
 
 我们可以看看下面这幅图： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/13.webp.jpg)
 
 Docker 客户端是 Docker 用户与 Docker 交互的主要方式。当您使用 Docker 命令行运行命令时，Docker 客户端将这些命令发送给服务器端，服务端将执行这些命令。
 
@@ -451,7 +452,7 @@ Docker 命令使用 Docker API 。Docker 客户端可以与多个服务端进行
 
 我们从下图可以很直观的了解到 Docker 的架构： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/14.webp.jpg)
 
 Docker 的核心组件包括：
 
@@ -481,7 +482,7 @@ Docker Client ，也称 Docker 客户端。它其实就是 Docker 提供命令�
 
 最常用的 Docker 客户端就是 Docker 命令，我们可以通过 Docker 命令很方便地在 Host 上构建和运行 Docker 容器。 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/15.webp.jpg)
 
 Docker Daemon
 
@@ -491,7 +492,7 @@ Docker Daemon 是服务器组件，以 Linux 后台服务的方式运行，是 D
 
 该进程会在后台启动一个 API Server ，负责接收由 Docker Client 发送的请求，接收到的请求将通过 Docker Daemon 内部的一个路由分发调度，由具体的函数来执行请求。 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/16.webp.jpg)
 
 我们大致可以将其分为以下三部分：
 
@@ -505,7 +506,7 @@ Job
 
 Docker Daemon 的架构如下所示： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/17.webp.jpg)
 
 Docker Daemon 可以认为是通过 Docker Server 模块接受 Docker Client 的请求，并在 Engine 中处理请求，然后根据请求类型，创建出指定的 Job 并运行。
 
@@ -538,14 +539,14 @@ docker --daemon = truedocker –ddocker –d = true
 
 下图可以很直观地看到 Docker Daemon 的启动流程： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/18.webp.jpg)
 
 默认配置下，Docker Daemon 只能响应来自本地 Host 的客户端请求。如果要允许远程客户端请求，需要在配置文件中打开 TCP 监听。
 
 我们可以照着如下步骤进行配置：
 
 1、编辑配置文件/etc/systemd/system/multi-user.target.wants/docker.service，在环境变量 ExecStart 后面添加 -H tcp://0.0.0.0，允许来自任意 IP 的客户端连接。 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/19.webp.jpg)
 
 
 2、重启 Docker Daemon：
@@ -588,7 +589,7 @@ Docker Registry
 
 Docker Registry 是存储 Docker Image 的仓库，它在 Docker 生态环境中的位置如下图所示： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/20.webp.jpg)
 
 运行 docker push、docker pull、docker search 时，实际上是通过 Docker Daemon 与 Docker Registry 通信。
 
@@ -621,7 +622,7 @@ Docker Daemon 启动容器。
 
 具体过程可以看如下这幅演示图： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/21.webp.jpg)
 
 我们可以通过 Docker Images 可以查看到 hello-world 已经下载到本地：
  
@@ -652,7 +653,7 @@ Docker Daemon 启动容器。
 
 我们可以通过 docker -h 去查看命令的详细的帮助文档。在这里我只会讲一些日常我们可能会用的比较多的一些命令。 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/22.webp.jpg)
 
 例如，我们需要拉取一个 Docker 镜像，我们可以用如下命令：
 
@@ -753,7 +754,7 @@ Dockerfile 是自动构建 Docker 镜像的配置文件，用户可以使用 Doc
 
 我们可以通过下面这幅图来直观地感受下 Docker 镜像、容器和 Dockerfile 三者之间的关系： 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/23.webp.jpg)
 
 我们从上图中可以看到，Dockerfile 可以自定义镜像，通过 Docker 命令去运行镜像，从而达到启动容器的目的。Dockerfile 是由一行行命令语句组成，并且支持已 # 开头的注释行。
 
@@ -979,7 +980,7 @@ nginx_web 为镜像名
 
 我们构建完成之后，使用 Docker Images 命令查看所有镜像，如果存在 REPOSITORY 为 Nginx 和 TAG 是 v1 的信息，就表示构建成功。 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/24.webp.jpg)
 
 接下来使用 docker run 命令来启动容器：
 
@@ -994,3 +995,4 @@ docker run --name nginx_web -d -p 8080:80   angelkitty/nginx_web:v1
 这样我们可以用浏览器去访问这个 Nginx 服务器：http://localhost:8080/ 或者 http://本机的 IP 地址：8080/，页面返回信息： 
 
 
+![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/25.webp.jpg)
