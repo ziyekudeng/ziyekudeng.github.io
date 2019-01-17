@@ -26,7 +26,7 @@ startup.sh脚本位于Nacos解压后的bin目录下。这里主要介绍Spring C
 
 启动完成之后，访问： http://127.0.0.1:8848/nacos/，可以进入Nacos的服务管理页面，具体如下；
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0117/springcloudAlibabaNacos/1.webp.jpg)
 
 构建应用接入Nacos注册中心
 在完成了Nacos服务的安装和启动之后，下面我们就可以编写两个应用（服务提供者与服务消费者）来验证服务的注册与发现了。
@@ -331,11 +331,11 @@ NacosServiceRegistry
 
 在启动都ok之后，我们可以访问Nacos的管理页面http://127.0.0.1:8848/nacos/来查看服务列表，此时可以看到如下内容：
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0117/springcloudAlibabaNacos/2.webp.jpg)
 
 这里会显示当前注册的所有服务，以及每个服务的集群数目、实例数、健康实例数。点击详情，我们还能看到每个服务具体的实例信息，如下图所示：
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0117/springcloudAlibabaNacos/3.webp.jpg)
 
 服务消费者
 接下来，实现一个应用来消费上面已经注册到Nacos的服务。
