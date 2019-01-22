@@ -30,7 +30,7 @@ tags: [other]
 
 看一看改造后的应用情况示意图：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary/1.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary1/1.webp.jpg)
 
 
 
@@ -94,7 +94,7 @@ Any organization that designs a system (defined more broadly here than just info
 
 ## **业务服务化改造方案**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary/2.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary1/2.webp.jpg)
 
 
 
@@ -166,14 +166,14 @@ DEFAULT_VALUE。返回默认值。默认值通过spel表达式进行设置。
 在闲鱼，各种业务所需要存储的东西大同小异，从闲鱼的发布界面上来看就不难发现这一点，都是在基础对象（如标题、描述、图片）之外添加一些业务相关的数据，如拍卖业务中指定拍卖的开拍时间等信息，免费送业务中设置兑换币值，图书业务上设置条形码。即对一本图书进行拍卖当然也是允许的，这就出现了拍卖业务和图书业务叠加起来的复合型业务。
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary/3.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary1/3.webp.jpg)
 
 
 
 对于主干应用开发人员来说，应该提供单个接口以支持所有业务类型，这样不用每次修改或者新增业务时都需要提供新接口。从稳定性的角度考虑，这样的要求很合理。既然是单个接口，那么DO的定义也应该统一。以商品DO为例，有以下三种方式：
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary/4.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary1/4.webp.jpg)
 
 
 第一种是继承型结构，该结构不适用于业务叠加的情况。另外主干需要知晓各个业务的DO，每次业务修改或新增，主干都需要做变动。
@@ -186,7 +186,7 @@ DEFAULT_VALUE。返回默认值。默认值通过spel表达式进行设置。
 
 使用第三种的对象模型，以新加一种业务为例，其开发流程是：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary/5.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2019/0122/swakSummary1/5.webp.jpg)
 
 
 
