@@ -2,8 +2,8 @@
 layout: post
 title: 20 分钟教你搞懂 Git！
 no-post-nav: true
-category: life
-tags: [life]
+category: other
+tags: [other]
 ---
 尽管每天你都会用到Git，常用的命令可能不到5个，但你可能现在还搞不懂它的工作原理。为什么Git可以管理版本？基本命令git add和git commit到底在干什么？
 在这篇文章中，我将用一个例子来解释Git的运行过程，帮助你理解Git的工作原理。
