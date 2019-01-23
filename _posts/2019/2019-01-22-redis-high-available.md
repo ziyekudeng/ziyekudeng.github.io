@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Redis 备份、容灾及高可用实战
-no-post-nav: true
-category: other
-tags: [other]
+category: redis
+tags: [redis]
 ---
 
 

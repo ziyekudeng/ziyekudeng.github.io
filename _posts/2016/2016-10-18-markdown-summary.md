@@ -99,7 +99,5 @@ Markdown 的粗体和斜体也非常简单，用两个```  *```  包含一段文
     this is java code space
 ``` 
 
-## markdown 快捷键
-### 插入图片快捷键
-[]()
+
 
