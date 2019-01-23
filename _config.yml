@@ -120,9 +120,9 @@ classes:
     name: 我的故事
     describe: 生活就是故事，故事就是生活
 
-  - href: /manageRole.html
-    name: 项目管理系列文章
-    describe: 一个项目管理者的学习经历
+  - href: /tools.html
+    name: 项目工具系列文章
+    describe: 工欲善其事，必先利其器
 
   -
     href: /arch.html
@@ -137,6 +137,10 @@ classes:
   - href: /redis.html
     name: redis系列文章
     describe: 缓存,容灾,高可用
+
+  - href: /drools.html
+    name: drools系列文章
+    describe: 梳理业务规则交给技术实现
 
 
 
