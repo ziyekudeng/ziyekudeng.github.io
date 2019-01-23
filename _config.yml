@@ -120,6 +120,10 @@ classes:
     name: 我的故事
     describe: 生活就是故事，故事就是生活
 
+  - href: /manageRole.html
+    name: 项目管理系列文章
+    describe: 一个项目管理者的学习经历
+
   -
     href: /arch.html
     name: 架构师之路
@@ -129,6 +133,13 @@ classes:
     href: /jvm.html
     name: Jvm系列文章
     describe: Java之根基，Java程序员必学
+
+  - href: /redis.html
+    name: redis系列文章
+    describe: 缓存,容灾,高可用
+
+
+
 
 
 # ---------------- #
