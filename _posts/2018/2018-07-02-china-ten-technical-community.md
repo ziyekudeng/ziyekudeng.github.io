@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 中国十大技术社区你都知道哪些？
-category: other
-tags: [other]
+category: tools
+tags: [tools]
 keywords: CSDN,博客园,51CTO,V2EX,开源中国,头条,掘金,开发者头条,SegmentFault,W3School,ChinaUnix
 ---
 

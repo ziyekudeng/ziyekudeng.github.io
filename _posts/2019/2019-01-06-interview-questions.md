@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 消息顺序性为何这么难？
-category: interview_questions
-tags: [interview_questions]
+category: other
+tags: [other]
 ---
 # 面试题：Kafka、ActiveMQ、RabbitMQ、RocketMQ 有什么优缺点
 

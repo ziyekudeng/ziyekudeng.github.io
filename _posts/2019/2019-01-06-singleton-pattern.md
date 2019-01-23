@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Java 实现单例模式的 9 种方法？
-category: interview_questions
-tags: [interview_questions]
+category: java
+tags: [java]
 ---
 
 

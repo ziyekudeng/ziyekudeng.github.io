@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 业务代码解构利器--SWAK--捋直代码
-category: other
-tags: [other]
+category: tools
+tags: [tools]
 ---
 
 

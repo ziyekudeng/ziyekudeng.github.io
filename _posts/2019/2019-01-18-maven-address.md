@@ -2,8 +2,8 @@
 layout: post
 title: 常用maven地址
 no-post-nav: true
-category: life
-tags: [life]
+category: tools
+tags: [tools]
 ---
 ## **1.配置阿里云maven仓库**
 `    

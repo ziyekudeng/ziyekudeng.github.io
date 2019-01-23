@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 解密阿里线上问题诊断工具Arthas和jvm-sandbox
-category: other
-tags: [other]
+category: tools
+tags: [tools]
 ---
 
 ## **大纲目录**

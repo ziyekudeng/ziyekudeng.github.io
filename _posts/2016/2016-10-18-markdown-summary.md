@@ -1,8 +1,8 @@
 ---
 layout: post
 title: markdown 使用总结
-category: other
-tags: [other]
+category: tools
+tags: [tools]
 ---
 
 markdown来写文章，有一些命令或者是快捷键不是特别熟悉在此记录下来，方便日后查看
