@@ -6,6 +6,6 @@ subtitle:
 menu: redis
 css: ['blog-page.css']
 permalink: /redis
-keywords: redis教程,redis示例,redis学习,redis资源,Spring Cloud
+keywords: redis教程,redis示例,redis学习,redis资源
 ---
 {% include redis.html %}
