@@ -108,9 +108,9 @@ labels:
     name: MongoDB
 
   -
-  href: /docker.html
-  name: docker
-    -
+    href: /docker.html
+    name: docker
+
   -
     href: /open-source.html
     name: Code
@@ -125,7 +125,7 @@ classes:
     describe: 生活就是故事，故事就是生活
 
   - href: /tools.html
-    name: 项目工具系列文章
+    name: 工具系列文章
     describe: 工欲善其事，必先利其器
 
   -
