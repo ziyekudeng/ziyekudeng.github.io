@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Dubbo Ecosystem - 从微服务框架到微服务生态
-category: springcloud
-tags: [springcloud]
+category: dubbo
+tags: [dubbo]
 ---
 
 从微服务框架到微服务生态，这是微服务发展的必然趋势，也是Dubbo社区满足开发者更高效的构建微服务体系期望的使命和担当。

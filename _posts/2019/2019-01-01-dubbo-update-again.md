@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 阿里Dubbo疯狂更新，关Spring Cloud什么事？
-category: springcloud
-tags: [springcloud]
+category: dubbo
+tags: [dubbo]
 ---
 
 最近，开源社区发生了一件大事，那个全国 Java 开发者使用最广的开源服务框架 Dubbo 低调重启维护，并且 3 个月连续发布了 4 个维护版本。

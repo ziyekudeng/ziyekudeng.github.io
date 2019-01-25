@@ -100,12 +100,9 @@ labels:
     name: Jvm
 
   -
-    href: /fastdfs.html
-    name: FastDFS
+    href: /dubbo.html
+    name: dubbo
 
-  -
-    href: /mongodb.html
-    name: MongoDB
 
   -
     href: /docker.html
@@ -135,16 +132,25 @@ classes:
 
   -
     href: /jvm.html
-    name: Jvm系列文章
+    name: Jvm 系列文章
     describe: Java之根基，Java程序员必学
 
   - href: /redis.html
-    name: redis系列文章
+    name: redis 系列文章
     describe: 缓存,容灾,高可用
 
   - href: /drools.html
-    name: drools系列文章
+    name: drools 系列文章
     describe: 梳理业务规则交给技术实现
+
+  - href: /fastdfs.html
+    name: fastDfs
+    describe: 文件系统分布式
+
+  - href: /mongodb.html
+    name: mongodb 系列文章
+    describe: 不单单是个数据库
+
 
 
 
