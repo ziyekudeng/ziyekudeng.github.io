@@ -99,9 +99,9 @@ labels:
     href: /jvm.html
     name: Jvm
 
-  -
-    href: /dubbo.html
-    name: dubbo
+#  -
+#    href: /dubbo.html
+#    name: dubbo
 
   -
     href: /docker.html
