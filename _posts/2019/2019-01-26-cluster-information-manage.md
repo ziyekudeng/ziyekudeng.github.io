@@ -40,7 +40,7 @@ db层与cache层
 
 额，好拗口，通俗的说，集群就是一堆机器，上面部署了提供相似功能的站点，服务，数据库，或者缓存。
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0126/cluster-information-managem/2.webp.jpg)
 
 如上图：
 
@@ -56,15 +56,13 @@ cache集群，由cache-M/cache-S两个实例组成
 
 与“集群”相对应的是“单机”。
 
-画外音：关于高可用架构，详见文章《究竟啥才是互联网架构“高可用”》。
-
-画外音：缓存如果没有高可用要求，可能是单机架构，而不是集群。
 
 
 
-二、集群信息
 
-什么是集群信息？
+## 二、集群信息
+
+### 什么是集群信息？
 
 一个集群，会包含若干信息（额，这tm算什么解释），例如：
 
@@ -80,7 +78,7 @@ IP列表
 
 负责人列表
 
-画外音：集群IP列表不建议直接使用IP，而建议使用内网域名，详见文章《小小的IP，大大的耦合》。
+
 
  
 
@@ -108,13 +106,13 @@ IP列表
 
 例如，自动化上线，有一个配置文件，deploy.user.service.config，其内容是：
 
-name : user.service
-
-ip.list : ip1, ip2, ip3
-
-bin.path : /user.service/bin/
-
-ftp.path : ftp://192.168.0.1/USER_2_0_1_3/user.exe
+    name : user.service
+    
+    ip.list : ip1, ip2, ip3
+    
+    bin.path : /user.service/bin/
+    
+    ftp.path : ftp://192.168.0.1/USER_2_0_1_3/user.exe
 
  
 
@@ -136,11 +134,11 @@ ftp.path : ftp://192.168.0.1/USER_2_0_1_3/user.exe
 
 又例如，web-X调用下游的user服务，又有一个配置文件，web-X.config，其内容配置了：
 
-service.name : user.service
-
-service.ip.list : ip1, ip2, ip3
-
-service.port : 8080
+    service.name : user.service
+    
+    service.ip.list : ip1, ip2, ip3
+    
+    service.port : 8080
 
 
 
@@ -160,7 +158,7 @@ web-X拿取user服务的连接，通过RPC接口调用user服务
 
  
 
-三、存在什么问题？
+## 三、存在什么问题？
 
 上述业务场景，对于集群信息的使用，有两个最大的特点：
 
@@ -176,17 +174,17 @@ web-X拿取user服务的连接，通过RPC接口调用user服务
 
 这里最大的问题，是耦合，当集群的信息发生变化的时候，有非常多的配置需要修改：
 
-deploy.user.service.config
-
-clean.log.user.service.config
-
-backup.bin.user.service.config
-
-monitor.config
-
-web-X.config
-
-…
+    deploy.user.service.config
+    
+    clean.log.user.service.config
+    
+    backup.bin.user.service.config
+    
+    monitor.config
+    
+    web-X.config
+    
+    …
 
 
 
@@ -198,59 +196,58 @@ web-X.config
 
 逐渐的，莫名其妙的问题出现了
 
-画外音：ca，谁痛谁知道
+
 
  
 
-如何解决上述耦合的问题呢？
+### 如何解决上述耦合的问题呢？
 
 一句话回答：集群信息管理集中化。
 
  
 
-四、如何集中化管理集群信息
+## 四、如何集中化管理集群信息
 
 如何集中化管理集群配置信息，不同发展阶段的公司，实现的方式不一样。
-
 
 
 早期方案
 
 通过全局配置文件，实现集群信息集中管理，举例global.config如下：
 
-[user.service]
+    [user.service]
+    
+    ip.list : ip1, ip2, ip3
+    
+    port : 8080
+    
+    bin.path : /user.service/bin/
+    
+    log.path : /user.service/log/
+    
+    conf.path : /user.service/conf/
+    
+    ftp.path :ftp://192.168.0.1/USER_2_0_1_3/user.exe
+    
+    owner.list : shenjian, zhangsan, lisi
 
-ip.list : ip1, ip2, ip3
-
-port : 8080
-
-bin.path : /user.service/bin/
-
-log.path : /user.service/log/
-
-conf.path : /user.service/conf/
-
-ftp.path :ftp://192.168.0.1/USER_2_0_1_3/user.exe
-
-owner.list : shenjian, zhangsan, lisi
 
 
-
-[passport.web]
-
-ip.list : ip11, ip22, ip33
-
-port : 80
-
-bin.path : /passport.web/bin/
-
-log.path : /passport.web/log/
-
-conf.path : /passport.web/conf/
-
-ftp.path :ftp://192.168.0.1/PST_1_2_3_4/passport.jar
-
-owner.list : shenjian, zui, shuaiqi
+    [passport.web]
+    
+    ip.list : ip11, ip22, ip33
+    
+    port : 80
+    
+    bin.path : /passport.web/bin/
+    
+    log.path : /passport.web/log/
+    
+    conf.path : /passport.web/conf/
+    
+    ftp.path :ftp://192.168.0.1/PST_1_2_3_4/passport.jar
+    
+    owner.list : shenjian, zui, shuaiqi
 
  
 
@@ -272,7 +269,7 @@ global.config会部署到任何一台线上机器，维护和管理也很方便
 
 画外音：慢慢的，配置太多了，通过global.config来修改配置太容易出错了
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0126/cluster-information-managem/3.webp.jpg)
 
 如上图，建立集群信息管理服务：
 
@@ -288,9 +285,9 @@ info.web ：集群信息维护后台
 
 服务的核心接口是：
 
-Info InfoService::getInfo(String ClusterName);
-
-Bool InfoService::setInfo(String ClusterName, String key, String value);
+    Info InfoService::getInfo(String ClusterName);
+    
+    Bool InfoService::setInfo(String ClusterName, String key, String value);
 
  
 
@@ -306,13 +303,13 @@ Bool InfoService::setInfo(String ClusterName, String key, String value);
 
 集群信息服务可以解决大部分的耦合问题，但仍然有一个不足：集群信息变更时，无法反向实时通知关注方，集群信息发生了改变。更长远的，要引入配置中心来解决。
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0126/cluster-information-managem/4.webp.jpg)
 
 配置中心的细节，网上的分析很多，之前也撰文写过，细节就不再本文展开。
 
  
 
-五、总结
+## 五、总结
 
 集群信息管理，是架构设计中非常容易遗漏的一环，但又是非常基础，非常重要的基础设施，一定要在早期规划好：
 
@@ -322,9 +319,9 @@ Bool InfoService::setInfo(String ClusterName, String key, String value);
 
 
 
-六、调研
+## 六、调研
 
-调研一、对于集群信息管理，你的感受是：
+### 调研一、对于集群信息管理，你的感受是：
 
 ca，没考虑过这个问题，一直是分散式管理
 
@@ -336,7 +333,7 @@ ca，没考虑过这个问题，一直是分散式管理
 
  
 
-调研二、对于自动化运维，你的感受是：
+### 调研二、对于自动化运维，你的感受是：
 
 ca，啥是运维，都是研发在线上乱搞
 
