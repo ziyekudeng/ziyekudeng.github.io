@@ -27,17 +27,17 @@ tags: [life]
 
 服务端状态离线，直接存储离线消息，等用户下一次登录拉取
 
-![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/1.webp)
+
 
 如何实时更新服务端状态？
 
 用户uid-A登录时，会修改用户的服务端状态为在线。
 
-![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/2.webp)
+![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/1.webp)
 
 用户uid-A登出时，会修改用户的服务端状态为离线。
 
-![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/3.webp)
+![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/2.webp)
 
 
 经常的，服务端会将用户的服务端状态存储在高可用的缓存集群里。
@@ -59,7 +59,7 @@ tags: [life]
 uid-A登录时，先去数据库拉取自己的好友列表，再去缓存获取所有好友的状态。
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/4.webp)
+![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/3.webp)
 
 
 用户uid-A的好友uid-B状态改变时（由登录、登出等动作触发），uid-A如何同步这一事件？
@@ -81,7 +81,7 @@ uid-A向服务器轮询拉取uid-B（其实是自己的全部好友）的状态�
 uid-B状态改变时（由登录、登出等动作触发），服务端不仅要在缓存中修改uid-B的状态，还要将这个状体改变的通知推送给uid-B的在线好友。
 
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0201/state-sync/4.webp)
 
 推送的优势是：实时
 
