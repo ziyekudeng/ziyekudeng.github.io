@@ -21,6 +21,7 @@ permalink: /link
 - [wherebt](http://wherebt.com/) - 提供各种BT资源导航,主要收录了bt sync keys的分享网站
 - [公众号编辑器](http://md.ityouknow.com/) - 可以以优雅的方式在微信公众号去发布markdown文章
 - [技术博客联盟](http://techblog.pub/) - 原创技术博客作者交流的地方
+- [优品PPT](http://www.ypppt.com/) - 一个有情怀的免费PPT模板下载网站
 
 
 
