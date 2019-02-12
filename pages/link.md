@@ -13,6 +13,7 @@ permalink: /link
 
 - [程序员书架](https://anoyi.com/book/) - 程序员书架网站
 - [程序员导航网站](http://tooool.org/) - 程序员的导航网站 
+- [jQuery API 中文文档](https://www.html.cn/jqapi-1.9/) - jQuery API 中文文档
 
 - [Spring Boot中文导航](http://springboot.fun/) - Spring Boot的资源导航网站    
 - [Spring Cloud中文导航](http://springcloud.fun/) - Spring Cloud的资源导航网站    
