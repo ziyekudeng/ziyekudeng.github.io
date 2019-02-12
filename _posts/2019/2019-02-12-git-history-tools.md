@@ -6,12 +6,12 @@ tags: [tools]
 ---
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/git-history/1.gif)
+
 
 
 开发者 pomber 开源了一个可以轻松快速浏览 GitHub 文件操作历史记录的工具 Git History。
 
-
+![](https://ziyekudeng.github.io/assets/images/2019/0212/git-history/1.gif)
 
 如上图所示，该工具的功能和使用方法简洁明了，只要将任何文件的 URL 中的“github.com”替换成“github.githistory.xyz”即可以动画的方式快速查看该文件的修改历史记录。
 
