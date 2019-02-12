@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IntelliJ IDEA 常用插件一览，让效率成为习惯
+title: 轻松快速浏览 GitHub 文件操作历史记录的工具
 category: tools
 tags: [tools]
 ---
