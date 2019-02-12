@@ -16,7 +16,7 @@ JetBrains JVM Debugger Memory View plugin
 
 ### What is the plugin about?
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/2.png)
+
 
 此插件扩展了内置的JVM调试器，具有在调试会话期间观察JVM堆中的对象的功能。
 
@@ -33,11 +33,11 @@ JetBrains JVM Debugger Memory View plugin
 *   **快捷键：** 按 **command/ ctrl** + **shift** + **A，** 类型 **插件** 随后，按 **enter** 键：
 *   或打开 **Preferences/Settings:** （Mac：Android Studio - >Preferences **/** Windows和Linux：File - >Settings）并找到 **Plugins** 页面：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/3.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/2.png)
 
 按 **Install jetBrains plugin…** 按钮，搜索 **JVM Debugger Memory View** 然后 **Install** 。
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/4.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/3.png)
 
 装完重新启动Android Studio。
 
@@ -45,7 +45,7 @@ At first glance:
 
 回到Android Studio后，您会发现 **Memory View Tool Window** 已经添加到工具栏的右侧。
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/5.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/4.png)
 
 Memory View Tool Window
 
@@ -63,37 +63,37 @@ Memory View Tool Window
 
 *   Android Studio可能会停止响应
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/6.png)
+
 
 ### Let’s debug!
 
 在调试模式下运行应用程序并在BreakPoint上暂停后，您会看到很神奇的画面：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/7.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/5.png)
 
 这个表让我们最感兴趣的地方是 **Diff** ”列，当你一步步调试代码行时，你将看到会有多少新的对象实例被创建或销毁！
 
 我想寻找我自己的对象 （即ProfileModel类） ，所以我搜索它：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/8.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/6.png)
 
 正如你可以看到我已经在这行代码更新了ProfileModel vairable，在GC删除旧对象之前我得到差异是+1 ，也可以访问之前不可能访问到的旧的对象。 通过双击这条记录，我将在窗口中获取ProfileModel类的实例：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/9.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/7.png)
 
 此窗口还允许你使用类方法通过计算的表达式过滤实例，例如，您可以使用 **OkHttp Response** 类的 **isSuccessful** 方法来过滤筛选在内存中加载不成功的响应：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/10.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/8.png)
 
 实例过滤器功能
 
 另一个有用的功能是跟踪新实例，您可以通过Memory View Tool窗口中的右键菜单启用：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/11.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/9.png)
 
 此功能可帮助您跟踪已生成类的新实例的代码！
 
-![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/12.png)
+![](https://ziyekudeng.github.io/assets/images/2019/0212/jvm-debugger-memory-view-plugin/10.png)
 
 
  
