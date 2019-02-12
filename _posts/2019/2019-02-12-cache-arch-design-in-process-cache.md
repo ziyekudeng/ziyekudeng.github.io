@@ -1,6 +1,6 @@
 ---
 layout: post
-title:缓存架构设计 - 进程内缓存
+title: 缓存架构设计 - 进程内缓存
 category: springcloud
 tags: [springcloud]
 keywords: 微服务,实践,经验教训,架构,互联网

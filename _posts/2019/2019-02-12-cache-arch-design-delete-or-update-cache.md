@@ -1,6 +1,6 @@
 ---
 layout: post
-title:缓存，究竟是淘汰，还是修改？
+title: 缓存，究竟是淘汰，还是修改？
 category: springcloud
 tags: [springcloud]
 keywords: 微服务,实践,经验教训,架构,互联网
