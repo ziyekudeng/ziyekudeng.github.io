@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drools6规则引擎(十一)
+title: Jboss rules规则引擎 Drools 6.4.0 Final 教程(1)
 category: drools
 tags: [drools]
 ---
