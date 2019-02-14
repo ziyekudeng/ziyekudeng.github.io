@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 小明历险记：规则引擎drools教程一
+title: 小明历险记：规则引擎drools教程
 category: drools
 tags: [drools]
 ---
