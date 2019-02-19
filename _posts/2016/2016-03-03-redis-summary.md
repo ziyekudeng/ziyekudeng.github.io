@@ -1,6 +1,6 @@
 ---
 layout: post
-title: redis使用总结
+title: redis使用总结-常用命令
 category: redis
 tags: [redis]
 ---
