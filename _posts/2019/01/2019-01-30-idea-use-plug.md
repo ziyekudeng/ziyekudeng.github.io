@@ -25,45 +25,45 @@ IntelliJ IDEA 默认安装并提供了非常多的工具，比如 Git Integratio
 
 ### 二、市场插件
 
-阿里代码规约检测: Alibaba Java Coding Guidelines
+#### 阿里代码规约检测: Alibaba Java Coding Guidelines
 
-快捷键提示工具：Key promoter X
+#### 快捷键提示工具：Key promoter X
 
-代码注解插件： Lombok
+#### 代码注解插件： Lombok
 
-代码生成工具：CodeMaker
+#### 代码生成工具：CodeMaker
 
-单元测试测试生成工具：JUnitGenerator
+#### 单元测试测试生成工具：JUnitGenerator
 
-Mybatis 工具：iBATIS/MyBatis plugin
+#### Mybatis 工具：iBATIS/MyBatis plugin
 
-Mybatis 工具：Free Mybatis plugin
+#### Mybatis 工具：Free Mybatis plugin
 
-Maven辅助神器：Maven Helper
+#### Maven辅助神器：Maven Helper
 
-JSON转领域对象工具：GsonFormat
+#### JSON转领域对象工具：GsonFormat
 
-领域对象转JSON工具：POJO to JSON
+#### 领域对象转JSON工具：POJO to JSON
 
-时序图生成工具：SequenceDiagram
+#### 时序图生成工具：SequenceDiagram
 
-字符串工具：String Manipulation
+#### 字符串工具：String Manipulation
 
-代码作色工具：Rainbow Brackets
+#### 代码作色工具：Rainbow Brackets
 
-RESTful 服务开发辅助工具集: RestfulToolkit
+#### RESTful 服务开发辅助工具集: RestfulToolkit
 
-日志工具：Grep Console
+#### 日志工具：Grep Console
 
-生成对象set方法：GenerateAllSetter
+#### 生成对象set方法：GenerateAllSetter
 
-Redis可视化：Iedis
+#### Redis可视化：Iedis
 
-K8s工具：Kubernetes
+#### K8s工具：Kubernetes
 
-中英文翻译工具：Translation
+#### 中英文翻译工具：Translation
 
-GIT插件: GitToolBox 
+#### GIT插件: GitToolBox 
          配合版本控制工具git使用，非常直观显示当前项目分支，及代码未更新，未提交数目。省去查询分支和最新代码等不必要的麻烦
 
 #### 1. 阿里代码规约检测
