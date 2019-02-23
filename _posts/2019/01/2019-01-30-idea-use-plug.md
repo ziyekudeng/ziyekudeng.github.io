@@ -25,7 +25,7 @@ IntelliJ IDEA 默认安装并提供了非常多的工具，比如 Git Integratio
 
 ### 二、市场插件
 
-阿里代码规约检测
+阿里代码规约检测: Alibaba Java Coding Guidelines
 
 快捷键提示工具：Key promoter X
 
@@ -34,6 +34,8 @@ IntelliJ IDEA 默认安装并提供了非常多的工具，比如 Git Integratio
 代码生成工具：CodeMaker
 
 单元测试测试生成工具：JUnitGenerator
+
+Mybatis 工具：iBATIS/MyBatis plugin
 
 Mybatis 工具：Free Mybatis plugin
 
@@ -60,6 +62,9 @@ Redis可视化：Iedis
 K8s工具：Kubernetes
 
 中英文翻译工具：Translation
+
+GIT插件: GitToolBox 
+         配合版本控制工具git使用，非常直观显示当前项目分支，及代码未更新，未提交数目。省去查询分支和最新代码等不必要的麻烦
 
 #### 1. 阿里代码规约检测
 
