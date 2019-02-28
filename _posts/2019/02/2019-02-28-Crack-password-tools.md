@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 十三款流行无线网络安全工具介绍
-category: life
-tags: [life]
+category: tools
+tags: [tools]
 ---
 
 
