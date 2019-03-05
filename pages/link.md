@@ -46,7 +46,7 @@ permalink: /link
 - [云收藏](http://www.favorites.ren/) - 一个在线云端的网络收藏夹，可以分享和查看其它人分享
 - [wherebt](http://wherebt.com/) - 提供各种BT资源导航,主要收录了bt sync keys的分享网站
 
-## 推荐建立博客工具网站
+- [蓝灯](https://github.com/getlantern/download/) - 蓝灯软件
 
 - [建立简单的静态博客网站](https://jekyllcn.com/docs/home/) - Jekyll 是一个简单的博客形态的静态站点生产机器 中文网站
 - [MD工具](http://relatos.top/md/) - markdown转发html在线工具  
