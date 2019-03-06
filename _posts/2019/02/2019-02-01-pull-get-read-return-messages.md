@@ -2,8 +2,9 @@
 layout: post
 title: 推送还是拉取-群消息已读回执
 no-post-nav: true
-category: life
-tags: [life]
+category: java
+tags: [java]
+
 ---
 
 

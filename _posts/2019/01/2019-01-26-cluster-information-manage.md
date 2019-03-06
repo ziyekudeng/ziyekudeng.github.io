@@ -4,6 +4,8 @@ title: 集群信息管理，架构设计中最容易遗漏的一环
 no-post-nav: true
 category: life
 tags: [life]
+keywords: 个人生活感悟
+
 ---
 
 

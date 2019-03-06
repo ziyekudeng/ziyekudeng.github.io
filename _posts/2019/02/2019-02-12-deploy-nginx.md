@@ -2,8 +2,8 @@
 layout: post
 title: 使用nginx部署网站
 no-post-nav: true
-category: life
-tags: [life]
+category: nginx
+tags: [nginx]
 ---
 
 
