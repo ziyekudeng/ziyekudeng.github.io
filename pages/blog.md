@@ -47,6 +47,8 @@ permalink: /blog
 - [springboot(十三)：springboot小技巧](https://ziyekudeng.github.io/springboot/2017/06/22/springboot-tips.html)
 - [springboot(十五)：springboot+jpa+thymeleaf增删改查示例](https://ziyekudeng.github.io/springboot/2017/09/23/spring-boot-jpa-thymeleaf-curd.html)  
 - [springboot(十六)：使用Jenkins部署Spring Boot](https://ziyekudeng.github.io/springboot/2017/11/11/springboot-jenkins.html)
+- [程序员笔记——springboot 之常用注解](https://mp.weixin.qq.com/s/eE9bLX5invvMjGePprO2Ew)
+
 
 - **[springboot实战：我们的第一款开源软件](https://ziyekudeng.github.io/springboot/2016/09/26/springboot%E5%AE%9E%E6%88%98-%E6%88%91%E4%BB%AC%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%BE%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6.html)**
 
