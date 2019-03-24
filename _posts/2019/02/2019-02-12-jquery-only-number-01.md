@@ -7,7 +7,7 @@ tags: [jquery]
 
 
 
-    <code class=" hljs javascript">jquery 限制文本框只能输入数字
+    jquery 限制文本框只能输入数字
     $("input[name='fangwenyudinhuishu']").keyup(function(){       
             var tmptxt=$(this).val();       
             $(this).val(tmptxt.replace(/\D|^0/g,''));       
@@ -16,7 +16,7 @@ tags: [jquery]
             $(this).val(tmptxt.replace(/\D|^0/g,''));       
         }).css("ime-mode", "disabled");
 
-上面是keyup事件处理,下面处理了CTR+V事件,最后就是CSS设置输入法不可用</code><code class=" hljs javascript">用jquery限制文本框只能输入数字：    
+上面是keyup事件处理,下面处理了CTR+V事件,最后就是CSS设置输入法不可用用jquery限制文本框只能输入数字：    
 
 程序：    
 
@@ -58,7 +58,7 @@ tags: [jquery]
             //调用文本框的id 
       $("#score").numeral();     
     
-    });</code> 
+    });  
 
  
 

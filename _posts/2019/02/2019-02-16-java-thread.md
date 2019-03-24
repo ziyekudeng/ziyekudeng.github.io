@@ -28,10 +28,10 @@ tags: [java]
 
 *   线程安全：经常用来描绘一段代码。指在并发的情况之下，该代码经过多线程使用，线程的调度顺序不影响任何结果。这个时候使用多线程，我们只需要关注系统的内存，CPU 是不是够用即可。反过来，线程不安全就意味着线程的调度顺序会影响最终结果，如不加事务的转账代码：
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">void transferMoney(User from, User to, float amount){
-        to.setMoney(to.getBalance() + amount);
-        from.setMoney(from.getBalance() - amount);
-}</code>
+      void transferMoney(User from, User to, float amount){
+            to.setMoney(to.getBalance() + amount);
+            from.setMoney(from.getBalance() - amount);
+    }  
 
 *   同步：Java 中的同步指的是通过人为的控制和调度，保证共享资源的多线程访问成为线程安全，来保证结果的准确。如上面的代码简单加入 @synchronized 关键字。在保证结果准确的同时，提高性能，才是优秀的程序。线程安全的优先级高于性能。
 
@@ -88,72 +88,72 @@ wait/notify 必须存在于 synchronized 块中。并且，这三个关键字针
 
 *   代码块：如下，在多线程环境下，synchronized 块中的方法获取了 lock 实例的 monitor，如果实例相同，那么只有一个线程能执行该块内容
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">public class Thread1 implements Runnable { 
-‍        ‍Object lock; 
-‍‍        ‍public void run() { 
-‍            ‍synchronized(lock){ 
-‍                ‍..do something 
-‍            ‍}
-‍        ‍} 
-}</code>
+      public class Thread1 implements Runnable { 
+    ‍        ‍Object lock; 
+    ‍‍        ‍public void run() { 
+    ‍            ‍synchronized(lock){ 
+    ‍                ‍..do something 
+    ‍            ‍}
+    ‍        ‍} 
+    }  
 
 *   直接用于方法： 相当于上面代码中用 lock 来锁定的效果，实际获取的是 Thread1 类的 monitor。更进一步，如果修饰的是 static 方法，则锁定该类所有实例。
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">public class Thread1 implements Runnable {
-            public synchronized void run() {
-                ..do something
-            }
-}</code>
+      public class Thread1 implements Runnable {
+                public synchronized void run() {
+                    ..do something
+                }
+    }  
 
 *   synchronized, wait, notify 结合:典型场景生产者消费者问题
-
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">/**     
-    * 生产者生产出来的产品交给店员     
-    */    
-    public synchronized void produce()    
-    {
-        if(this.product >= MAX_PRODUCT)
-        { 
-            try 
-            {
-                wait(); 
-                System.out.println("产品已满,请稍候再生产");
-            }
-            catch(InterruptedException e) 
-            {
-                e.printStackTrace () ; 
-            } 
-            return; 
-        } 
-
-        this.product++;
-        System.out.println("生产者生产第" + this.product + "个产品.");
-        notifyAll();   //通知等待区的消费者可以取出产品了
-    }
-
-‍    ‍/**      
-‍    ‍ * 消费者从店员取产品
-‍    ‍*/    
-‍    ‍public synchronized void consume()     
-‍    ‍{        
-‍‍        ‍if(this.product <= MIN_PRODUCT)        
-‍        ‍{           
-‍‍            ‍try              
-‍            ‍{                
-‍                ‍wait(); 
-‍‍‍                ‍‍‍System.out.println("缺货,稍候再取");
-‍            ‍}              
-‍‍‍            ‍‍‍catch (InterruptedException e)              
-‍            ‍{                 
-‍‍                ‍e.printStackTrace();             
-‍            ‍}            
-‍            ‍return;
-‍        ‍}                  
-
-            System.out.println("消费者取走了第" + this.product + "个产品.");
-            this.product--;
-            notifyAll();   //通知等待去的生产者可以生产产品了
-‍    ‍}</code>
+    
+      /**     
+        * 生产者生产出来的产品交给店员     
+        */    
+        public synchronized void produce()    
+        {
+            if(this.product >= MAX_PRODUCT)
+            { 
+                try 
+                {
+                    wait(); 
+                    System.out.println("产品已满,请稍候再生产");
+                }
+                catch(InterruptedException e) 
+                {
+                    e.printStackTrace () ; 
+                } 
+                return; 
+            } 
+    
+            this.product++;
+            System.out.println("生产者生产第" + this.product + "个产品.");
+            notifyAll();   //通知等待区的消费者可以取出产品了
+        }
+    
+    ‍    ‍/**      
+    ‍    ‍ * 消费者从店员取产品
+    ‍    ‍*/    
+    ‍    ‍public synchronized void consume()     
+    ‍    ‍{        
+    ‍‍        ‍if(this.product <= MIN_PRODUCT)        
+    ‍        ‍{           
+    ‍‍            ‍try              
+    ‍            ‍{                
+    ‍                ‍wait(); 
+    ‍‍‍                ‍‍‍System.out.println("缺货,稍候再取");
+    ‍            ‍}              
+    ‍‍‍            ‍‍‍catch (InterruptedException e)              
+    ‍            ‍{                 
+    ‍‍                ‍e.printStackTrace();             
+    ‍            ‍}            
+    ‍            ‍return;
+    ‍        ‍}                  
+    
+                System.out.println("消费者取走了第" + this.product + "个产品.");
+                this.product--;
+                notifyAll();   //通知等待去的生产者可以生产产品了
+    ‍    ‍}  
 
 **volatile**
 
@@ -168,20 +168,20 @@ volatile
 基本线程类指的是 Thread 类，Runnable 接口，Callable 接口
 
 Thread 类实现了 Runnable 接口，启动一个线程的方法：
-
- <code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">MyThread my = new MyThread();
-‍‍    ‍‍my.start();</code>
+    
+       MyThread my = new MyThread();
+    ‍‍    ‍‍my.start();  
 
 **Thread类相关方法**
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">//当前线程可转让 cpu 控制权，让别的就绪状态线程运行（切换）
-public static Thread.yield()
-//暂停一段时间
-public static Thread.sleep()   
-//在一个线程中调用 other.join(),将等待other执行完后才继续本线程。　　　　
-public join()
-//后两个函数皆可以被打断
-public interrupte()</code>
+      //当前线程可转让 cpu 控制权，让别的就绪状态线程运行（切换）
+    public static Thread.yield()
+    //暂停一段时间
+    public static Thread.sleep()   
+    //在一个线程中调用 other.join(),将等待other执行完后才继续本线程。　　　　
+    public join()
+    //后两个函数皆可以被打断
+    public interrupte()  
 
 **关于中断**：它并不像 stop 方法那样会中断一个正在运行的线程。线程会不时地检测中断标识位，以判断线程是否应该被中断（中断标识值是否为 true ）。终端只会影响到 wait 状态、sleep 状态和 join 状态。被打断的线程会抛出 InterruptedException。
 Thread.interrupted() 检查当前线程是否发生中断，返回boolean
@@ -206,11 +206,11 @@ synchronized 在获锁的过程中是不能被中断的。
 
 future 模式：并发模式的一种，可以有两种形式，即无阻塞和阻塞，分别是 isDone 和 get。其中 Future 对象用来存放该线程的返回值以及状态
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">ExecutorService e = Executors.newFixedThreadPool(3);
-//submit 方法有多重参数版本，及支持 callable 也能够支持runnable 接口类型. 
-Future future = e.submit(new myCallable());
-future.isDone() //return true,false 无阻塞 
-future.get() // return 返回值，阻塞直到该线程运行结束</code>
+      ExecutorService e = Executors.newFixedThreadPool(3);
+    //submit 方法有多重参数版本，及支持 callable 也能够支持runnable 接口类型. 
+    Future future = e.submit(new myCallable());
+    future.isDone() //return true,false 无阻塞 
+    future.get() // return 返回值，阻塞直到该线程运行结束  
 
 **九阴真经：高级多线程控制类**
 
@@ -228,17 +228,17 @@ future.get() // return 返回值，阻塞直到该线程运行结束</code>
 
 如果使用 atomic wrapper class 如 atomicInteger，或者使用自己保证原子的操作，则等同于 synchronized
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">//返回值为 boolean
-AtomicInteger.compareAndSet(int expect,int update)</code>
+  //返回值为 boolean
+AtomicInteger.compareAndSet(int expect,int update)  
 
 该方法可用于实现乐观锁，考虑文中最初提到的如下场景：a 给 b 付款10元，a 扣了 10 元，b 要加 10 元。此时 c 给 b 2 元，但是 b的加十元代码约为：
-
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">if(b.value.compareAndSet(old, value)){  
-    return ;
-}else{
-        //try again
-        // if that fails, rollback and log
-}</code>
+    
+      if(b.value.compareAndSet(old, value)){  
+        return ;
+    }else{
+            //try again
+            // if that fails, rollback and log
+    }  
 
 **AtomicReference**
 
@@ -281,17 +281,17 @@ synchronized和Lock性能对比
 
 1.先 new 一个实例
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">static ReentrantLock r=new ReentrantLock();</code>
+  static ReentrantLock r=new ReentrantLock();  
 
 2.加锁
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">r.lock()或 r.lockInterruptibly();</code>
+  r.lock()或 r.lockInterruptibly();  
 
 此处也是个不同，后者可被打断。当 a 线程 lock 后，b 线程阻塞，此时如果是 lockInterruptibly，那么在调用 b.interrupt() 之后，b 线程退出阻塞，并放弃对资源的争抢，进入 catch 块。（如果使用后者，必须 throw interruptable exception 或 catch）
 
 3.释放锁
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">r.unlock()</code>
+  r.unlock()  
 
 必须做！何为必须做呢，要放在 finally 里面。以防止异常跳出了正常流程，导致灾难。这里补充一个小知识点，finally 是可以信任的：经过测试，哪怕是发生了 OutofMemoryError ，finally 块中的语句执行也能够得到保证。
 
@@ -299,9 +299,9 @@ synchronized和Lock性能对比
 
 可重入读写锁（读写锁的一个实现）
 
- <code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">ReentrantReadWriteLock   lock = new ReentrantReadWriteLock()
+   ReentrantReadWriteLock   lock = new ReentrantReadWriteLock()
     ReadLock r = lock.readLock();　
-    WriteLock w = lock.writeLock();</code>
+    WriteLock w = lock.writeLock();  
 
 两者都有 lock,unlock 方法。写写，写读互斥；读读不互斥。可以实现并发读的高效线程安全代码
 
@@ -347,14 +347,14 @@ BlockingQueue
 
 如果不了解这个类，应该了解前面提到的 ExecutorService，开一个自己的线程池非常方便
 
-<code class="java hljs" style="font-size: 0.85em; font-family: Consolas, Menlo, Courier, monospace; margin: 0px 0.15em; white-space: pre; overflow: auto; padding: 0.5em; color: #abb2bf; text-size-adjust: none; display: block !important; min-width: 400px; background: none 0% 0% / auto repeat scroll padding-box border-box #282c34; font-weight: 400;">ExecutorService e = Executors.newCachedThreadPool(); 
-    ExecutorService e =Executors.newSingleThreadExecutor();  
-    ExecutorService e = Executors.newFixedThreadPool(3);   
-    // 第一种是可变大小线程池，按照任务数来分配线程，    
-    // 第二种是单线程池，相当于 FixedThreadPool(1)    
-    // 第三种是固定大小线程池。    
-    // 然后运行 
-    e.execute(new MyRunnableImpl());</code>
+      ExecutorService e = Executors.newCachedThreadPool(); 
+        ExecutorService e =Executors.newSingleThreadExecutor();  
+        ExecutorService e = Executors.newFixedThreadPool(3);   
+        // 第一种是可变大小线程池，按照任务数来分配线程，    
+        // 第二种是单线程池，相当于 FixedThreadPool(1)    
+        // 第三种是固定大小线程池。    
+        // 然后运行 
+        e.execute(new MyRunnableImpl());  
 
 该类内部是通过 ThreadPoolExecutor 实现的，掌握该类有助于理解线程池的管理，本质上，他们都是 ThreadPoolExecutor 类的各种实现版本。请参见 javadoc：
 

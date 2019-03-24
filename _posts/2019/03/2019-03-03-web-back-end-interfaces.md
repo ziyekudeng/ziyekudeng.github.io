@@ -97,47 +97,47 @@ API 文档
 
 # raml-mocker
 
-raml-mocker (https://github.com/xbl/raml-mocker) 是一个基于 Raml 使用 Nodejs 开发的 Mock Server 工具，使用 Raml 描述接口中设置 response 的 `example` 指令即可，raml-mocker 会解析 Raml 文件，并启动一个 Mock Server，将 `example` 的内容返回给浏览器。
+    raml-mocker (https://github.com/xbl/raml-mocker) 是一个基于 Raml 使用 Nodejs 开发的 Mock Server 工具，使用 Raml 描述接口中设置 response 的 `example` 指令即可，raml-mocker 会解析 Raml 文件，并启动一个 Mock Server，将 `example` 的内容返回给浏览器。
 
 ## 开始
 
 ### 初始化项目
 
-<code class="hljs bash" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">git clone https://github.com/xbl/raml-mocker-starter.git raml-api
-cd raml-api
-git remote rm origin</code> 
+    git clone https://github.com/xbl/raml-mocker-starter.git raml-api
+    cd raml-api
+    git remote rm origin
 ### 安装
 
-<code class="hljs coffeescript" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">yarn
+yarn
 # or
-npm install</code> 
+    npm install
 ### 启动 mock server
 
-<code class="hljs sql" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">yarn start
-# or
-npm start</code> 
+    yarn start
+    # or
+    npm start
 ### 测试
 
-<code class="hljs nginx" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">curl -i http://localhost:3000/api/v1/users/1/books/
-# or
-curl -i http://localhost:3000/api/v1/users/1/books/1</code> 
+    curl -i http://localhost:3000/api/v1/users/1/books/
+    # or
+    curl -i http://localhost:3000/api/v1/users/1/books/1
 ### 生成 API 可视化文档
 
-<code class="hljs coffeescript" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">yarn run build
-# or
-npm run build</code> 
+    yarn run build
+    # or
+    npm run build
 
 此功能使用了raml2html。
 
 ## 配置 .raml-config.json
-
-<code class="hljs json" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">{
-  "controller": "./controller",
-  "raml": "./raml",
-  "main": "api.raml",
-  "port": 3000,
-  "plugins": []
-}</code> 
+    
+    {
+      "controller": "./controller",
+      "raml": "./raml",
+      "main": "api.raml",
+      "port": 3000,
+      "plugins": []
+    }
 
 *   controller: controller 目录路径，在高级篇中会有更详细说明
 
@@ -153,41 +153,41 @@ npm run build</code>
 
 raml-mocker 只需要在response 添加 `example`:
 
-<code class="hljs bash" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">/books:
-  /:id:
-    post:
-      body:
-        application/json:
-          type: abc
-      responses:
-        200:
-          body:
-            application/json:
-              type: song
-              # 返回的 Mock 数据
-              example: !include ./books_200.json</code> 
-
-books_200.json
-
-<code class="hljs json" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">{
-  "code": 200,
-  "data": [
-    {
-      "id": 1,
-      "title": "books title",
-      "description": "books desccription1"
-    },
-    {
-      "id": 2,
-      "title": "books title",
-      "description": "books desccription2"
-    }
-  ]
-}</code> 
+    /books:
+      /:id:
+        post:
+          body:
+            application/json:
+              type: abc
+          responses:
+            200:
+              body:
+                application/json:
+                  type: song
+                  # 返回的 Mock 数据
+                  example: !include ./books_200.json
+    
+    books_200.json
+    
+    {
+      "code": 200,
+      "data": [
+        {
+          "id": 1,
+          "title": "books title",
+          "description": "books desccription1"
+        },
+        {
+          "id": 2,
+          "title": "books title",
+          "description": "books desccription2"
+        }
+      ]
+    }
 
 通过 curl 请求：
 
-<code class="hljs ruby" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">curl -i http://localhost:3000/api/v1/users/1/books</code> 
+    curl -i http://localhost:3000/api/v1/users/1/books
 
 就会得到 `example` 的数据，唯一不足是无法根据参数动态返回不同数据。别急，请往下看。
 
@@ -196,44 +196,44 @@ books_200.json
 如果静态的 Mock 数据不能满足你的需求，Raml-mocker 还提供了动态的功能。
 
 在 raml 文档中添加 `(controller)` 指令，即可添加动态的 Server，如：
-
-<code class="hljs bash" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">/books:
-  type:
-    resourceList:
-  get:
-    description: 获取用户的书籍
-    (controller): user#getBook
-    responses:
-      200:
-        body:
-          type: song[]
-          example: !include ./books_200.json</code> 
+    
+    /books:
+      type:
+        resourceList:
+      get:
+        description: 获取用户的书籍
+        (controller): user#getBook
+        responses:
+          200:
+            body:
+              type: song[]
+              example: !include ./books_200.json
 
 在文档中 `(controller)` 表示 controller 目录下 user.js 中 getBook 函数。
-
-controller/user.js
-
-<code class="hljs coffeescript" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">exports.getBook = (req, res, webApi) => {
-  console.log(webApi);
-  res.send('Hello World!');
-}</code> 
+    
+    controller/user.js
+    
+    exports.getBook = (req, res, webApi) => {
+      console.log(webApi);
+      res.send('Hello World!');
+    }
 
 Raml-mocker 是在 expressjs 基础上进行开发，req、res 可以参考 express 文档。
 
 webApi 会返回文档中的配置：
-
-<code class="hljs json" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">{
-  "absoluteUri": "/api/:version/users/:user_id/books",
-  "method": "get",
-  "controller": "user#getBook",
-  "responses": [
-    {
-      "code": "200",
-      "body": "... example ...",
-      "mimeType": "application/json"
-    }
-  ]
-}</code> 
+    
+    {
+      "absoluteUri": "/api/:version/users/:user_id/books",
+      "method": "get",
+      "controller": "user#getBook",
+      "responses": [
+        {
+          "code": "200",
+          "body": "... example ...",
+          "mimeType": "application/json"
+        }
+      ]
+    }
 
 如此，raml-mocker 提供了更多可扩展空间，我们甚至可以在 controller 中实现一定的逻辑。
 
@@ -241,28 +241,28 @@ webApi 会返回文档中的配置：
 
 Raml-mocker 提供了插件机制，允许我们在不使用 `controller` 指令的时候对 response 的内容进行处理，例如使用 Mockjs。
 
-.raml-config.json
+    .raml-config.json
+    
+    {
+      "controller": "./controller",
+      "raml": "./raml",
+      "main": "api.raml",
+      "port": 3000,
+      "plugins": ["./plugins/mock.js"]
+    }
 
-<code class="hljs json" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">{
-  "controller": "./controller",
-  "raml": "./raml",
-  "main": "api.raml",
-  "port": 3000,
-  "plugins": ["./plugins/mock.js"]
-}</code> 
-
-./plugins/mock.js
-
-<code class="hljs javascript" style="padding: 0.5em; font-family: Consolas, Inconsolata, Courier, monospace; display: block; overflow-x: auto; line-height: 18px; font-size: 14px; letter-spacing: 0px; background: #1d1f21; color: #c5c8c6; overflow-wrap: normal !important; word-break: normal !important; overflow-y: auto !important;">var { mock } = require('mockjs');
-
-module.exports = (body) => {
-  try {
-    return mock(JSON.parse(body));
-  } catch(e) {}
-  return body;
-}</code> 
-
-Enjoy it！
+    ./plugins/mock.js
+    
+    var { mock } = require('mockjs');
+    
+    module.exports = (body) => {
+      try {
+        return mock(JSON.parse(body));
+      } catch(e) {}
+      return body;
+    }
+    
+    Enjoy it！
 
 # 总结
 

@@ -40,22 +40,22 @@ Drools6的官方文档很强大，不过个人认为作为进阶学习的资料�
 
 kmodule.xml
 
-    <code class=" hljs xml"><kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+     
       <kbase name="kbase1" packages="org.mypackages>
         <ksession name="ksession1"/>
       </kbase>
-    </kmodule></code>
+    </kmodule> 
 
 Kmodule.xml是Kie API中比较重要的一部分，之后会介绍相应的用法，在这里只是告诉你这时新特性，别傻傻的在旧版本里面找它了。
 
 ##### **KieModules, KieContainer and KIE-CI**
 
-    <code class=" hljs avrasm">KieServices ks = KieServices.Factory.get();
+     KieServices ks = KieServices.Factory.get();
     KieContainer kContainer = ks.newKieContainer(
             ks.newReleaseId("org.mygroup", "myartefact", "1.0") );
     KieSession kSession = kContainer.newKieSession("ksession1");
     kSession.insert(new Message("Dave", "Hello, HAL. Do you read me, HAL?"));
-    kSession.fireAllRules();</code>
+    kSession.fireAllRules(); 
 
 这里引用Drools-6.1.0.Final 入门文档 中的介绍来介绍这个特性：
 
@@ -67,14 +67,14 @@ Kmodule.xml是Kie API中比较重要的一部分，之后会介绍相应的用�
 1.  引入新的算法PHREAK，官方文档的意思是能让Drools处理大量的规则以及事实。我没有找到太多关于PHREAK算法的资料，有空再去研究下吧。
 2.  Automatically firing timed rule in passive mode.这什么意思，大致指的是Drools默认情况下是惰性的执行规则，即除非你调用了fireAllRules（），不然他不会执行规则的。而现在有一个Drools加了个新特性，能让你改变默认的行为，他会自动执行规则。
 
-    <code class=" hljs avrasm">KieSessionConfiguration ksconf = KieServices.Factory.get().newKieSessionConfiguration();
-    ksconf.setOption( TimedRuleExectionOption.YES );
-    KSession ksession = kbase.newKieSession(ksconf, null);</code>
+         KieSessionConfiguration ksconf = KieServices.Factory.get().newKieSessionConfiguration();
+        ksconf.setOption( TimedRuleExectionOption.YES );
+        KSession ksession = kbase.newKieSession(ksconf, null); 
 
 这个新特性什么时候用，我还真没数。
 3\. Expression Timers.
 
-    <code class=" hljs ruby">declare Bean
+     declare Bean
         delay   : String = "30s"
         period  : long = 60000
     end
@@ -83,7 +83,7 @@ Kmodule.xml是Kie API中比较重要的一部分，之后会介绍相应的用�
     when
         Bean( $d : delay, $p : period )
     then
-    end</code><code class=" hljs vbscript">timer (int: 30s 10s; start=3-JAN-2010, end=5-JAN-2010)</code>
+    end <code class=" hljs vbscript">timer (int: 30s 10s; start=3-JAN-2010, end=5-JAN-2010) 
 
 感觉就像个定时器，在从2010年1月3日开始，延迟30秒时间。之后每隔10秒发生一次，直到1月5日。
 
@@ -93,7 +93,7 @@ Kmodule.xml是Kie API中比较重要的一部分，之后会介绍相应的用�
 
 ##### **CDI**
 
-    <code class=" hljs java">@Inject
+     @Inject
     @KSession("ksession1") 
     @KReleaseId( groupId = "jar1", rtifactId = "art1", version = "1.0")
     private KieSession ksessionv10;
@@ -101,7 +101,7 @@ Kmodule.xml是Kie API中比较重要的一部分，之后会介绍相应的用�
     @Inject
     @KSession("ksession1") 
     @KReleaseId( groupId = "jar1", rtifactId = "art1", version = "1.1")
-    private KieSession ksessionv11;</code>
+    private KieSession ksessionv11; 
 
 注入相应版本的KieBase和KieSession。
 
