@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 分享 15 个好用 + 实用的 Chrome 扩展
-category: life
-tags: [life]
+category: tools
+tags: [tools]
 ---
 
 
