@@ -2,8 +2,8 @@
 layout: page
 title: Nignx相关知识
 titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
-menu: life
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; Nignx相关知识
+menu: nignx
 css: ['blog-page.css']
 permalink: /nignx
 ---
