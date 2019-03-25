@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 2019年元旦搭建个人技术博客
-no-post-nav: true
 category: life
 tags: [life]
 keywords: 个人生活感悟

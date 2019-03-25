@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 一个例子说明如何做技术方案
-no-post-nav: true
 category: life
 tags: [life]
 keywords: 个人生活感悟

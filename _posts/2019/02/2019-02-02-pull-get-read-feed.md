@@ -1,7 +1,6 @@
 ---
 layout: post
 title: feed流拉取，读扩散，究竟是啥？
-no-post-nav: true
 category: life
 tags: [life]
 ---

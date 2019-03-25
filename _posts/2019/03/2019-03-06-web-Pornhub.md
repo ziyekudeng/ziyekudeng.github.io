@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Pornhub，一个神奇的网站
-no-post-nav: true
 category: life
 tags: [life]
 ---

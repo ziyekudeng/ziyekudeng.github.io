@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 如何成为优秀的技术主管？你要做到这三点
-category: life
 tags: [life]
 keywords: 个人生活感悟
 ---

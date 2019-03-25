@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 史上最污技术解读-假设你是个妹子
-no-post-nav: true
 category: life
 tags: [life]
 keywords: 个人生活感悟

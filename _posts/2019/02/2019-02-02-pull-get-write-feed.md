@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 朋友圈微博feed流，推拉实践
-no-post-nav: true
 category: life
 tags: [life]
 ---

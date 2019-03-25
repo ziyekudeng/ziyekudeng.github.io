@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 架构师之路18年精选100篇
-no-post-nav: true
 category: life
 tags: [life]
 ---

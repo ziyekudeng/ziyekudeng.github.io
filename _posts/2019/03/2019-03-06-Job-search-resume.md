@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 跳槽的必要条件是有一份好的简历
-no-post-nav: true
 category: life
 tags: [life]
 ---

@@ -125,6 +125,11 @@ classes:
     describe: 工欲善其事，必先利其器
 
   -
+    href: /nginx.html
+    name: weblogic和nginx
+    describe: 工作中用的的中间件
+
+  -
     href: /arch.html
     name: 架构师之路
     describe: 一个架构师的自我修养

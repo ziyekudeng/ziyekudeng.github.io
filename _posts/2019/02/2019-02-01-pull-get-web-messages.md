@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 推送还是拉取-网页端收消息
-no-post-nav: true
 category: life
 tags: [life]
 ---

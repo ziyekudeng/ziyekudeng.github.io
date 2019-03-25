@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 喝茶，真的只是一种生活方式。
-no-post-nav: true
 category: life
 tags: [life]
 keywords: 个人生活感悟

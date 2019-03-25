@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 群消息，究竟存1份还是多份？
-no-post-nav: true
 category: life
 tags: [life]
 ---

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 如何从传统软件开发顺利过渡到互联网技术开发
-no-post-nav: true
 category: life
 tags: [life]
 keywords: 个人生活感悟
