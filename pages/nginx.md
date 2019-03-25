@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nignx相关知识
-titlebar: life
+titlebar: nignx
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; Nignx相关知识
 menu: nignx
 css: ['blog-page.css']
