@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 推送还是拉取-系统通知
-category: life
-tags: [life]
+category: springcloud
+tags: [springcloud]
 ---
 
 

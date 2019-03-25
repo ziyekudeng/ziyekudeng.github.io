@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 朋友圈微博feed流，推拉实践
-category: life
-tags: [life]
+category: springcloud
+tags: [springcloud]
 ---
 
 
