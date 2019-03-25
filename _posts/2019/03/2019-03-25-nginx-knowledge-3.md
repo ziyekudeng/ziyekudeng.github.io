@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 解决linux环境下nohup: redirecting stderr to stdout问题
+title: 解决linux环境下日志输出报错问题
 category: nginx
 tags: [nginx]
 ---
