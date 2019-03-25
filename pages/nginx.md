@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Nignx相关知识
-titlebar: nignx
+titlebar: nginx
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; Nignx相关知识
-menu: nignx
+menu: nginx
 css: ['blog-page.css']
-permalink: /nignx
+permalink: /nginx
 ---
 
 <div class="row">
