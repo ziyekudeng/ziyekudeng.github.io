@@ -436,7 +436,7 @@ ORA-01507
 
 参考[https://blog.csdn.net/u014330421/article/details/78655468](https://blog.csdn.net/u014330421/article/details/78655468)
 
-### 7.强制停止ORACLE数据库
+### 8.强制停止ORACLE数据库
 
 # 适用场景
 
@@ -455,6 +455,14 @@ ORA-01507
       3、清除oracle占用的共享信号量
     
      ipcs -s | grep oracle | grep -v grep | awk '{print $2}' | xargs -n 1 ipcrm -s
+
+### 9.建立测试表空间及账户
+    
+     create tablespace TMP_LZX datafile '/data/oracle/oracle/oradata/TMP_LZX.dbf' size 50M autoextend on next 5M maxsize 100M;
+    
+     create user TMP_LZX identified by TMP_LZX default tablespace TMP_LZX;
+    
+     grant connect,resource,dba,sysdba to TMP_LZX;
      
 # 三.删除
 

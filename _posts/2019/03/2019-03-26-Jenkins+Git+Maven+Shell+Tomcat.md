@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IntelliJ IDEA 插件推荐
+title: Jenkins+Git+Maven+Shell+Tomcat
 category: tools
 tags: [tools]
 ---

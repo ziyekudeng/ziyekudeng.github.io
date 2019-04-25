@@ -113,6 +113,10 @@ tags: [tools]
 | 
 ###### SMartIM
 
+ | 自定义类、方法、doc、变量注释模板 |
+| 
+###### Jindent-Source Code Formatter
+
  | 惊喜自己拉到后面看 |
 | 
 ###### Settings Repository
@@ -295,9 +299,15 @@ IntelliJ IDEA 上的 SmartIM 插件，可以在 IDEA 中使用 QQ,微信 聊天
 
 ![](https://img2018.cnblogs.com/blog/1441969/201901/1441969-20190123112415668-699889834.png)
 
+## Jindent-Source Code Formatter
+
+自定义类、方法、doc、变量注释模板
+
+http://plugins.jetbrains.com/plugin/2170?pr=idea
+
 ### Settings Repository
 
- <code class="language-text">File → Settings Repository</code> 
+ File → Settings Repository 
 
 <noscript>![](https://pic1.zhimg.com/v2-8fd2153db60e5d2b52d333581ecc8190_b.jpg)</noscript>
 
