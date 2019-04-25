@@ -464,7 +464,18 @@ ORA-01507
     
      grant connect,resource,dba,sysdba to TMP_LZX;
      
-# 三.删除
+# 三.重启
+
+    用root以ssh登录到linux，打开终端输入以下命令：
+    
+    cd $ORACLE_HOME   #进入到oracle的安装目录  
+    dbstart           #重启服务器  
+    lsnrctl start     #重启监听器  
+    cd $ORACLE_HOME   #进入到oracle的安装目录
+    dbstart           #重启服务器
+    lsnrctl start     #重启监听器
+    
+# 四.删除
 
 
 **1、停数据库，关监听**
