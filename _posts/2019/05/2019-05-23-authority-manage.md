@@ -23,11 +23,11 @@ keywords: 微服务,Spring Cloud,中小企业,架构
 
 但是通过上面我们也发现问题了，**如果用户的数量非常大的时候，就需要给系统的每一个用户逐一授权**(分配角色)，这是件非常繁琐的事情，这时就可以增加一个用户组，每个用户组内有多个用户，除了给单个用户授权外，还可以给用户组授权，这样一来，通过一次授权，就可以同时给多个用户授予相同的权限，而这时用户的所有权限就是用户个人拥有的权限与该用户所在组所拥有的权限之和。用户组、用户与角色三者的关联关系如下图：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/1.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/1.webp)
 
 通常在应用系统里面的权限我们把它表现为菜单的访问(页面级)、功能模块的操作(功能级)、文件上传的删改，甚至页面上某个按钮、图片是否可见等等都属于权限的范畴。有些权限设计，会把功能操作作为一类，而把文件、菜单、页面元素等作为另一类，这样构成“用户-角色-权限-资源”的授权模型。而**在做数据表建模时，可把功能操作和资源统一管理，也就是都直接与权限表进行关联，这样可能更具便捷性和易扩展性。**如下图：
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/2.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/2.webp)
 
 > 这里特别需要注意以下权限表中有一列“PowerType(权限类型)”，我们根据它的取值来区分是哪一类权限，可以把它理解为一个枚举，如“MENU”表示菜单的访问权限、“OPERATION”表示功能模块的操作权限、“FILE”表示文件的修改权限、“ELEMENT”表示页面元素的可见性控制等。
 
@@ -42,7 +42,7 @@ keywords: 微服务,Spring Cloud,中小企业,架构
 这样，可以不需要权限菜单关联表，让权限表与菜单表直接关联，此时，须在权限表中新增一列用来保存菜单的ID，权限表通过“权限类型”和这个ID来区分是种类型下的哪条记录。最后扩展出来的模型完整设计如下图：
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/3.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/3.webp)
 
 > 注意上面我额外增加了一个操作日志表；
 
@@ -55,83 +55,83 @@ keywords: 微服务,Spring Cloud,中小企业,架构
 **1.用户表：**
 
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/4.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/4.webp)
 
 **2.角色表：**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/5.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/5.webp)
 
 **3.用户与角色关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/6.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/6.webp)
 
 **4.用户组表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/7.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/7.webp)
 
 **5.用户组与用户信息关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/8.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/8.webp)
 
 
 **6.用户组与角色关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/9.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/9.webp)
 
 
 **7．菜单表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/10.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/10.webp)
 
 
 **8.页面元素表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/11.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/11.webp)
 
 
 **9.文件表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/12.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/12.webp)
 
 
 **10.权限表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/13.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/13.webp)
 
 
 **11.权限与菜单关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/14.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/14.webp)
 
 
 **12.权限与页面元素关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/15.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/15.webp)
 
 
 **13.权限与文件关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/16.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/16.webp)
 
 
 **14.功能操作表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/17.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/17.webp)
 
 
 **15.权限与功能操作关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/18.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/18.webp)
 
 
 **16.角色与权限关联表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/19.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/19.webp)
 
 
 **17.操作日志表**
 
-![](https://ziyekudeng.github.io/assets/images/2019/0523/20.webp
+![](https://ziyekudeng.github.io/assets/images/2019/0523/20.webp)
 
 
 （完）
