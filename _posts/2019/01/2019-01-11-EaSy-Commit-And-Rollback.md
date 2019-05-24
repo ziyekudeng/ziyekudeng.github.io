@@ -1,8 +1,8 @@
 ---
 layout: post
 title: FESCAR：阿里重磅开源分布式事务解决方案
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

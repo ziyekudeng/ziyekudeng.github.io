@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 单点登录原理与简单实现
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: 推送还是拉取-群消息已读回执
 no-post-nav: true
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

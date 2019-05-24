@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 我对分布式多中心架构的几点看法
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 分布式,多中心,架构
 ---
 ## 背景

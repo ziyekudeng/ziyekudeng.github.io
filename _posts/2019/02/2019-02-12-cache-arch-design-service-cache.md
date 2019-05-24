@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 服务通过缓存传递数据，绝不推荐
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

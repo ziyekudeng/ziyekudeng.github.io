@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 群消息，究竟存1份还是多份？
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

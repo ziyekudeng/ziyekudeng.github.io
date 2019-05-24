@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 大规模微服务实战经验
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 微服务,实践,经验教训,架构,互联网
 ---
 ![](https://ziyekudeng.github.io/assets/images/2019/0131/actual-combat/1.png)

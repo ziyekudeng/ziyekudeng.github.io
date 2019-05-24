@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 缓存架构设计 - 选redis还是memcache
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

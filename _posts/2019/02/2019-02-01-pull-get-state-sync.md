@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 推送还是拉取-状态同步
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

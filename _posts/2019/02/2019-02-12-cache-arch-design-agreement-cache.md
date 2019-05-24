@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 缓存架构设计 - 缓存与数据库不一致，咋办？
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 缓存，究竟是淘汰，还是修改？
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

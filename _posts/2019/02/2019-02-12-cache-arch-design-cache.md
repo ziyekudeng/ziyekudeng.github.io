@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 缓存架构设计 - 缓存，你真的用对了么？
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 
