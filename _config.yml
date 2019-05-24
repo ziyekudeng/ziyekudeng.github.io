@@ -63,9 +63,11 @@ navs:
     href: /spring-boot.html
     label: Spring-Boot
 
-  -
-    href: /spring-cloud.html
+  - href: /spring-cloud.html
     label: Spring-Cloud
+
+  - href: /arch.html
+    label: Architecture
 
   -
     href: /archives.html
