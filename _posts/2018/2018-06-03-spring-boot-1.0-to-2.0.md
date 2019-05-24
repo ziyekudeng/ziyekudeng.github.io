@@ -1,24 +1,12 @@
 ---
 layout: post
-title: Spring Boot 2.0 版的开源项目云收藏来了！
+title: Spring Boot 1.0 升级到 2.0 版时解决问题记录
 no-post-nav: true
 category: springboot
 tags: [springboot]
-keywords: Spring Boot,Spring Boot 2.0,云收藏,升级
-excerpt: 给大家聊一聊云收藏从 Spring Boot 1.0 升级到 2.0 所踩的坑
 ---
 
-先给大家晒一下云收藏的几个数据，作为一个 Spring Boot 的开源项目（[https://github.com/cloudfavorites/favorites-web](https://github.com/cloudfavorites/favorites-web)）目前在 Github 上面已经有1600多个 Star，如果按照 SpringBoot 标签进行筛选的话也可以排到第五位。
-
-当云收藏1.0开发完成之后，同步将云收藏部署到了服务器上，申请了一个域名[www.favorites.ren](http://favorites.ren/)方便大家使用，到目前为止：网站的注册用户4000多人，共计收藏文章100000多条，在百度上搜索：云收藏，排在第一的就是云收藏的官网。2年多的时间这个数据其实也并不是很耀眼，但是作为一个学习 Spring Boot 的开源软件来讲，已经不错了。
-
-云收藏的部署之路也挺曲折，刚开始的时候部署在我以前公司的服务器上，后来离职的时候在阿里云买了个1核1G的云服务器，因为安装了 Mysql、Redis、还有其它小软件导致服务器非常卡，那段时间访问云收藏的时候需要等待2-3秒才会有响应。
-
-终于有一天自己也不能忍了，花钱把服务器升级到2核2G，访问速度虽有所提升但还是很不理想，那段时间工作很忙也没时间优化。网站的 Bug 也是一片，有时候还会突然中断服务几个小时，流失了一大批用户，甚至有人在 Github 上面留言说：看来微笑哥已经放弃云收藏了，我看了之后只能苦笑。
-
-到了今年 Spring Boot 2.0 发布的时候，我就计划着把云收藏全面升级到2.0，顺便做一些优化让访问速度快一点。但一拖就是2个月，终于在前几个周末抽出了一点时间，将云收藏升级到了 Spring Boot 2.0 同时修复了一批显而易见的 Bug ,使用 Nginx 将静态图片等资源做了代理，当这些工作完全做完的时候，云收藏的访问速度明显得到了提升，大家可以访问[www.favorites.ren](http://favorites.ren/)体验一下。
-
-将云收藏从 Spring Boot 1.0 升级到 2.0 的时候也遇到了一些问题，在修改的过程中记录下来，今天整理一下分享出来，方便后续升级的朋友少踩一些坑。
+将项目从 Spring Boot 1.0 升级到 2.0 的时候也遇到了一些问题，在修改的过程中记录下来，今天整理一下分享出来，方便后续升级的朋友少踩一些坑。
 
 1、第一个问题：启动类报错
 
@@ -100,7 +88,7 @@ Tag getByTagId(@Param("tagId") long tagId);
 ```
 
 
-4、云收藏升级到 2.0 之后，插入数据会报错，错误信息如下：
+4、插入数据会报错，错误信息如下：
 
 ```
 org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [PRIMARY]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
@@ -171,13 +159,6 @@ public interface CollectView{
 
 在使用 Spring Boot 1.0 时，如果没有查询到对应的字段会返回空，在 Spring Boot 2.0 中会直接报空指针异常，对结果集的检查会更加严格一些。
 
-8、其它优化
-
-前段时间在学习 Docker ，给云收藏添加了 Docker 、Docker Compose 支持让部署的时候更简单一些；同时修复了一些 bug，对于明显很消耗资源的功能进行了改进，部分功能添加了容错性；本次部署的时候使用了 Nginx 作为反向代理，因为使用了 WebJars 暂时不能使用 Nginx 代理 Js，所以将除过 Js 以外的其它资源都配置了缓存，；数据库由 Mysql 换成了 Mariadb。
-
-以上就是云收藏从 Spring Boot 1.0 到 2.0 所做的一些小改进，做完这些工作之后惊喜的发现云收藏的访问速度比以前快了很多，虽然还有很大的优化空间，但日常使用基本上不会体验到太大的延迟。Spring Boot 2.0 中 Thymeleaf 默认使用了 3.0 ，数据库连接池默认使用了 Hikari ，这两个组件在性能上有很大的提升，同时也是提升云收藏访问速度的因素之一。
-
-未来云收藏还会持续升级，后续会规划一些面向程序员的新功能，敬请期待！
 
 
 
