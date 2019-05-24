@@ -3,7 +3,7 @@ layout: post
 title: 缓存架构设计 - 缓存与数据库不一致，咋办？
 category: springcloud
 tags: [springcloud]
-keywords: 微服务,实践,经验教训,架构,互联网
+keywords: 架构
 ---
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0212/agreement/1.png)

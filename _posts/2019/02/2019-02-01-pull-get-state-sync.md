@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 推送还是拉取-状态同步
-category: life
-tags: [life]
+category: springcloud
+tags: [springcloud]
+keywords: 架构
 ---
 
 

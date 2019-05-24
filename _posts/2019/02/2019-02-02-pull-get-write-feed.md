@@ -3,6 +3,7 @@ layout: post
 title: 朋友圈微博feed流，推拉实践
 category: springcloud
 tags: [springcloud]
+keywords: 架构
 ---
 
 

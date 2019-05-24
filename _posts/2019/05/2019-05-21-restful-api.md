@@ -3,7 +3,7 @@ layout: post
 title: 前后端分离后，RESTful API 最佳实践
 category: springcloud
 tags: [springcloud]
-keywords: 微服务,Spring Cloud,中小企业,架构
+keywords: 架构
 ---
 
  

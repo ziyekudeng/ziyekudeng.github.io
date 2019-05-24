@@ -3,6 +3,7 @@ layout: post
 title: 推送还是拉取-网页端收消息
 category: springcloud
 tags: [springcloud]
+keywords: 架构
 ---
 
 

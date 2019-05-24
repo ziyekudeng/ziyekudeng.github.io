@@ -3,7 +3,7 @@ layout: post
 title: 如何设计一个完美的权限管理模块
 category: springcloud
 tags: [springcloud]
-keywords: 微服务,Spring Cloud,中小企业,架构
+keywords: 架构
 ---
 
  

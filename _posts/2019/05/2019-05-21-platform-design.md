@@ -3,7 +3,7 @@ layout: post
 title: 40页PPT分享万亿级交易量下的支付平台设计
 category: springcloud
 tags: [springcloud]
-keywords: 微服务,Spring Cloud,中小企业,架构
+keywords: 架构
 ---
 
   

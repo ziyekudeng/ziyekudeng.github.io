@@ -2,9 +2,9 @@
 layout: post
 title: 推送还是拉取-群消息已读回执
 no-post-nav: true
-category: java
-tags: [java]
-
+category: springcloud
+tags: [springcloud]
+keywords: 架构
 ---
 
 

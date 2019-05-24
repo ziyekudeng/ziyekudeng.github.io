@@ -3,6 +3,7 @@ layout: post
 title: FESCAR：阿里重磅开源分布式事务解决方案
 category: springcloud
 tags: [springcloud]
+keywords: 架构
 ---
 
 ## FESCAR名字的由来:

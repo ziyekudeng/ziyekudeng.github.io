@@ -3,7 +3,7 @@ layout: post
 title: Springboot + Vue + shiro 实现前后端分离、权限控制
 category: springcloud
 tags: [springcloud]
-keywords: 微服务,Spring Cloud,中小企业,架构
+keywords: 架构
 ---
 
  

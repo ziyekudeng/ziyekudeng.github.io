@@ -3,7 +3,7 @@ layout: post
 title: 学习如何使用Shiro，从架构谈起，到框架集成！
 category: springcloud
 tags: [springcloud]
-keywords: 微服务,Spring Cloud,中小企业,架构
+keywords: 架构
 ---
 
 
