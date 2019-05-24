@@ -128,14 +128,11 @@ classes:
     name: 工具系列文章
     describe: 工欲善其事，必先利其器
 
-  -
-    href: /nginx.html
+  - href: /nginx.html
     name: weblogic和nginx
     describe: 工作中用的的中间件
 
-
-  -
-    href: /jvm.html
+  - href: /jvm.html
     name: Jvm 系列文章
     describe: Java之根基，Java程序员必学
 
