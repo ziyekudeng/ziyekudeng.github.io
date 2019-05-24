@@ -67,7 +67,7 @@ navs:
     label: Spring-Cloud
 
   - href: /arch.html
-    label: arch
+    label: Architecture
 
   -
     href: /archives.html
