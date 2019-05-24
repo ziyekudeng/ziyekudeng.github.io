@@ -1,6 +1,6 @@
 ---
 layout: post
-title: springboot 之常用注解
+title: spring Boot 之常用注解
 category: springboot
 tags: [springboot]
 ---
