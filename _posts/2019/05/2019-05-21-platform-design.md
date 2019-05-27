@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 40页PPT分享万亿级交易量下的支付平台设计
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

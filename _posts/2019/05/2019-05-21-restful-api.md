@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 前后端分离后，RESTful API 最佳实践
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

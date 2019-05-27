@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Java 异常处理的 9 个最佳实践
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

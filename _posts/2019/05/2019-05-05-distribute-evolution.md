@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 图解分布式架构的演进过程
-category: life
-tags: [life]
+category: arch
+tags: [arch]
+keywords: 架构
 ---
  
 来源：http://t.cn/EauzRSz

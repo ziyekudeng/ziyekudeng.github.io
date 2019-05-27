@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 35个可以飞快提高千倍效率的Java语言代码小技巧
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 
