@@ -130,9 +130,6 @@ classes:
     name: 工具系列文章
     describe: 工欲善其事，必先利其器
 
-  - href: /nginx.html
-    name: weblogic和nginx
-    describe: 工作中用的的中间件
 
   - href: /jvm.html
     name: Jvm 系列文章
@@ -146,9 +143,9 @@ classes:
     name: drools 系列文章
     describe: 梳理业务规则交给技术实现
 
-  - href: /fastdfs.html
-    name: fastDfs
-    describe: 文件系统分布式
+  #  - href: /fastdfs.html
+  #    name: fastDfs
+  #    describe: 文件系统分布式
 
   - href: /mongodb.html
     name: mongodb 系列文章

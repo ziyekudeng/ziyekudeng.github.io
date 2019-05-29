@@ -1,8 +1,8 @@
 ---
 layout: post
 title: linux下重启weblogic（关闭和启动）
-category: nginx
-tags: [nginx]
+category: tools
+tags: [tools]
 ---
 
 

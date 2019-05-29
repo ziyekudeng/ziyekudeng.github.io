@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Linux下nginx的安装和配置 
-category: nginx
-tags: [nginx]
+category: tools
+tags: [tools]
 ---
 
 

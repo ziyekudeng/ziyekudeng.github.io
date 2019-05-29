@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 解决linux环境下日志输出报错问题
-category: nginx
-tags: [nginx]
+category: tools
+tags: [tools]
 ---
 
 
@@ -34,4 +34,3 @@ tags: [nginx]
     2> stderr.log
     1> stdout.log
 
- 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 使用Nginx实现反向代理
-category: nginx
-tags: [nginx]
+category: tools
+tags: [tools]
 ---
 
 
@@ -121,4 +121,3 @@ Nginx作为近年来较火的反向代理服务器，安装在目的主机端，
 
 Nginx用作反向代理服务器时，它就是众多反向代理服务器中的一种，通过简单的配置，指定到服务器IP或域名地址便可将客户机请求转发给指定服务器处理请求。
 
- 

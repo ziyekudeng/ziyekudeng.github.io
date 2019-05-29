@@ -1,8 +1,8 @@
 ---
 layout: post
 title: weblogic部署web项目（war包） 
-category: nginx
-tags: [nginx]
+category: tools
+tags: [tools]
 ---
 
 
