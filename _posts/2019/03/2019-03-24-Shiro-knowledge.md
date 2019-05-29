@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 学习如何使用Shiro，从架构谈起，到框架集成！
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 

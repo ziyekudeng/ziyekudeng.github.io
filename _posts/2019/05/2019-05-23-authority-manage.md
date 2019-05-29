@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 如何设计一个完美的权限管理模块
-category: springcloud
-tags: [springcloud]
+category: arch
+tags: [arch]
 keywords: 架构
 ---
 
