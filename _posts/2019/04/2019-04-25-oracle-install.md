@@ -450,6 +450,7 @@ ORA-01507
 
    
 参考[https://www.showdoc.cc/page/1932265630854490](https://www.showdoc.cc/page/1932265630854490)
+参考[https://www.cnblogs.com/little-mat/articles/2193767.html](https://www.cnblogs.com/little-mat/articles/2193767.html)
     
 ### 8.强制停止ORACLE数据库
 
