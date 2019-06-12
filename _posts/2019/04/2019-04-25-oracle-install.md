@@ -271,7 +271,9 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
 
     su - oracle
     cd /data/oracle/database
+    
 # 可以看见database文件夹下有三个模板其中dbca.rsp是用来创建数据库的。db_install.rsp是用来安装Oracle软件的。netca.rsp是用来创建监听器的
+    
     ./runInstaller -silent -ignorePrereq -responseFile /data/oracle/etc/db_install.rsp
 
 正常会进入如下过程：
@@ -286,15 +288,21 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
 
 ![](https://img-blog.csdnimg.cn/20190125104858664.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpYnlfc3Vubnk=,size_16,color_FFFFFF,t_70)
 
+在此步骤经常遇到的问题：
+
+centos 安装oracle 报Checking swap space: 0 MB available, 150 MB required. Failed
+参考[https://www.cnblogs.com/a9999/p/6957280.html](https://www.cnblogs.com/a9999/p/6957280.html)
+
+
 按照上边提示的内容进行操作：
     
-    1.打开一个新的shell窗口
-    
-    2\. 登录root账号
-    
-    3.执行脚本（脚本位置在红框前两行有标注）
-    
-    4.回到当前窗口按回车
+1.打开一个新的shell窗口
+
+2\. 登录root账号
+
+3.执行脚本（脚本位置在红框前两行有标注）
+
+4.回到当前窗口按回车
     
     [root@bogon ~]# sh /data/oracle/oracle/inventory/orainstRoot.sh
     Changing permissions of /data/oracle/oracle/inventory.
@@ -305,9 +313,9 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
     The execution of the script is complete.
     [root@bogon ~]# sh /data/oracle/oracle/product/11.2.0/root.sh
     Check /data/oracle/oracle/product/11.2.0/install/root_bogon_2019-01-25_10-51-48.log for the output of root script
+
 ### 2.**配置静默监听**
-    
-    在另外一个窗口用root执行那两个脚本后，之前oracle的窗口需要关掉重新开，否则监听配置不成功
+在另外一个窗口用root执行那两个脚本后，之前oracle的窗口需要关掉重新开，否则监听配置不成功
     
     [root@bogon ~]# su - oracle
     Last login: Fri Jan 25 10:40:23 CST 2019 on pts/0
@@ -321,9 +329,10 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
     Profile configuration complete.
     Listener "LISTENER" already exists.
     Oracle Net Services configuration successful. The exit code is 0
+    
 ### 3.**静默创建数据库**
     
-    **注：修改配置文件为root用户，静默建库为oracle用户**
+**注：修改配置文件为root用户，静默建库为oracle用户**
     
     [root@bogon ~]# vim /data/oracle/etc/dbca.rsp
     # 修改如下配置
@@ -338,7 +347,7 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
     CHARACTERSET = "AL32UTF8"
     TOTALMEMORY = "1638"
     
-    修改完成后执行静默建库 GDBNAME为ORCL
+修改完成后执行静默建库 GDBNAME为ORCL
 
     [oracle@bogon etc]$ dbca -silent -createDatabase -templateName General_Purpose.dbc -gdbName ORCL -sysPassword oracle -systemPassword oracle
 ### 4.查看监听状态
@@ -372,8 +381,7 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
     The command completed successfully
 ### 5.启动数据库
 
-**需要先将/usr/local/oracle/admin/test/pfile/init.ora.1014201721194复制修改名称放到/usr/local/oracle/product/11.2.0/dbs/initORCL.ora**
-    
+   
     [oracle@iz8vb8edqeyilgy4r9zci6z ~]$ sqlplus / as sysdba
     
     SQL*Plus: Release 11.2.0.1.0 Production on Fri Jan 25 16:30:40 2019
@@ -399,7 +407,7 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
 
 ORA-00845: MEMORY_TARGET not supported on this system 
 
-参考[https://blog.csdn.net/sunny05296/article/details/56495599](https://blog.csdn.net/sunny05296/article/details/56495599)
+参考[https://www.cnblogs.com/a9999/p/6957280.html](https://www.cnblogs.com/a9999/p/6957280.html)
 
 ORA-01102 cannot mount database in EXCLUSIVE mode 
 
