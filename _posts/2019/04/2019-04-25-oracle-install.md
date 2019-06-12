@@ -446,6 +446,11 @@ ORA-01507
 
 参考[https://blog.csdn.net/u014330421/article/details/78655468](https://blog.csdn.net/u014330421/article/details/78655468)
 
+#创建表空间被navicat连接
+
+   
+参考[https://www.showdoc.cc/page/1932265630854490](https://www.showdoc.cc/page/1932265630854490)
+    
 ### 8.强制停止ORACLE数据库
 
 # 适用场景
@@ -563,4 +568,7 @@ ORA-01507
     **8、重启**
     
     53. [root@Boss ~]# reboot
+    
+    
+
     
