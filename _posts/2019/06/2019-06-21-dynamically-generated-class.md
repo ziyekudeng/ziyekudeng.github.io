@@ -168,9 +168,13 @@ Java的编译器是`javac`，但是，在很早很早的时候，Java的编译�
 
 > 完整的源码呢？
 
-在这里：[https://github.com/michaelliao/compiler](https://github.com/michaelliao/compiler)，连Maven的包都给你准备好了！
-
 也就200行代码吧！动态创建class不是梦！
+
+廖雪峰：[https://github.com/michaelliao/compiler](https://github.com/michaelliao/compiler)
+
+子夜枯灯：[https://github.com/ziyekudeng/compiler](https://github.com/ziyekudeng/compiler)
+
+
 
 
 **作者：廖雪峰**  
