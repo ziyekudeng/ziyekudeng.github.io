@@ -503,6 +503,9 @@ a) > 设αβδ是文法G的一个句型，若存在S=*>αAδ，A=+>β， 则称�
     2\.  直接短语：只有父子关系的子树中所有从左到右排列的叶子（树高为2）；
     3\.  句柄：最左边父子关系树中所有从左到右排列的叶子（句柄是唯一的）
 
+![](https://ziyekudeng.github.io/assets/images/2019/0714/compilation_principle/8.webp)
+
+
 b)最左归约：若 α是文法G的句子且满足下述条件，则称序列αn，αn-1，...，α0是α的一个最左归约。
    1) αn = α
    2) α0 = S（S是G 的开始符号）
@@ -556,6 +559,8 @@ G' = G ∪ {S' → S}
 
 核心项目：J=goto(I，X)，S'→.S（作为项目集的代表）
 非核心项目：closure(J)-J（特点：可由J某中某项目算得） 
+
+![](https://ziyekudeng.github.io/assets/images/2019/0714/compilation_principle/9.webp)
 
 <3> 识别活前缀
 
