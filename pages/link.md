@@ -72,7 +72,7 @@ permalink: /link
 
 - [科学上网软件不完全收录](https://gitee.com/www.iamooc.com/fq/) - 科学上网软件不完全收录
 
-
+- [SCI-HUB](http://sci-hub.tw/) - 科研论文免费下载全文
 
 
 
