@@ -43,15 +43,32 @@ Linux是目前应用最广泛的服务器操作系统，基于Unix，开源免�
 
 命令格式：命令 -选项 参数 （选项和参数可以为空）
 
-<code class="" style="margin-right: 0.15em; margin-left: 0.15em; padding: 5.95px; max-width: 100%; border-radius: 4px; font-size: 0.85em; background: #282c34; color: #abb2bf; display: block; overflow-x: auto; white-space: nowrap; box-sizing: border-box !important; overflow-wrap: break-word !important;">如：ls -la /usr</code>
+    如：ls -la /usr
 
 2.1 操作文件及目录
 
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/2.webp) 
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/3.webp) 
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/4.webp) 
+
 2.2 系统常用命令
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/5.webp) 
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/6.webp) 
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/7.webp) 
+
 
 2.3 压缩解压缩
 
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/8.webp) 
+
 2.4 文件权限操作
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/9.webp) 
 
 *   linux文件权限的描述格式解读
 
@@ -67,21 +84,37 @@ Linux是目前应用最广泛的服务器操作系统，基于Unix，开源免�
 
 *   第2-10位：表示所有的权限，用a（all）表示
 
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/10.webp) 
+
 # 三、linux系统常用快捷键及符号命令
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/11.webp) 
 
 # 四、vim编辑器
 
 vi / vim是Linux上最常用的文本编辑器而且功能非常强大。只有命令，没有菜单，下图表示vi命令的各种模式的切换图。
 
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/12.webp) 
+
 4.1 修改文本
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/13.webp) 
 
 4.2 定位命令
 
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/14.webp) 
+
 4.3 替换和取消命令
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/15.webp) 
 
 4.4 删除命令
 
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/16.webp) 
+
 4.5 常用快捷键
+
+![](https://ziyekudeng.github.io/assets/images/2019/0726/linux-command/17.webp) 
 
 **-END-**
 
