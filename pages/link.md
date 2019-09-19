@@ -27,9 +27,6 @@ permalink: /link
 
 - [技术博客联盟](http://techblog.pub/) - 原创技术博客作者交流的地方
 
-- [Carbon（代码界美图秀秀）](https://carbon.now.sh/) - 代码格式化
-
-- [公众号编辑器](http://md.ityouknow.com/) - 可以以优雅的方式在微信公众号去发布markdown文章
 
 
 
@@ -37,7 +34,6 @@ permalink: /link
 
 - [伯乐在线](http://hao.jobbole.com/) - 伯乐在线资源收录各种开发、设计、系统管理与安全相关的工具与资源。
 
-- [Apache Flink官方教程](https://zh.ververica.com/developers/flink-training-course1/) - Apache Flink 背后的技术以及应用实践系列视频课程。
 
 - [前端里](http://www.yyyweb.com/) - 前端里专注于分享最前沿的Web开发技术，教程，资源和素材，是面向网站开发人员和设计师的学习交流平台。
 
@@ -80,7 +76,6 @@ permalink: /link
 
 - [easy PDF（在线 PDF 工具）](https://easypdf.com/cn/) - easy PDF（在线 PDF 工具）
 
-- [云收藏](http://www.favorites.ren/) - 一个在线云端的网络收藏夹，可以分享和查看其它人分享
 
 
 
