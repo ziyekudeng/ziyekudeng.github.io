@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 你的生活和我一样吗
-titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
-menu: life
+title: 极客技术专栏
+titlebar: geektime
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; &nbsp;&nbsp;极客时间大礼包>&nbsp;&nbsp;>&nbsp;&nbsp;<a href ="http://gk.link/a/103Gb" target="_blank" ><font color="#EB9439">点我直达</font></a>
+menu: geektime
 css: ['blog-page.css']
-permalink: /life
+permalink: /geektime
 ---
 
 <div class="row">
@@ -14,7 +14,7 @@ permalink: /life
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='life' %}
+                {% if post.category=='geektime' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>

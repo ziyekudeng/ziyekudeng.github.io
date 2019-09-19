@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 你的生活和我一样吗
-titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
-menu: life
+title: Java 极客技术
+titlebar: java
+subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; Java 人的精神家园。>&nbsp;&nbsp;>&nbsp;&nbsp;<a href ="http://www.justdojava.com/" target="_blank" ><font color="#EB9439">点我直达</font></a>
+menu: java
 css: ['blog-page.css']
-permalink: /life
+permalink: /java
 ---
 
 <div class="row">
@@ -14,7 +14,7 @@ permalink: /life
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='life' %}
+                {% if post.category=='java' or post.category=='jvm' or post.keywords contains 'java' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>

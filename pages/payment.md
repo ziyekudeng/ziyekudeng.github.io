@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 你的生活和我一样吗
-titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
-menu: life
+title: 支付系列文章
+titlebar: payment
+subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 支付、第三方支付系列文章
+menu: payment
 css: ['blog-page.css']
-permalink: /life
+permalink: /payment
 ---
 
 <div class="row">
@@ -14,7 +14,7 @@ permalink: /life
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='life' %}
+                {% if post.category=='payment'  or post.keywords contains '支付' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>

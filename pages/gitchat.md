@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 你的生活和我一样吗
-titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
-menu: life
+title: GitChat 专栏推荐课程
+titlebar: gitchat
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 程序员的分享天地
+menu: gitchat
 css: ['blog-page.css']
-permalink: /life
+permalink: /gitchat
 ---
 
 <div class="row">
@@ -14,7 +14,7 @@ permalink: /life
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='life' %}
+                {% if post.category=='gitchat' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
