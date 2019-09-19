@@ -144,7 +144,7 @@ nginx使用location指令来实现URI匹配
 
 9.  `   # 将请求反向代理到上游服务器处理`
 
-10.  `   proxy_pass http://localhost:9000;`
+10.  `   proxy_pass https://localhost:9000;`
 
 11.  `}`
 
@@ -156,7 +156,7 @@ nginx使用location指令来实现URI匹配
 
 3.  `   # 尝试寻找匹配 uri 的文件，失败了就会转到上游处理`
 
-4.  `   proxy_pass  http://localhost:9000;`
+4.  `   proxy_pass  https://localhost:9000;`
 
 5.  `}`
 
@@ -192,7 +192,7 @@ upstream，定义一个上游服务器集群
 
 7.  `location / {`
 
-8.  `       proxy_pass http://backend;`
+8.  `       proxy_pass https://backend;`
 
 9.  `   }`
 
@@ -204,7 +204,7 @@ proxy_pass 将请求转发到有处理能力的端上，默认不会转发请求
 
 1.  `location /blog {`
 
-2.  `   prox_pass http://localhost:9000;`
+2.  `   prox_pass https://localhost:9000;`
 
 4.  `   ### 下面都是次要关注项`
 
@@ -434,7 +434,7 @@ admin.xiaohuochai.cc中的CSP配置如下
 
 11.  `               proxy_set_header X-Nginx-Proxy true;`
 
-12.  `               proxy_pass http://test;`
+12.  `               proxy_pass https://test;`
 
 13.  `               proxy_redirect off;`
 
@@ -506,7 +506,7 @@ admin.xiaohuochai.cc中的CSP配置如下
 
 26.  `               proxy_set_header X-Nginx-Proxy true;`
 
-27.  `               proxy_pass http://api;`
+27.  `               proxy_pass https://api;`
 
 28.  `               proxy_redirect off;`
 
@@ -530,7 +530,7 @@ admin.xiaohuochai.cc中的CSP配置如下
 
 1.  `location /api/ {`
 
-2.  `       proxy_pass http://api/;`
+2.  `       proxy_pass https://api/;`
 
 3.  `   }`
 
@@ -592,7 +592,7 @@ admin.xiaohuochai.cc中的CSP配置如下
 
 24.  `location /api/ {`
 
-25.  `       proxy_pass http://api/;`
+25.  `       proxy_pass https://api/;`
 
 26.  `   }`
 
@@ -674,7 +674,7 @@ admin.xiaohuochai.cc中的CSP配置如下
 
 24.  `location /api/ {`
 
-25.  `       proxy_pass http://api/;`
+25.  `       proxy_pass https://api/;`
 
 27.  `   }`
 
@@ -738,7 +738,7 @@ admin.xiaohuochai.cc中的CSP配置如下
 
 19.  `   if ($host = 'xiaohuochai.cc'){`
 
-20.  `rewrite ^/(.*)$ http://www.xiaohuochai.cc/$1 permanent;`
+20.  `rewrite ^/(.*)$ https://www.xiaohuochai.cc/$1 permanent;`
 
 21.  `   }`
 
@@ -756,7 +756,7 @@ admin.xiaohuochai.cc中的CSP配置如下
 
 28.  `               proxy_set_header X-Nginx-Proxy true;`
 
-29.  `               proxy_pass http://client;`
+29.  `               proxy_pass https://client;`
 
 30.  `               proxy_redirect off;`
 

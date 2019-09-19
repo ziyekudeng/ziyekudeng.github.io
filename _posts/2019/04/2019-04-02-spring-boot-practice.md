@@ -10,7 +10,7 @@ tags: [springboot]
 
 ## Spring Boot 最流行的 16 条实践解读！
 
-来源：http://t.cn/EJWZNra
+来源：https://t.cn/EJWZNra
 
 > *   1、使用自定义BOM来维护第三方依赖
 >     

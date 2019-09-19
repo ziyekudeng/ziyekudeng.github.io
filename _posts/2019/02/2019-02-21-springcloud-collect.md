@@ -127,7 +127,7 @@ tags: [springcloud]
 
 *   `eureka.client.enabled` 设置为 `false`，停止各服务的eureka注册
 *   `ribbon.eureka.enabled` 设置为 `false`，让ribbon不从eureka获取服务列表
-*   以服务foo为例，`foo.ribbon.listofservers` 设置为 [`http://foo:8080`](http://foo:8080)，那么当一个服务需要使用服务foo的时候，就会直接调用到[`http://foo:8080`](http://foo:8080)
+*   以服务foo为例，`foo.ribbon.listofservers` 设置为 [`https://foo:8080`](https://foo:8080)，那么当一个服务需要使用服务foo的时候，就会直接调用到[`https://foo:8080`](https://foo:8080)
 
 ## CI的改造
 
@@ -139,4 +139,3 @@ CI的改造主要是多了一部编译docker image并打包到Harbor的过程，
 
 其实以上的每一点都可以深入的写成一篇文章，微服务的架构演进涉及到开发，测试和运维，要求团队内多工种紧密合作。分治是软件行业解决大系统的不二法门，作为小团队我们并没有盲目追新，而是在发展的过程通过服务化的方式解决问题。从另一方面我们也体会到了微服务对于人的要求，以及对于团队的挑战都比过去要高要大。未来仍需探索，演进仍在路上。
 
- 

@@ -128,7 +128,7 @@ Repository UR 项目地址 Credentials授权可以是SSH也可以是用户名密
 
 例如 部署后的产物上传到nexus等,详情参考 Maven命令
 
-    clean install deploy:deploy-file -DgroupId=com.weitoo -DartifactId=common -Dversion=0.1-SNAPSHOT -Dpackaging=jar -Dfile=D:workspaceserver-aggregatorcommon  argetcommon-0.1-SNAPSHOT.jar -Durl=http://192.168.0.200:8081/nexus/content/repositories/thirdparty/ -DrepositoryId=thirdparty
+    clean install deploy:deploy-file -DgroupId=com.weitoo -DartifactId=common -Dversion=0.1-SNAPSHOT -Dpackaging=jar -Dfile=D:workspaceserver-aggregatorcommon  argetcommon-0.1-SNAPSHOT.jar -Durl=https://192.168.0.200:8081/nexus/content/repositories/thirdparty/ -DrepositoryId=thirdparty
     
     Add post-build step
 
@@ -248,11 +248,11 @@ exec command 是远程sh的路径
 
 【推荐阅读】
 
-[初级Java程序员需要掌握哪些主流技术才能拿20K？](http://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&mid=2455546009&idx=1&sn=a5318af96efb926f1d20a5a97e96a670&chksm=fb9cb4f9cceb3def2e0bde8df943c477f269e40c913f46e09db9983cec39f8f67c36ec1b3789&scene=21#wechat_redirect)
+[初级Java程序员需要掌握哪些主流技术才能拿20K？](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&mid=2455546009&idx=1&sn=a5318af96efb926f1d20a5a97e96a670&chksm=fb9cb4f9cceb3def2e0bde8df943c477f269e40c913f46e09db9983cec39f8f67c36ec1b3789&scene=21#wechat_redirect)
 
-[学习如何使用Shiro，从架构谈起，到框架集成！](http://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&mid=2455546041&idx=1&sn=55c581351a85fcb357c6914565fe3ed6&chksm=fb9cb4d9cceb3dcfcc99bdcbff66358bbef8699ad428da9adf121bb0aa7d3f579c7c05c32177&scene=21#wechat_redirect)
+[学习如何使用Shiro，从架构谈起，到框架集成！](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&mid=2455546041&idx=1&sn=55c581351a85fcb357c6914565fe3ed6&chksm=fb9cb4d9cceb3dcfcc99bdcbff66358bbef8699ad428da9adf121bb0aa7d3f579c7c05c32177&scene=21#wechat_redirect)
 
-[单点登录原理与简单实现](http://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&mid=2455546053&idx=1&sn=c56f001614b83913ee51a0f3893270c6&chksm=fb9cb4a5cceb3db3419a263d1fd6d3028a4b21c0da2a94d16455b4144bf27604545a43ef67b0&token=1308182523&lang=zh_CN&scene=21#wechat_redirect)
+[单点登录原理与简单实现](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NDQ0Nw==&mid=2455546053&idx=1&sn=c56f001614b83913ee51a0f3893270c6&chksm=fb9cb4a5cceb3db3419a263d1fd6d3028a4b21c0da2a94d16455b4144bf27604545a43ef67b0&token=1308182523&lang=zh_CN&scene=21#wechat_redirect)
 
 （完）
 

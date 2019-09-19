@@ -22,7 +22,7 @@ CSDN (Chinese Software Developer Network) 是蒋涛创立于1999年，是中国�
 
 CSDN 是国内IT行业覆盖最全的一个社区，有很多的高手和大神隐藏于此，到现在还有很多学者、研究生等高层次人才在 CSDN 发表博客，同样海量的 IT 同行们也都活跃于 CSDN ，不过令人诟病的是 CSDN 的广告是最多的，用户体验非常差。不过今年博客系统进行了改版后比以前好了一些，并且博客专家不用显示广告，这点值得点赞。
 
-网站链接：[http://www.csdn.net/](http://www.csdn.net/)
+网站链接：[https://www.csdn.net/](https://www.csdn.net/)
 
 从 Alexa 的排名来看目前排在全球第 41 位，当之无愧的为国内技术社区老大。
 
@@ -38,9 +38,9 @@ CSDN 是国内IT行业覆盖最全的一个社区，有很多的高手和大神�
 
 可以看到，博客园的页面十分干净清爽，干货都放在首要位置，没有时下流行的大图轮播，没有任何广告，只为这样的情怀也应为博客园点赞。博客园最大的特点是足够的开放，首页的文章由读者来决定，每个人的博客也可以自定义显示，因此博客现在有最丰富的个人博客皮肤界面，我在博客园看到了程序员们的想象力。
 
-第一份工作在华为做外包，在华为内部办公不能访问外网，但一些主流的技术网站都可以访问，其中就有博客园 。那时候中午休息的时候总是要逛一逛技术社区，博客园的IT行业新闻吸引了我，就一直养成了在博客园看业内新闻的习惯。但直到2016年才开始在博客园写博客，17年成为博客园的推荐博客，到了现在我的博客是博客园推荐博客的 top 30，可以说我写博客的起点就来自博客园。[我在博客园的博客](http://www.cnblogs.com/ityouknow/)
+第一份工作在华为做外包，在华为内部办公不能访问外网，但一些主流的技术网站都可以访问，其中就有博客园 。那时候中午休息的时候总是要逛一逛技术社区，博客园的IT行业新闻吸引了我，就一直养成了在博客园看业内新闻的习惯。但直到2016年才开始在博客园写博客，17年成为博客园的推荐博客，到了现在我的博客是博客园推荐博客的 top 30，可以说我写博客的起点就来自博客园。[我在博客园的博客](https://www.cnblogs.com/ityouknow/)
 
-网站链接：[http://www.cnblogs.com/](http://www.cnblogs.com/)
+网站链接：[https://www.cnblogs.com/](https://www.cnblogs.com/)
 
 博客园全球 alexa 排名在 210，仅次于 CSDN。
 
@@ -86,7 +86,7 @@ V2EX 全球访问量排名在 931
 
 开源中国也是国内唯一一个专业报道开源事件的社区，网站会实时报道开源界的所有资讯，同时也有中国版的github：gitee。
 
-网站链接：[http://www.oschina.net/](http://www.oschina.net/)
+网站链接：[https://www.oschina.net/](https://www.oschina.net/)
 
 开源中国 全球访问量排名在 969
 
@@ -108,7 +108,7 @@ W3School 是因特网上最大的 WEB 开发者资源，其中包括全面的教
 
 前端程序员的最爱，W3School 最开始分享很多浅显易懂的前端教程，后来也有一些后端的教程在里面。
 
-网站链接：[http://www.w3school.com.cn](http://www.w3school.com.cn)
+网站链接：[https://www.w3school.com.cn](https://www.w3school.com.cn)
 
 W3School 全球访问量排名在 989
 
@@ -121,7 +121,7 @@ W3School 全球访问量排名在 989
 
 51CTO 成立于2005年，目前已建成为专注于IT人职业成长平台；拥有1500万注册用户，覆盖了中国主流城市大多数IT从业人群，是国内排名第一的服务IT技术人员的专业性服务平台。
 
-网站链接：[http://www.51cto.com](http://www.51cto.com)
+网站链接：[https://www.51cto.com](https://www.51cto.com)
 
 51CTO 全球访问量排名在 1145
 
@@ -129,13 +129,13 @@ W3School 全球访问量排名在 989
 
 51CTO 最开始专注于运维这个领域，也是国内聚集运维技术人才最多的一个技术社区，到了后来逐渐的转为覆盖全领域的技术社区。
 
-特别需要提到的是 51CTO 博客平台，也是在今年进行了 2.0 的改版，改版之后的用户体验提升非常明显，添加了 md 、赞赏和微信系统打通等新的功能，目前为止是所有技术社区对作者考虑最为全面的一个，也是体验最好的一个。我是在17年在 51CTO 开通了博客，目前在博客的粉丝排名中，位于前十。[我在51CTO的博客](http://blog.51cto.com/ityouknow)
+特别需要提到的是 51CTO 博客平台，也是在今年进行了 2.0 的改版，改版之后的用户体验提升非常明显，添加了 md 、赞赏和微信系统打通等新的功能，目前为止是所有技术社区对作者考虑最为全面的一个，也是体验最好的一个。我是在17年在 51CTO 开通了博客，目前在博客的粉丝排名中，位于前十。[我在51CTO的博客](https://blog.51cto.com/ityouknow)
 
 51CTO 博客
 
 ![](https://ziyekudeng.github.io/assets/images/2018/it/51cto_blog.png)
 
-博客链接：[http://blog.51cto.com/](http://blog.51cto.com/)
+博客链接：[https://blog.51cto.com/](https://blog.51cto.com/)
 
 
 ## ChinaUnix
@@ -146,7 +146,7 @@ ChinaUnix.net(简称CU)是一个以讨论 Linux/Unix 类操作系统技术、软
 
 CU的宗旨是给所有爱好Linux/Unix技术、开源技术的朋友提供一个自由、开放、免费的交流空间。只专注一个领域，小而精是CU的特色，如果你刚好对Linux/Unix技术等领域感兴趣，CU是不错的选择，如果你关注其他领域，CU上可能并没有相关讨论和资料。
 
-网站链接：[http://www.chinaunix.net/](http://www.chinaunix.net/)
+网站链接：[https://www.chinaunix.net/](https://www.chinaunix.net/)
 
 ChinaUnix 全球访问量排名在 3835
 
@@ -159,7 +159,7 @@ ChinaUnix 全球访问量排名在 3835
 
 伯乐在线成立于 2010 年，由黄余粮和黄利民联合发起，做专业的IT互联网职业社区。
 
-网站链接：[http://www.jobbole.com/](http://www.jobbole.com/)
+网站链接：[https://www.jobbole.com/](https://www.jobbole.com/)
 
 伯乐在线主要是由专业编辑挑选文章，所以文章质量都不错，也正是因为如此，人气不足。
 
@@ -176,7 +176,7 @@ ITEye (曾名为JavaEye)是在2003年9月创办的，创始人范凯在学习和
 
 ITEye以专业性著称，据说网站创建初期新用户注册时需要强制做题，做13道有关论坛规则的选择题，做不对就不予审核通过。自从 ITEye 被 CSDN 收购后，网站就再也没有更新过，人气大降，目前已经沦落为二线阵营。
 
-网站链接：[http://www.iteye.com/](http://www.iteye.com/)
+网站链接：[https://www.iteye.com/](https://www.iteye.com/)
 
 ITEye 全球访问量排名在 8473
 
@@ -218,9 +218,9 @@ ITEye 全球访问量排名在 8473
 GitChat 是一款基于微信平台的知识分享产品，通过这款产品我们希望改变IT知识的学习方式。GitChat 算是技术付费的先驱了，在技术知识付费领域在国内做的比较早。
 
 17年的时候，发现有人在我的公号内留言，邀请我在 GitChat 做一场分享，那时候我还不知道 GitChat 分享是干什么的。抱着试试看态度做了一场分享:[从架构演进的角度聊聊 Spring Cloud 都做了些什么？
-](http://gitbook.cn/gitchat/activity/59d9f8f83c47cd7bb69447df)，后面感觉还不错又做了一个课程:[快速学习 Spring Boot 技术栈](http://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)，没想到一年后这个课程的销量已经到达了平台畅销前三，还是挺受鼓舞的。GitChat 后来被 CSDN 所收购，所以大家也会在 CSDN 看到 GitChat 的推荐内容。
+](https://gitbook.cn/gitchat/activity/59d9f8f83c47cd7bb69447df)，后面感觉还不错又做了一个课程:[快速学习 Spring Boot 技术栈](https://gitbook.cn/gitchat/column/59f5daa149cd4330613605ba)，没想到一年后这个课程的销量已经到达了平台畅销前三，还是挺受鼓舞的。GitChat 后来被 CSDN 所收购，所以大家也会在 CSDN 看到 GitChat 的推荐内容。
 
-网站链接：[http://gitbook.cn/](http://gitbook.cn/)
+网站链接：[https://gitbook.cn/](https://gitbook.cn/)
 
 GitChat 全球访问量排名在 31341
 

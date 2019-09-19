@@ -41,7 +41,7 @@ spring:
     config:
       server:
         svn:
-          uri: http://192.168.0.6/svn/repo/config-repo
+          uri: https://192.168.0.6/svn/repo/config-repo
           username: username
           password: password
         default-label: trunk
@@ -72,12 +72,12 @@ public class ConfigServerApplication {
 
 **服务端测试**
 
-访问：```http://localhost:8001/neo-config-dev.properties```，返回：```neo.hello: hello im dev```，说明服务端可以正常读取到svn代码库中的配置信息。修改配置文件```neo-config-dev.properties```中配置信息为：```neo.hello=hello im dev update```,再次在浏览器访问```http://localhost:8001/neo-config-dev.properties```，返回：```neo.hello: hello im dev update```。说明server端会自动读取最新提交的内容
+访问：```https://localhost:8001/neo-config-dev.properties```，返回：```neo.hello: hello im dev```，说明服务端可以正常读取到svn代码库中的配置信息。修改配置文件```neo-config-dev.properties```中配置信息为：```neo.hello=hello im dev update```,再次在浏览器访问```https://localhost:8001/neo-config-dev.properties```，返回：```neo.hello: hello im dev update```。说明server端会自动读取最新提交的内容
 
 
 **客户端测试**
 
-客户端直接使用上一篇示例项目```spring-cloud-config-client```来测试，配置基本不用变动。启动项目后访问：```http://localhost:8002/hello，返回：```hello im dev update``说明已经正确的从server端获取到了参数。同样修改svn配置并提交，再次访问```http://localhost:8002/hello```依然获取的是旧的信息，和git版本的问题一样。
+客户端直接使用上一篇示例项目```spring-cloud-config-client```来测试，配置基本不用变动。启动项目后访问：```https://localhost:8002/hello，返回：```hello im dev update``说明已经正确的从server端获取到了参数。同样修改svn配置并提交，再次访问```https://localhost:8002/hello```依然获取的是旧的信息，和git版本的问题一样。
 
 
 ## refresh
@@ -126,9 +126,9 @@ class HelloController {
 management.security.enabled=false
 ```
 
-OK 这样就改造完了，以post请求的方式来访问```http://localhost:8002/refresh``` 就会更新修改后的配置文件。
+OK 这样就改造完了，以post请求的方式来访问```https://localhost:8002/refresh``` 就会更新修改后的配置文件。
 
-我们再次来测试，首先访问```http://localhost:8002/hello```，返回：```hello im dev```，我将库中的值修改为```hello im dev update```。在win上面打开cmd执行```curl -X POST http://localhost:8002/refresh```，返回```["neo.hello"]```说明已经更新了```neo.hello```的值。我们再次访问```http://localhost:8002/hello```，返回：```hello im dev update```,客户端已经得到了最新的值。
+我们再次来测试，首先访问```https://localhost:8002/hello```，返回：```hello im dev```，我将库中的值修改为```hello im dev update```。在win上面打开cmd执行```curl -X POST https://localhost:8002/refresh```，返回```["neo.hello"]```说明已经更新了```neo.hello```的值。我们再次访问```https://localhost:8002/hello```，返回：```hello im dev update```,客户端已经得到了最新的值。
 
 每次手动刷新客户端也很麻烦，有没有什么办法只要提交代码就自动调用客户端来更新呢，github的webhook是一个好的办法。
 

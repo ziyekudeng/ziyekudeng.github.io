@@ -38,7 +38,7 @@ application.properties配置如下：
 ``` properties
 spring.application.name=spring-cloud-producer
 server.port=9000
-eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
+eureka.client.serviceUrl.defaultZone=https://localhost:8000/eureka/
 ```
 
 参数在上一篇都已经解释过，这里不多说。
@@ -107,7 +107,7 @@ application.properties配置如下：
 ``` properties
 spring.application.name=spring-cloud-consumer
 server.port=9001
-eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
+eureka.client.serviceUrl.defaultZone=https://localhost:8000/eureka/
 ```
 
 ### 3、启动类
@@ -174,13 +174,13 @@ public class ConsumerController {
 ### 简单调用
 依次启动spring-cloud-eureka、spring-cloud-producer、spring-cloud-consumer三个项目
 
-先输入：```http://localhost:9000/hello?name=neo``` 检查spring-cloud-producer服务是否正常
+先输入：```https://localhost:9000/hello?name=neo``` 检查spring-cloud-producer服务是否正常
 
 返回：```hello neo，this is first messge```
 
 说明spring-cloud-producer正常启动，提供的服务也正常。
 
-浏览器中输入：```http://localhost:9001/hello/neo```  
+浏览器中输入：```https://localhost:9001/hello/neo```  
 
 返回：```hello neo，this is first messge``` 
 
@@ -206,7 +206,7 @@ public class HelloController {
 ``` properties
 spring.application.name=spring-cloud-producer
 server.port=9003
-eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
+eureka.client.serviceUrl.defaultZone=https://localhost:8000/eureka/
 ```
 
 打包启动后，在eureka就会发现两个服务提供者，如下图：
@@ -214,7 +214,7 @@ eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
  
 ![](https://ziyekudeng.github.io/assets/images/2017/springcloud/eureka_server2.png)
 
-然后在浏览器再次输入：```http://localhost:9001/hello/neo```  进行测试：
+然后在浏览器再次输入：```https://localhost:9001/hello/neo```  进行测试：
 
 第一次返回结果：```hello neo，this is first messge```
 

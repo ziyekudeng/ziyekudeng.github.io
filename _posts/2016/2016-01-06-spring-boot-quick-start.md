@@ -42,7 +42,7 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 
 **maven构建项目**
 
-- 1、访问http://start.spring.io/  
+- 1、访问https://start.spring.io/  
 - 2、选择构建工具Maven Project、Spring Boot版本1.3.6以及一些工程基本信息，点击“Switch to the full version.”java版本选择1.7，可参考下图所示：
 
  
@@ -125,7 +125,7 @@ public class HelloWorldController {
 
 ```@RestController``` 的意思就是controller里面的方法都以json格式输出，不用再写什么jackjson配置的了！
 
-3、启动主程序，打开浏览器访问http://localhost:8080/hello，就可以看到效果了，有木有很简单！
+3、启动主程序，打开浏览器访问https://localhost:8080/hello，就可以看到效果了，有木有很简单！
 
 
 **如何做单元测试**

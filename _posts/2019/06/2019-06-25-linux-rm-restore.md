@@ -7,7 +7,7 @@ tags: [tools]
 
 
 
-来源：http://t.cn/E99LnX9
+来源：https://t.cn/E99LnX9
 
 * * *
 
@@ -163,7 +163,7 @@ wait,wait，不是有binlog吗?我们服务都要求开启binlog，说不定能�
 
 这个工具有一个bug，出错后不会向下执行ext3grep: init_directories.cc:534: void init_directories(): Assertion `lost_plus_found_directory_iter != all_directories.end()' failed.，从而造成恢复失败，作者放出了一个补丁，下载地址：补丁下载。不明白为什么作者新版没有把这个补丁加进去。
 
-1.  **extundelete：****http://extundelete.sourceforge.net/**
+1.  **extundelete：****https://extundelete.sourceforge.net/**
 
 功能跟ext3grep差不多，原理应该也差不多。只是号称可以还原目录，我这里没有试验成功。
 

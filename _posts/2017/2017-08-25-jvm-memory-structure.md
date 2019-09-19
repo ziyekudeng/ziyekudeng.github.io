@@ -71,7 +71,7 @@ Java虚拟机规范对这个区域的限制非常宽松，除了和Java堆一样
 方法区有时被称为持久代（PermGen）。
 
  
-![](http://ifeve.com/wp-content/uploads/2015/05/JUtH_20121024_RuntimeDataAreas_2_MemoryModel-1.png)
+![](https://ifeve.com/wp-content/uploads/2015/05/JUtH_20121024_RuntimeDataAreas_2_MemoryModel-1.png)
 
 所有的对象在实例化后的整个运行周期内，都被存放在堆内存中。堆内存又被划分成不同的部分：伊甸区(Eden)，幸存者区域(Survivor Sapce)，老年代（Old Generation Space）。
 
@@ -94,11 +94,11 @@ public class HelloWorld {
 
 这段程序的数据在内存中的存放如下：
 
-![](http://ifeve.com/wp-content/uploads/2015/05/JUtH_20121024_RuntimeDataAreas_4_MemoryModel.png)
+![](https://ifeve.com/wp-content/uploads/2015/05/JUtH_20121024_RuntimeDataAreas_4_MemoryModel.png)
 
 通过JConsole工具可以查看运行中的Java程序（比如Eclipse）的一些信息：堆内存的分配，线程的数量以及加载的类的个数；
 
-![](http://ifeve.com/wp-content/uploads/2015/05/JUtH_20121024_RuntimeDataAreas_5_JConsole.png)
+![](https://ifeve.com/wp-content/uploads/2015/05/JUtH_20121024_RuntimeDataAreas_5_JConsole.png)
 
 
 ##  程序计数器（Program Counter Register）

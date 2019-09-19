@@ -63,7 +63,7 @@ public class AdminServerApplication {
 }
 ```
 
-完成上面三步之后，启动服务端，浏览器访问`http://localhost:8000`可以看到以下界面：
+完成上面三步之后，启动服务端，浏览器访问`https://localhost:8000`可以看到以下界面：
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springboot/admin1.png)
 
@@ -89,7 +89,7 @@ public class AdminServerApplication {
 ``` properties
 server.port=8001
 
-spring.boot.admin.url=http://localhost:8000  
+spring.boot.admin.url=https://localhost:8000  
 management.security.enabled=false 
 ```
 
@@ -108,7 +108,7 @@ public class AdminClientApplication {
 }
 ```
 
-配置完成之后，启动Client端服务，再次访问服务：`http://localhost:8000`可以看到客户端的相关信息。
+配置完成之后，启动Client端服务，再次访问服务：`https://localhost:8000`可以看到客户端的相关信息。
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springboot/admin2.png)
 
@@ -173,7 +173,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+      defaultZone: ${EUREKA_SERVICE_URL:https://localhost:8761}/eureka/
 
 management.security.enabled: false
 ```
@@ -229,7 +229,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: https://localhost:8761/eureka/
 management:
   security:
     enabled: false
@@ -263,7 +263,7 @@ public class ProducerApplication {
 
 web层添加了/hello的请求方法，方法中使用one/two区别是哪个应用。spring-cloud-producer-2和spring-cloud-producer代码类似，具体大家可以查看示例代码。
 
-完成上面配置之后，分别启动项目：spring-cloud-producer和spring-cloud-producer-2，浏览器访问`http://localhost:8000` 可以看到以下界面：
+完成上面配置之后，分别启动项目：spring-cloud-producer和spring-cloud-producer-2，浏览器访问`https://localhost:8000` 可以看到以下界面：
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springboot/admin4.png)
 
@@ -310,7 +310,7 @@ spring:
         mail:
           from: xxxx@qq.com
           to: xxxx@qq.com
-# http://codecentric.github.io/spring-boot-admin/1.5.6/#mail-notifications
+# https://codecentric.github.io/spring-boot-admin/1.5.6/#mail-notifications
 ```
 
 在配置文件中添加邮件发送相关信息：邮件的发送者、接受者、协议、移动授权码等。关于Spring Boot邮件发送，可以参考[springboot(十)：邮件服务](https://ziyekudeng.github.io/springboot/2017/05/06/springboot-mail.html)
@@ -326,6 +326,6 @@ spring:
 
 ## 参考
 
-[Spring Boot Admin Reference Guide](http://codecentric.github.io/spring-boot-admin/1.5.6/#getting-started)  
+[Spring Boot Admin Reference Guide](https://codecentric.github.io/spring-boot-admin/1.5.6/#getting-started)  
 
 

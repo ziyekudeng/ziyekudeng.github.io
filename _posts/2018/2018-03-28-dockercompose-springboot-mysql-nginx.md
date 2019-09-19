@@ -110,7 +110,7 @@ public class VisitorController {
 
 实体类和 Repository 层代码比较简单，这里就不贴出来了，大家感兴趣可以下载源码查看。
 
-以上内容都完成后，启动项目，访问：`http://localhost:8080/` 我们就可以看到这样的返回结果：
+以上内容都完成后，启动项目，访问：`https://localhost:8080/` 我们就可以看到这样的返回结果：
 
 ``` text
 I have been seen ip 0:0:0:0:0:0:0:1 1 times.
@@ -201,7 +201,7 @@ server {
     access_log off;
 
     location / {
-        proxy_pass http://app:8080;
+        proxy_pass https://app:8080;
         proxy_set_header Host $host:$server_port;
         proxy_set_header X-Forwarded-Host $server_name;
         proxy_set_header X-Real-IP $remote_addr;
@@ -217,7 +217,7 @@ server {
 }
 ```
 
-这块内容比较简单，配置请求转发，将80端口的请求转发到服务 app 的8080端口。其中`proxy_pass http://app:8080`这块的配置信息需要解释一下，这里使用是`app`而不是`localhost`，是因为他们没有在一个容器中，在一组 compose 的服务通讯需要使用 services 的名称进行访问。  
+这块内容比较简单，配置请求转发，将80端口的请求转发到服务 app 的8080端口。其中`proxy_pass https://app:8080`这块的配置信息需要解释一下，这里使用是`app`而不是`localhost`，是因为他们没有在一个容器中，在一组 compose 的服务通讯需要使用 services 的名称进行访问。  
 
 ### Spring Boot 项目改造
 
@@ -265,7 +265,7 @@ app_1    | 2018-03-26 02:54:55.660  INFO 1 --- [           main] com.neo.Compose
 
 看到信息`Tomcat started on port(s): 8080`表示服务启动成功。也可以使用`docker-compose up -d`后台启动
 
-访问服务器地址；`http://58.87.69.230/`，返回：`I have been seen ip 172.19.0.2 1 times.` 表示整体服务启动成功
+访问服务器地址；`https://58.87.69.230/`，返回：`I have been seen ip 172.19.0.2 1 times.` 表示整体服务启动成功
 
 
 **使用`docker-compose ps`查看项目中目前的所有容器**

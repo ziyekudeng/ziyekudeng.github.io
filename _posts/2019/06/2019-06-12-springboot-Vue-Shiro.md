@@ -6,7 +6,7 @@ tags: [arch]
 keywords: 架构
 ---
 
-来源：http://sina.lt/gauR
+来源：https://sina.lt/gauR
 
 *   一、前后端分离思想
 

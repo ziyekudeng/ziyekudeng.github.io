@@ -376,7 +376,7 @@ tcp        0      0 0.0.0.0:8080                0.0.0.0:*                   LIST
 cat /usr/local/nginx/logs/error.log
 ```
 
-在error.log中没有错误，既启动成功。可以打开浏览器，直接访问http://192.168.53.90:8080，查看是否弹出nginx欢迎页面。
+在error.log中没有错误，既启动成功。可以打开浏览器，直接访问https://192.168.53.90:8080，查看是否弹出nginx欢迎页面。
 
 查看到欢迎页则说明，nginx运行成功。之后依次在其它storage上全部安装上nginx并确认运行正常。
 
@@ -453,11 +453,11 @@ http {
         listen       8080;
        #设置group1的负载均衡参数
         location /group1/M00 {
-            proxy_pass http://fdfs_group1;
+            proxy_pass https://fdfs_group1;
         }
         #设置group2的负载均衡参数
         location /group2/M00 {
-            proxy_pass http://fdfs_group2;
+            proxy_pass https://fdfs_group2;
         }
       }
 
@@ -516,7 +516,7 @@ group2/M00/00/00/wKg26VncfamAEqZ0AAu-4Kcs3QI677.jpg
 然后使用浏览器访问:
 
 ``` sh
-http://192.168.53.85:8080/group2/M00/00/00/wKg26VncfamAEqZ0AAu-4Kcs3QI677.jpg
+https://192.168.53.85:8080/group2/M00/00/00/wKg26VncfamAEqZ0AAu-4Kcs3QI677.jpg
 ```
 
 看有查看到图片,说明集群搭建成功！
@@ -640,7 +640,7 @@ url_have_group_name=true
 
 ### 测试图片无法访问
 
-搭建完成之后，访问```http://192.168.53.85:8080/group2/M00/00/00/wKg26VncfamAEqZ0AAu-4Kcs3QI677.jpg```
+搭建完成之后，访问```https://192.168.53.85:8080/group2/M00/00/00/wKg26VncfamAEqZ0AAu-4Kcs3QI677.jpg```
 地址图片总是报404无法找到，跟踪到storage服务器，查看nginx的error日志发现如下；
 
 ``` sh

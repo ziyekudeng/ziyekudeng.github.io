@@ -15,7 +15,7 @@ keywords: Spring Boot,微服务架构,大数据,MongoDB
 
 微服务架构是 SOA 架构的传承，但一个最本质的区别就在于微服务是真正的分布式的、去中心化的。把所有的“思考”逻辑包括路由、消息解析等放在服务内部，去掉一个大一统的 ESB，服务间轻通信，是比 SOA 更彻底的拆分。微服务架构强调的重点是业务系统需要彻底的组件化和服务化，原有的单个业务系统会拆分为多个可以独立开发，设计，运行和运维的小应用，这些小应用之间通过服务完成交互和集成。
 
-大约 2009 年开始，Netflix 完全重新定义了它的应用程序开发和操作模型，拉开了微服务探索的第一步，直到2014年3月 Martin Fowler 写的一篇文章 [Microservices](http://martinfowler.com/articles/microservices.html) 以更加通俗易懂的形式为大家定义了什么是微服务架构。Martin Fowler 在文中阐述了对微服务架构的设想，认为微服务架构是一种架构模式，它提倡将单一应用程序划分成一组小的服务，服务之间互相协调、互相配合，为用户提供最终价值。
+大约 2009 年开始，Netflix 完全重新定义了它的应用程序开发和操作模型，拉开了微服务探索的第一步，直到2014年3月 Martin Fowler 写的一篇文章 [Microservices](https://martinfowler.com/articles/microservices.html) 以更加通俗易懂的形式为大家定义了什么是微服务架构。Martin Fowler 在文中阐述了对微服务架构的设想，认为微服务架构是一种架构模式，它提倡将单一应用程序划分成一组小的服务，服务之间互相协调、互相配合，为用户提供最终价值。
 
 每个服务运行在其独立的进程中，服务和服务间采用轻量级的通信机制互相沟通（通常是基于 HTTP 的 RESTful API）。每个服务都围绕着具体业务进行构建，并且能够被独立地部署到生产环境、类生产环境等。另外，应尽量避免统一的、集中式的服务管理机制，对具体的一个服务而言，应根据业务上下文，选择合适的语言、工具对其进行构建。
 
@@ -112,7 +112,7 @@ Spring Boot 是 Java 领域微服务架构最优落地技术，Spring Boot+Mongo
 
 认真学完此专栏之后，会对微服务架构实践、Spring Boot 和 MongoDB 使用、微服务架构下数据处理有进一步的了解，具备使用 Spring Boot 开发微服务项目、利用相关技术解决微服务架构中数据治理的疼点。
 
-**专栏地址:[微服务技术架构和大数据治理实战](http://blog.51cto.com/cloumn/detail/4)**
+**专栏地址:[微服务技术架构和大数据治理实战](https://blog.51cto.com/cloumn/detail/4)**
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springboot/51cto-spring-boot.jpg)
 

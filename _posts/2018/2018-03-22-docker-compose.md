@@ -217,7 +217,7 @@ services:
     image: "redis:alpine"
 ```
 
-启动成功之后，在浏览器访问：`http://ipaddress:5000/` ，返回如下：
+启动成功之后，在浏览器访问：`https://ipaddress:5000/` ，返回如下：
 
 ``` sh
 Hello World! I have been seen 1 times.

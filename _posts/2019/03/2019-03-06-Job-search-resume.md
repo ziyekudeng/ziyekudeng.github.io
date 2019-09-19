@@ -14,7 +14,7 @@ tags: [life]
 写简历首先要有一个好的模板，我们做技术的不同于 UX,UED，我们不需要那么花哨，但是也需要整洁干净。好的模板能让你的简历给面试官一个好的印象，有一句话说得好，简单而不简单。
 回到技术上面，既然我们每天都用 `Markdown` 写文档，那么为什么直接用它编写我们的简历呢？清楚，简介，一目了然，方便存档和编辑。
 
-*   在线 Markdown 简历生成工具，可以导出 PDF。http://cvbox.sinaapp.com
+*   在线 Markdown 简历生成工具，可以导出 PDF。https://cvbox.sinaapp.com
 
 *   有道云笔记，支持 Markdown 语法，并且可以存储，同时支持导出 PDF
 
@@ -72,9 +72,9 @@ _PS: 网上的谬论说必须只能一页。_
 
 *   工作年限：3年
 
-*   技术博客：http://juice-resume.github.io (如果有不错的东西可以放)
+*   技术博客：https://juice-resume.github.io (如果有不错的东西可以放)
 
-*   Github：http://github.com/juice-resume (什么东西都没有就别放了，画蛇添足)
+*   Github：https://github.com/juice-resume (什么东西都没有就别放了，画蛇添足)
 
 *   期望职位：Java工程师，后端工程师(可以写多个)
 

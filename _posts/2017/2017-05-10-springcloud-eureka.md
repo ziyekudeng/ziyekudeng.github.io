@@ -144,16 +144,16 @@ server.port=8000
 eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
 
-eureka.client.serviceUrl.defaultZone=http://localhost:${server.port}/eureka/
+eureka.client.serviceUrl.defaultZone=https://localhost:${server.port}/eureka/
 ```
 
 - ```eureka.client.register-with-eureka``` ：表示是否将自己注册到Eureka Server，默认为true。
 - ```eureka.client.fetch-registry``` ：表示是否从Eureka Server获取注册信息，默认为true。
-- ```eureka.client.serviceUrl.defaultZone``` ：设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔。
+- ```eureka.client.serviceUrl.defaultZone``` ：设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是https://localhost:8761/eureka ；多个地址可使用 , 分隔。
 
 
 
-启动工程后，访问：http://localhost:8000/，可以看到下面的页面，其中还没有发现任何服务
+启动工程后，访问：https://localhost:8000/，可以看到下面的页面，其中还没有发现任何服务
 
  
 ![](https://ziyekudeng.github.io/assets/images/2017/springcloud/eureka_start.jpg)
@@ -174,7 +174,7 @@ spring.application.name=spring-cloud-eureka
 server.port=8000
 eureka.instance.hostname=peer1
 
-eureka.client.serviceUrl.defaultZone=http://peer2:8001/eureka/
+eureka.client.serviceUrl.defaultZone=https://peer2:8001/eureka/
 
 ```
 
@@ -185,7 +185,7 @@ spring.application.name=spring-cloud-eureka
 server.port=8001
 eureka.instance.hostname=peer2
 
-eureka.client.serviceUrl.defaultZone=http://peer1:8000/eureka/
+eureka.client.serviceUrl.defaultZone=https://peer1:8000/eureka/
 ```
 
 3、host转换
@@ -209,7 +209,7 @@ java -jar spring-cloud-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1
 java -jar spring-cloud-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2
 ```
 
-依次启动完成后，浏览器输入：```http://localhost:8000/``` 效果图如下：
+依次启动完成后，浏览器输入：```https://localhost:8000/``` 效果图如下：
 
  
 ![](https://ziyekudeng.github.io/assets/images/2017/springcloud/eureka-two.jpg)
@@ -239,7 +239,7 @@ eureka:
     hostname: peer1
   client:
     serviceUrl:
-      defaultZone: http://peer2:8001/eureka/,http://peer3:8002/eureka/
+      defaultZone: https://peer2:8001/eureka/,https://peer3:8002/eureka/
 ---
 spring:
   application:
@@ -252,7 +252,7 @@ eureka:
     hostname: peer2
   client:
     serviceUrl:
-      defaultZone: http://peer1:8000/eureka/,http://peer3:8002/eureka/
+      defaultZone: https://peer1:8000/eureka/,https://peer3:8002/eureka/
 ---
 spring:
   application:
@@ -265,7 +265,7 @@ eureka:
     hostname: peer3
   client:
     serviceUrl:
-      defaultZone: http://peer1:8000/eureka/,http://peer2:8001/eureka/
+      defaultZone: https://peer1:8000/eureka/,https://peer2:8001/eureka/
 
 ```
 
@@ -277,7 +277,7 @@ java -jar spring-cloud-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2
 java -jar spring-cloud-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer3
 ```
 
-依次启动完成后，浏览器输入：```http://localhost:8000/``` 效果图如下：
+依次启动完成后，浏览器输入：```https://localhost:8000/``` 效果图如下：
 
  
 ![](https://ziyekudeng.github.io/assets/images/2017/springcloud/eureka-cluster.jpg)
@@ -292,9 +292,9 @@ java -jar spring-cloud-eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer3
 
 参考：
 
-[Spring Cloud构建微服务架构（六）高可用服务注册中心](http://blog.didispace.com/springcloud6/)
+[Spring Cloud构建微服务架构（六）高可用服务注册中心](https://blog.didispace.com/springcloud6/)
 
-[Peer Awareness](http://cloud.spring.io/spring-cloud-static/spring-cloud.html#_peer_awareness)
+[Peer Awareness](https://cloud.spring.io/spring-cloud-static/spring-cloud.html#_peer_awareness)
 
 
 -------------

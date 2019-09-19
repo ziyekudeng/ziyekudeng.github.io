@@ -23,7 +23,7 @@ tags: [tools]
 
 **注**：装了这个就可以访问之后介绍的扩展链接了。
 
-> 链接：http://www.ggfwzs.com/
+> 链接：https://www.ggfwzs.com/
 
 ### 2\. 新浪微博图床
 

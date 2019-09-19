@@ -6,7 +6,7 @@ tags: [arch]
 keywords: 架构
 ---
  
-来源：http://t.cn/EauzRSz
+来源：https://t.cn/EauzRSz
 
 > *   一、什么是分布式架构
 >     
@@ -76,13 +76,13 @@ Mycat中间件学习
 
 # 三、资源推荐
 
-1、大型分布式网站架构设计与实践：http://item.jd.com/11529266.html
+1、大型分布式网站架构设计与实践：https://item.jd.com/11529266.html
 
-2、大型网站技术架构：核心原理与案例分析：http://item.jd.com/11322972.html
+2、大型网站技术架构：核心原理与案例分析：https://item.jd.com/11322972.html
 
-3、大型网站系统与Java中间件实践：http://item.jd.com/11449803.html
+3、大型网站系统与Java中间件实践：https://item.jd.com/11449803.html
 
-4、分布式Java应用：基础与实践：http://item.jd.com/10144196.html
+4、分布式Java应用：基础与实践：https://item.jd.com/10144196.html
 
 # 四、分布式架构的演进
 

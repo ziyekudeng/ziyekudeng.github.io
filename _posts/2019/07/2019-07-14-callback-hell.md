@@ -51,7 +51,7 @@ keywords: 架构
 
     private fun getCityIds(): List<String> {
         val cityIdsEntity: ResponseEntity<List<String>> = restTemplate
-                .exchange("http://localhost:$localServerPort/cityids",
+                .exchange("https://localhost:$localServerPort/cityids",
                         HttpMethod.GET,
                         null,
                         object : ParameterizedTypeReference<List<String>>() {})
@@ -62,7 +62,7 @@ keywords: 架构
 
 
     private fun getCityForId(id: String): City {
-        return restTemplate.getForObject("http://localhost:$localServerPort/cities/$id", City::class.java)!!
+        return restTemplate.getForObject("https://localhost:$localServerPort/cities/$id", City::class.java)!!
     }
 
 鉴于这两个函数，它们很容易组合，以便于轻松返回城市列表 ：
@@ -90,7 +90,7 @@ keywords: 架构
 
 
     val responseListenableFuture: ListenableFuture<Response> = asyncHttpClient
-                    .prepareGet("http://localhost:$localServerPort/cityids")
+                    .prepareGet("https://localhost:$localServerPort/cityids")
                     .execute()
 
 可以将回调附加到 ListenableFuture 以在可用时对响应进行操作。
@@ -107,7 +107,7 @@ keywords: 架构
 鉴于 cityIds 的列表，我想获得城市的详细信息，因此从响应中，我需要进行更多的远程调用并为每个调用附加回调以获取城市的详细信息：
     
     val responseListenableFuture: ListenableFuture<Response> = asyncHttpClient
-            .prepareGet("http://localhost:$localServerPort/cityids")
+            .prepareGet("https://localhost:$localServerPort/cityids")
             .execute()
     responseListenableFuture.addListener(Runnable {
         val response: Response = responseListenableFuture.get()
@@ -116,7 +116,7 @@ keywords: 架构
                 object : TypeReference<List<Long>>() {})
         cityIds.stream().map { cityId ->
             val cityListenableFuture = asyncHttpClient
-                    .prepareGet("http://localhost:$localServerPort/cities/$cityId")
+                    .prepareGet("https://localhost:$localServerPort/cities/$cityId")
                     .execute()
             cityListenableFuture.addListener(Runnable {
                 val cityDescResp = cityListenableFuture.get()
@@ -137,7 +137,7 @@ keywords: 架构
     
     private fun getCityIds(): CompletableFuture<List<Long>> {
         return asyncHttpClient
-                .prepareGet("http://localhost:$localServerPort/cityids")
+                .prepareGet("https://localhost:$localServerPort/cityids")
                 .execute()
                 .toCompletableFuture()
                 .thenApply { response ->
@@ -153,7 +153,7 @@ keywords: 架构
 
     
     private fun getCityDetail(cityId: Long): CompletableFuture<City> {
-        return asyncHttpClient.prepareGet("http://localhost:$localServerPort/cities/$cityId")
+        return asyncHttpClient.prepareGet("https://localhost:$localServerPort/cities/$cityId")
                 .execute()
                 .toCompletableFuture()
                 .thenApply { response ->

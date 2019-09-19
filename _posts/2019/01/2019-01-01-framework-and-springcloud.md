@@ -10,7 +10,7 @@ Spring Cloud作为一套微服务治理的框架，几乎考虑到了微服务�
 
 这也是我写Spring Cloud三部曲的最后一篇文章，前两面篇内容如下：
 
-- [中小型互联网公司微服务实践-经验和教训](http://mp.weixin.qq.com/s/bciSlKearaVFQg1QWOSn_g)
+- [中小型互联网公司微服务实践-经验和教训](https://mp.weixin.qq.com/s/bciSlKearaVFQg1QWOSn_g)
 
 - [Spring Cloud在国内中小型公司能用起来吗？](https://mp.weixin.qq.com/s/vnWXpH5pv-FAzLZfbgTGvg)
 
@@ -195,7 +195,7 @@ Spring Cloud Sleuth为服务之间调用提供链路追踪。通过Sleuth可以�
 
 Zipkin是Twitter的一个开源项目，允许开发者收集 Twitter 各个服务上的监控数据，并提供查询接口
 
-分布式链路跟踪需要Sleuth+Zipkin结合来实现，具体操作参考这篇文章：[分布式链路跟踪(Sleuth)](http://www.jianshu.com/p/c3d191663279)
+分布式链路跟踪需要Sleuth+Zipkin结合来实现，具体操作参考这篇文章：[分布式链路跟踪(Sleuth)](https://www.jianshu.com/p/c3d191663279)
 
 
 ### 总结
@@ -220,4 +220,4 @@ Spring Cloud从设计之初就考虑了绝大多数互联网公司架构演化�
 微服务架构是一种趋势，Spring Cloud提供了标准化的、全站式的技术方案，意义可能会堪比当前Servlet规范的诞生，有效推进服务端软件系统技术水平的进步。
 
 
-**这是我在GitChat的分享[从架构演进的角度聊聊 Spring Cloud 都做了些什么？](http://gitbook.cn/gitchat/author/5949f1f19bc6b9498d120a0d)**
+**这是我在GitChat的分享[从架构演进的角度聊聊 Spring Cloud 都做了些什么？](https://gitbook.cn/gitchat/author/5949f1f19bc6b9498d120a0d)**

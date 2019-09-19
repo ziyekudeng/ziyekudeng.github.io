@@ -22,13 +22,13 @@ Context标签可用于Tomcat部署web项目，配置项目信息，设置项目�
 
 
 
-浏览器访问地址为：”[http://IP](http://IP)地址或域名:端口/test”
+浏览器访问地址为：”[https://IP](https://IP)地址或域名:端口/test”
 paht可以为空字符串，为空字符串时表示此项目为Tomcat默认的项目。
 例如：
 
 
 
-浏览器访问地址为：”[http://IP](http://IP)地址或域名:端口”
+浏览器访问地址为：”[https://IP](https://IP)地址或域名:端口”
 path的值”test”和”/test”和”/test/”都是等同的配置一样的效果。
 
 #### docBase表示本地项目WebRoo绝对路径
@@ -39,7 +39,7 @@ Tomcat的webapps目录下有一个成品项目，项目的文件夹为“Test”
 
 
 
-浏览器访问地址为：”[http://IP](http://IP)地址或域名:端口/test”
+浏览器访问地址为：”[https://IP](https://IP)地址或域名:端口/test”
 
 #### reloadable表示项目修改时是否自动重新编译和装载项目。
 

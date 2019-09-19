@@ -65,11 +65,11 @@ keywords: 个人生活感悟
 
 推荐阅读：
 
-[你是什么类型的程序员？](http://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483861&idx=1&sn=1f18a778f2e82e29bef25d36bcfc07df&chksm=cfa11ba0f8d692b6aa07885f7f260557a6bf057d7191c33610016d9de5293a8f536cb08fd25f&scene=21#wechat_redirect)
+[你是什么类型的程序员？](https://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483861&idx=1&sn=1f18a778f2e82e29bef25d36bcfc07df&chksm=cfa11ba0f8d692b6aa07885f7f260557a6bf057d7191c33610016d9de5293a8f536cb08fd25f&scene=21#wechat_redirect)
 
-[技术人， 请不要封闭自己](http://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483823&idx=1&sn=f2918715f09e4b5e65f6c414dd67f4ae&chksm=cfa11bdaf8d692ccabb7407ffad14881b2e193d6c58894a2d6e95852bf41efea0d4562a852f9&scene=21#wechat_redirect)
+[技术人， 请不要封闭自己](https://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483823&idx=1&sn=f2918715f09e4b5e65f6c414dd67f4ae&chksm=cfa11bdaf8d692ccabb7407ffad14881b2e193d6c58894a2d6e95852bf41efea0d4562a852f9&scene=21#wechat_redirect)
 
-[职场程序员如何高效自学](http://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483849&idx=1&sn=172bd555db56264f12a9a0806cf18721&chksm=cfa11bbcf8d692aa1d182007bf5c9c04af659e35cd117ebd565d412690eca5d86e6fcf379924&scene=21#wechat_redirect)
+[职场程序员如何高效自学](https://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483849&idx=1&sn=172bd555db56264f12a9a0806cf18721&chksm=cfa11bbcf8d692aa1d182007bf5c9c04af659e35cd117ebd565d412690eca5d86e6fcf379924&scene=21#wechat_redirect)
 
-[写一份受面试官青睐的简历](http://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483808&idx=1&sn=c1ed7842f59e9442d479ce523b196a85&chksm=cfa11bd5f8d692c3dd4df824a1bc9d0b877d22d154e42fba5e1eb6f0c93592b399c7afe29f46&scene=21#wechat_redirect)
+[写一份受面试官青睐的简历](https://mp.weixin.qq.com/s?__biz=Mzg4NjAwMTQzNA==&mid=2247483808&idx=1&sn=c1ed7842f59e9442d479ce523b196a85&chksm=cfa11bd5f8d692c3dd4df824a1bc9d0b877d22d154e42fba5e1eb6f0c93592b399c7afe29f46&scene=21#wechat_redirect)
 

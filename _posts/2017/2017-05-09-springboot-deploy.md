@@ -354,7 +354,7 @@ service yourapp start|stop|restart
 **[示例代码-码云](https://gitee.com/ityouknow/spring-boot-examples)**
 
 **参考:**
-[Installing Spring Boot applications](http://docs.spring.io/spring-boot/docs/current/reference/html/deployment-install.html)
+[Installing Spring Boot applications](https://docs.spring.io/spring-boot/docs/current/reference/html/deployment-install.html)
 
 
 -------------

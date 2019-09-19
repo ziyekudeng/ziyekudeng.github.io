@@ -28,7 +28,7 @@ tags: [life]
 
 3.  `dir: '/data/guaiye/user/',`
 
-4.  `host: 'http://localhost:8080',`
+4.  `host: 'https://localhost:8080',`
 
 5.  `cases: [`
 

@@ -183,10 +183,10 @@ tags: [pay]
 
 参考：
 
-[支付系统的对账处理](http://blog.lixf.cn/essay/2016/10/10/account-2-reconciliation/)
+[支付系统的对账处理](https://blog.lixf.cn/essay/2016/10/10/account-2-reconciliation/)
 
-[账户体系架构设计相关思路记录](http://dinguangx.iteye.com/blog/2271566)
+[账户体系架构设计相关思路记录](https://dinguangx.iteye.com/blog/2271566)
 
-[对账系统–项目总览](http://www.changsheng.pub/archives/120)
+[对账系统–项目总览](https://www.changsheng.pub/archives/120)
 
 

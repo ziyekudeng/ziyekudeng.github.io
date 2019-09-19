@@ -5,7 +5,7 @@ category: tools
 tags: [tools]
 ---
 
-来源：http://t.cn/EVBRoQO
+来源：https://t.cn/EVBRoQO
 
 *   为什么前后端分离了，你比从前更痛苦？
 
@@ -118,9 +118,9 @@ yarn
     npm start
 ### 测试
 
-    curl -i http://localhost:3000/api/v1/users/1/books/
+    curl -i https://localhost:3000/api/v1/users/1/books/
     # or
-    curl -i http://localhost:3000/api/v1/users/1/books/1
+    curl -i https://localhost:3000/api/v1/users/1/books/1
 ### 生成 API 可视化文档
 
     yarn run build
@@ -187,7 +187,7 @@ raml-mocker 只需要在response 添加 `example`:
 
 通过 curl 请求：
 
-    curl -i http://localhost:3000/api/v1/users/1/books
+    curl -i https://localhost:3000/api/v1/users/1/books
 
 就会得到 `example` 的数据，唯一不足是无法根据参数动态返回不同数据。别急，请往下看。
 

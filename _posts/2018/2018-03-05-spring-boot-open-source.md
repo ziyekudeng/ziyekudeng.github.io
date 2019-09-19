@@ -14,7 +14,7 @@ keywords: Spring Boot,open source
 
 **产品主页**
 
-[http://springboot.fun](http://springboot.fun/)  
+[https://springboot.fun](https://springboot.fun/)  
 
 **项目主页**
 
@@ -31,7 +31,7 @@ keywords: Spring Boot,open source
 
 **产品主页**
 
-[http://favorites.ren](http://favorites.ren/)  
+[https://favorites.ren](https://favorites.ren/)  
 
 **项目主页**
 
@@ -53,7 +53,7 @@ My Blog是由Docker+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客系�
 
 **产品主页**
 
-[http://13blog.site](http://13blog.site)  
+[https://13blog.site](https://13blog.site)  
 
 **项目主页**
 
@@ -71,7 +71,7 @@ My Blog是由Docker+SpringBoot+Mybatis+thymeleaf等技术实现的Java博客系�
 
 **产品主页**
 
-[http://raysmond.com](http://raysmond.com/)  
+[https://raysmond.com](https://raysmond.com/)  
 
 **项目主页**
 
@@ -102,7 +102,7 @@ V部落是一个多用户博客管理平台，采用Vue+SpringBoot开发。
 
 **产品主页**
 
-[http://doc.52itstyle.com](http://doc.52itstyle.com/)  
+[https://doc.52itstyle.com](https://doc.52itstyle.com/)  
 
 **项目主页**
 
@@ -135,7 +135,7 @@ Any Video 是基于 Spring Boot 开发的应用，利用网络爬虫技术，实
 
 **产品主页**
 
-[http://shaofan.org/angular-filemanager](http://shaofan.org/angular-filemanager/)  
+[https://shaofan.org/angular-filemanager](https://shaofan.org/angular-filemanager/)  
 
 **项目主页**
 
@@ -205,4 +205,4 @@ Spring Boot 技术栈示例代码，快速简单上手教程，一个帮助大�
 
 ## 参考
 
-[Spring Boot 资源大全](http://springboot.fun/)  
+[Spring Boot 资源大全](https://springboot.fun/)  

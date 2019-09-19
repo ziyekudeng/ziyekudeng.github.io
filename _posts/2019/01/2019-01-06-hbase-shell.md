@@ -273,5 +273,5 @@ scan 'member', FILTER=>"PrefixFilter('E')"
 ```
 
 **参考：**  
-[hbase shell基础和常用命令详解](http://blog.pureisle.net/archives/1887.html)   
-[HBase Shell 常用操作](http://debugo.com/hbase-shell-cmds/)
+[hbase shell基础和常用命令详解](https://blog.pureisle.net/archives/1887.html)   
+[HBase Shell 常用操作](https://debugo.com/hbase-shell-cmds/)

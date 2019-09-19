@@ -114,10 +114,10 @@ Full GC回收日志:
 通过两张图非常明显看出gc日志构成：
 
 Young GC日志:
-![](http://ityouknow.com/assets/images/2017/jvm/Young GC.png)
+![](https://ityouknow.com/assets/images/2017/jvm/Young GC.png)
 
 Full GC日志:
-![](http://ityouknow.com/assets/images/2017/jvm/Full GC.png)
+![](https://ityouknow.com/assets/images/2017/jvm/Full GC.png)
 
 
 ## GC分析工具
@@ -150,7 +150,7 @@ GChisto是一款专业分析gc日志的工具，可以通过gc日志来分析：
 
 这是一个web工具,在线使用非常方便.  
 
-地址: [http://gceasy.io](http://gceasy.io)
+地址: [https://gceasy.io](https://gceasy.io)
 
 进入官网，讲打包好的zip或者gz为后缀的压缩包上传，过一会就会拿到分析结果。
 

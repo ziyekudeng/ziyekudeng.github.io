@@ -63,21 +63,21 @@ keywords: 微服务,Spring Cloud,中小企业,架构
 
 ## 推荐：Spring Cloud Alibaba基础教程
 
-*   [《使用Nacos实现服务注册与发现》](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486665&idx=1&sn=bf733e1b1d1ff0a10edc221537fbebd7&chksm=9bd0a151aca72847b76e78759107c3db5c58efc25f0f8d5a7c82d179b5bab7acd2986e415f45&scene=21#wechat_redirect)
+*   [《使用Nacos实现服务注册与发现》](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486665&idx=1&sn=bf733e1b1d1ff0a10edc221537fbebd7&chksm=9bd0a151aca72847b76e78759107c3db5c58efc25f0f8d5a7c82d179b5bab7acd2986e415f45&scene=21#wechat_redirect)
 
-*   [《支持的几种服务消费方式》](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486746&idx=1&sn=b332f8a2301f78264760fd0ca0a0f474&chksm=9bd0a082aca72994dd5fe17c9e9ec5eda75515ddd9c3f2321f060446634b2b7e57a26e7fe08a&scene=21#wechat_redirect)
+*   [《支持的几种服务消费方式》](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486746&idx=1&sn=b332f8a2301f78264760fd0ca0a0f474&chksm=9bd0a082aca72994dd5fe17c9e9ec5eda75515ddd9c3f2321f060446634b2b7e57a26e7fe08a&scene=21#wechat_redirect)
 
-*   [《使用Nacos作为配置中心》](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486766&idx=1&sn=af405af3564e4d72cb45e1adb63034ac&chksm=9bd0a0b6aca729a0488ce0b94e246268397f300bac39f1db3c4a5224216afe96befb7610deb7&scene=21#wechat_redirect)
+*   [《使用Nacos作为配置中心》](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486766&idx=1&sn=af405af3564e4d72cb45e1adb63034ac&chksm=9bd0a0b6aca729a0488ce0b94e246268397f300bac39f1db3c4a5224216afe96befb7610deb7&scene=21#wechat_redirect)
 
-*   [《Nacos配置的加载规则详解》](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486791&idx=1&sn=638e5a7875a263832c717f69d6aebfd8&chksm=9bd0a0dfaca729c99724b40c5ae49829cd0b5995e4ca91559264683afdaaaff08210d32c2478&scene=21#wechat_redirect)
+*   [《Nacos配置的加载规则详解》](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486791&idx=1&sn=638e5a7875a263832c717f69d6aebfd8&chksm=9bd0a0dfaca729c99724b40c5ae49829cd0b5995e4ca91559264683afdaaaff08210d32c2478&scene=21#wechat_redirect)
 
-*   [《Nacos配置的多环境管理》](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486796&idx=2&sn=7080accddd960104852460ef0ab65751&chksm=9bd0a0d4aca729c26ce1f222a49d11a094bb7fbdcdf528e609a2b309baf9fef0b4b626315247&scene=21#wechat_redirect)
+*   [《Nacos配置的多环境管理》](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486796&idx=2&sn=7080accddd960104852460ef0ab65751&chksm=9bd0a0d4aca729c26ce1f222a49d11a094bb7fbdcdf528e609a2b309baf9fef0b4b626315247&scene=21#wechat_redirect)
 
-*   [《Nacos配置的多文件加载与共享配置》](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486815&idx=1&sn=27361e6362a8e6b7bec65936957c4fb9&chksm=9bd0a0c7aca729d18e185ab3ab8cf2ee73e35786cc9dbd28e53cee3897bf3a5f2066795af0b4&scene=21#wechat_redirect)
+*   [《Nacos配置的多文件加载与共享配置》](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486815&idx=1&sn=27361e6362a8e6b7bec65936957c4fb9&chksm=9bd0a0c7aca729d18e185ab3ab8cf2ee73e35786cc9dbd28e53cee3897bf3a5f2066795af0b4&scene=21#wechat_redirect)
 
-*   [《Nacos的数据持久化》](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486860&idx=1&sn=d2574bd3305c50e3ad1fac1fab92ce74&chksm=9bd0a014aca729020be790f1eaff02eb7948b4f1c9e86b85588f51300ee61fe9f7ee346e5070&scene=21#wechat_redirect)
+*   [《Nacos的数据持久化》](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486860&idx=1&sn=d2574bd3305c50e3ad1fac1fab92ce74&chksm=9bd0a014aca729020be790f1eaff02eb7948b4f1c9e86b85588f51300ee61fe9f7ee346e5070&scene=21#wechat_redirect)
 
-*   《[Nacos的集群部署](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486880&idx=1&sn=f67cbcc9e5dab717fd5a43063a79e548&chksm=9bd0a038aca7292e43f133262242b3825d2fcc68d8dbeba3cb79ddf1f547efa815780528bfc0&scene=21#wechat_redirect)》
+*   《[Nacos的集群部署](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247486880&idx=1&sn=f67cbcc9e5dab717fd5a43063a79e548&chksm=9bd0a038aca7292e43f133262242b3825d2fcc68d8dbeba3cb79ddf1f547efa815780528bfc0&scene=21#wechat_redirect)》
 
 该系列教程的代码示例：
 

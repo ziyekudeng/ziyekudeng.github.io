@@ -75,7 +75,7 @@ css和js带参数（形如.css?t=与.js?t=） 
 
     <code class="hljs javascript has-numbering">在 URL 参数后加上 "?timestamp=" + new Date().getTime();</code> 
 
-用[PHP](http://lib.csdn.net/base/php "PHP知识库")后端清理
+用[PHP](https://lib.csdn.net/base/php "PHP知识库")后端清理
 
     <code class="hljs scss has-numbering">在服务端加 header("Cache-Control: no-cache, must-revalidate");等等(如php中)</code>
 

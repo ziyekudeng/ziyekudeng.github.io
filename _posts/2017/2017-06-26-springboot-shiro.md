@@ -452,9 +452,9 @@ public String login(HttpServletRequest request, Map<String, Object> map) throws 
 
 ### 测试
 
-1、编写好后就可以启动程序，访问`http://localhost:8080/userInfo/userList`页面，由于没有登录就会跳转到`http://localhost:8080/login`页面。登录之后就会跳转到index页面，登录后，直接在浏览器中输入`http://localhost:8080/userInfo/userList`访问就会看到用户信息。上面这些操作时候触发```MyShiroRealm.doGetAuthenticationInfo()```这个方法，也就是登录认证的方法。
+1、编写好后就可以启动程序，访问`https://localhost:8080/userInfo/userList`页面，由于没有登录就会跳转到`https://localhost:8080/login`页面。登录之后就会跳转到index页面，登录后，直接在浏览器中输入`https://localhost:8080/userInfo/userList`访问就会看到用户信息。上面这些操作时候触发```MyShiroRealm.doGetAuthenticationInfo()```这个方法，也就是登录认证的方法。
 
-2、登录admin账户，访问：```http://127.0.0.1:8080/userInfo/userAdd```显示```用户添加界面```，访问```http://127.0.0.1:8080/userInfo/userDel```显示```403没有权限```。上面这些操作时候触发```MyShiroRealm.doGetAuthorizationInfo()```这个方面，也就是权限校验的方法。
+2、登录admin账户，访问：```https://127.0.0.1:8080/userInfo/userAdd```显示```用户添加界面```，访问```https://127.0.0.1:8080/userInfo/userDel```显示```403没有权限```。上面这些操作时候触发```MyShiroRealm.doGetAuthorizationInfo()```这个方面，也就是权限校验的方法。
 
 3、修改admin不同的权限进行测试
 
@@ -468,5 +468,5 @@ shiro很强大，这仅仅是完成了登录认证和权限管理这两个功能
 参考：
 
 [Apache Shiro中文手册](https://waylau.gitbooks.io/apache-shiro-1-2-x-reference/content/)   
-[Spring Boot Shiro权限管理【从零开始学Spring Boot】](http://412887952-qq-com.iteye.com/blog/2299777)  
-[SpringBoot+shiro整合学习之登录认证和权限控制](http://z77z.oschina.io/2017/02/13/SpringBoot+shiro%E6%95%B4%E5%90%88%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81%E5%92%8C%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/)
+[Spring Boot Shiro权限管理【从零开始学Spring Boot】](https://412887952-qq-com.iteye.com/blog/2299777)  
+[SpringBoot+shiro整合学习之登录认证和权限控制](https://z77z.oschina.io/2017/02/13/SpringBoot+shiro%E6%95%B4%E5%90%88%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81%E5%92%8C%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/)

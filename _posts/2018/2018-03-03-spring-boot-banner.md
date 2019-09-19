@@ -53,7 +53,7 @@ Spring Boot 2.0 刚刚发布，一些 Maven 仓库还没更新，如果导入项
 
 我们先来回顾一下在 Spring Boot 1.0 中如何更换启动 Banner，其实都很简单，只需要在`src/main/resources`路径下新建一个`banner.txt`文件，`banner.txt`中填写好需要打印的字符串内容即可。
 
-一般情况下，我们会借助第三方工具帮忙转化内容，如网站`http://www.network-science.de/ascii/`将文字转化成字符串，网站：`http://www.degraeve.com/img2txt.php`可以将图片转化成字符串。
+一般情况下，我们会借助第三方工具帮忙转化内容，如网站`https://www.network-science.de/ascii/`将文字转化成字符串，网站：`https://www.degraeve.com/img2txt.php`可以将图片转化成字符串。
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springboot/hello.png)
 

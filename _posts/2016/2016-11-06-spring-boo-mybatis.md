@@ -144,7 +144,7 @@ public interface UserMapper {
 > - @Update 负责修改，也可以直接传入对象
 > - @delete 负责删除
 
-[了解更多属性参考这里](http://www.mybatis.org/mybatis-3/zh/java-api.html)
+[了解更多属性参考这里](https://www.mybatis.org/mybatis-3/zh/java-api.html)
 
 > **注意，使用#符号和$符号的不同：**
 

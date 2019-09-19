@@ -21,11 +21,11 @@ Attribute 是可选的（最好是每行只有一个 Attribute ）。
 
 Left Hand Side 其实就是规则的条件部分。 LHS 对应的 rail-road 图如下，我们在后面会做进一步解释：
 
-![](http://image.360doc.com/DownloadImg/7147/596025_2.png)
+![](https://image.360doc.com/DownloadImg/7147/596025_2.png)
 
  **Figure 5.2. Left Hand Side
 
-![](http://image.360doc.com/DownloadImg/7147/596025_3.png)** 
+![](https://image.360doc.com/DownloadImg/7147/596025_3.png)** 
 
  **Figure 5.3. pattern**
 
@@ -47,7 +47,7 @@ Right Hand Side （ RHS ）就是规则的结果（ consequence ）或者动作�
 
 **5.3 Rule Attributes**
 
- ![](http://image.360doc.com/DownloadImg/7147/596025_4.png)
+ ![](https://image.360doc.com/DownloadImg/7147/596025_4.png)
 
  **Figure 5.4. rule attributes**
 
@@ -99,7 +99,7 @@ Agenda group 允许用户对 Agenda 进行分组，以提供更多的执行控�
 
 **5.4 Column**
 
- ![](http://image.360doc.com/DownloadImg/7147/596025_5.png)
+ ![](https://image.360doc.com/DownloadImg/7147/596025_5.png)
 
  **Figure 5.5. Column**
 
@@ -109,7 +109,7 @@ Cheese( type  ==   " stilton " , price  <   10  )
 
 一个 Column 由一个类的一个或多个域约束构成。第一个例子没有约束，它将匹配 WorkingMemory 中所有的 Cheese 实例。第二个例子对于一个 Cheese 对象有两个字面约束（ Literal Constraints ），它们被用“，”号隔开，意味着“ and ”。
 
-![](http://image.360doc.com/DownloadImg/7147/596025_6.png)
+![](https://image.360doc.com/DownloadImg/7147/596025_6.png)
 
  **Figure 5.6. Bound Column**
 
@@ -127,7 +127,7 @@ Field Constraints 使规则引擎可以从 WorkingMemory 中挑选出合适的 F
 注意：如果一个 field 使用原始类型（ primitive type ）， Drools 将会把它们自动装箱成相应的对象（即使你使用 java 1.4 ），但是在 java 1.4 下却不能自动拆箱。总的来说，尽量在 rule 所使用的类中，使用非原始类型的域。如果是使用 java 5 ，就可以比较随意了，因为编译器会帮你执行自动装拆箱。
 
 **5.4.1.1 Operators** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_7.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_7.png)** 
 
  **Figure 5.7. Operators**
 
@@ -139,7 +139,7 @@ Field Constraints 使规则引擎可以从 WorkingMemory 中挑选出合适的 F
 
 注意：你可以检查域是否为 null ，使用 = = 或 != 操作符和字面值‘ null ’关键字。如， Cheese(type != null) 。字面值约束，特别是“ = = ”操作符，提供了非常快的执行速度，因为可以使用散列法来提高性能。
 
-![](http://image.360doc.com/DownloadImg/7147/596025_8.png)
+![](https://image.360doc.com/DownloadImg/7147/596025_8.png)
 
  **Figure 5.8. Literal Constraints**
 
@@ -242,7 +242,7 @@ Cheese( type  ==  likes )
 Cheesery( cheeses contains $stilton )
 
  **5.4.1.4 Predicate Constraints** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_9.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_9.png)** 
 
  **Figure 5.9. Predicate expression**
 
@@ -255,7 +255,7 @@ Predicate 表达式可以使用任何有效的 Java 逻辑表达式。先前的 
 Person( boyAge : age  ->  ( girlAge.intValue()  +   2   ==  boyAge.intValue() ), sex  =   =   " M "  )
 
 **5.4.1.5 Return Value Constraints** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_9.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_9.png)** 
 
  **Figure 5.10. Return Value expression**
 
@@ -273,7 +273,7 @@ Person( age  =   =  (  new  Integer(girlAge.intValue()  +   2 ) ), sex
 Conditional Elements 用来连接一个或多个 Columns 。
 
 **5.5.1 “ and ”** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_11.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_11.png)** 
 
  **Figure 5.11. and**
 
@@ -283,7 +283,7 @@ Conditional Elements 用来连接一个或多个 Columns 。
 Cheese( cheeseType : type ) and Person( favouriteCheese  ==  cheeseType )
 
 **5.5.2 “ or ”** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_12.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_12.png)** 
 
  **Figure 5.12. or**
 
@@ -292,7 +292,7 @@ Cheese( cheeseType : type ) and Person( favouriteCheese  ==  cheeseType
  Person( sex  ==   " f " , age  >   60  )  ||  Person( sex  ==   " m " , age  >   65  )
 Person( sex  ==   " f " , age  >   60  ) or Person( sex  ==   " m " , age  >   65  )
 
- **![](http://image.360doc.com/DownloadImg/7147/596025_13.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_13.png)** 
 
  **Figure 5.13. or with binding**
 
@@ -306,7 +306,7 @@ pensioner : ( Person( sex  ==   " f " , age  >   60  ) or Person( s
 可以将“ OR ” Conditional Element 理解成产生两条规则的快捷方式。因此可以很容易理解，当“ OR ” Conditional Element 两边都为真时，这样的一条规则将可能产生多个 activation 。
 
 **5.5.3 “ eval ”** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_14.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_14.png)** 
 
  **Figure 5.14 . eval**
 
@@ -322,7 +322,7 @@ eval( p1.getList().containsKey(p2.getItem()) )
 eval( isValid(p1, p2) )  // this is how you call a function in the LHS - a function called  // "isValid"
 
 **5.5.4 “ not ”** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_15.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_15.png)** 
 
  **Figure 5.15. not**
 
@@ -338,7 +338,7 @@ eval( isValid(p1, p2) )  // this is how you call a function in the 
 not ( Bus(color  ==   " red " , number  =   =   42 ) )  // brackets are optional
 
 **5.5.5 “ exists ”** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_16.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_16.png)** 
 
  **Figure 5.16. exists**
 
@@ -355,7 +355,7 @@ not ( Bus(color  ==   " red " , number  =   =   42 ) )  // brackets a
      exists Bus(color  ==   " red " )
 
 **5.5.6 “ group ”** 
- **![](http://image.360doc.com/DownloadImg/7147/596025_17.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596025_17.png)** 
 
  **Figure 5.17. group**
 
@@ -369,7 +369,7 @@ Java 5 支持在原始类型与其对应包装类之间的装拆箱。尽管如�
 
 **6** **．** **Query**
 
- ![](http://image.360doc.com/DownloadImg/7147/596025_18.png)
+ ![](https://image.360doc.com/DownloadImg/7147/596025_18.png)
 
  **Figure 6.1 . query**
 

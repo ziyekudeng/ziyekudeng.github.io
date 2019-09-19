@@ -42,12 +42,12 @@ Domain Specific Language 是对原生规则语言的加强。它们使用“ exp
 
 **2.1** **单行注释：**
 
- ![](http://image.360doc.com/DownloadImg/7147/596021_1.png)
+ ![](https://image.360doc.com/DownloadImg/7147/596021_1.png)
 
 **Figure 2.1. Single line comment**
 
 **2.2 多行注释：** 
- **![](http://image.360doc.com/DownloadImg/7147/596021_2.png)** **Figure 2.2. Multi line comment** 
+ **![](https://image.360doc.com/DownloadImg/7147/596021_2.png)** **Figure 2.2. Multi line comment** 
 
 **3\.** **Package**
 
@@ -57,24 +57,24 @@ Domain Specific Language 是对原生规则语言的加强。它们使用“ exp
 
 下面的 rail-road 图显示了组成一个 Package 的所有组件。注意：一个 package 必须有一个命名空间，并且采用 Java 包名的约定。在一个规则文件中，各组件出现的位置是任意的，除了“ package ”和“ expander ”语句必须出现在任何一个规则之前，放在文件的顶部。在任何情况下，分号都是可选的。
 
- ![](http://image.360doc.com/DownloadImg/7147/596021_3.png)
+ ![](https://image.360doc.com/DownloadImg/7147/596021_3.png)
 
 **Figure 3.1. package** **3.1 import** 
- **![](http://image.360doc.com/DownloadImg/7147/596021_4.png)
+ **![](https://image.360doc.com/DownloadImg/7147/596021_4.png)
 Figure 3.2. import** 
 
 Import 语句的使用很像 Java 中的 import 语句。你需要为你要在规则中使用的对象，指定完整的路径和类名。 Drools 自动从相同命名的 java 包中引入所需的类。
 
 **3.2 expander**
 
-**![](http://image.360doc.com/DownloadImg/7147/596021_5.png)** 
+**![](https://image.360doc.com/DownloadImg/7147/596021_5.png)** 
 
 **Figure 3.3. expander**
 
 expander 语句是可选的，是用来指定 Domain Specific Language 的配置（通常是一个 .dsl 文件）。这使得解析器可以理解用你自己的 DSL 语言所写的规则。
 
 **3.3 global** 
- **![](http://image.360doc.com/DownloadImg/7147/596021_6.png)** 
+ **![](https://image.360doc.com/DownloadImg/7147/596021_6.png)** 
 
  **Figure 3.4. global**
 
@@ -86,7 +86,7 @@ Global 就是全局变量。如果多个 package 声明了具有相同标识符�
 
 **4\. Function**
 
-![](http://image.360doc.com/DownloadImg/7147/596021_7.png)
+![](https://image.360doc.com/DownloadImg/7147/596021_7.png)
 **Figure 4.1. function**
 
 Function 是将代码放到你的规则源中的一种方法。它们只能做类似 Helper 类做的事（实际上编译器在背后帮你生成了 Helper 类）。在一个 rule 中使用 function 的主要优势是，你可以保持所有的逻辑都在一个地方，并且你可以根据需要来改变 function （这可能是好事也可能是坏事）。 Function 最有用的就是在规则的 RHS 调用 actions ，特别是当那个 action 需要反复调用的时候。

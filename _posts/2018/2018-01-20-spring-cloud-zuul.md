@@ -150,8 +150,8 @@ public TokenFilter tokenFilter() {
 
 我们依次启动示例项目：`spring-cloud-eureka`、`spring-cloud-producer`、`spring-cloud-zuul`，这个三个项目均为上一篇示例项目，`spring-cloud-zuul`稍微进行改造。
 
-访问地址：`http://localhost:8888/spring-cloud-producer/hello?name=neo`，返回：token is empty ，请求被拦截返回。  
-访问地址：`http://localhost:8888/spring-cloud-producer/hello?name=neo&token=xx`，返回：hello neo，this is first messge，说明请求正常响应。
+访问地址：`https://localhost:8888/spring-cloud-producer/hello?name=neo`，返回：token is empty ，请求被拦截返回。  
+访问地址：`https://localhost:8888/spring-cloud-producer/hello?name=neo&token=xx`，返回：hello neo，this is first messge，说明请求正常响应。
 
 通过上面这例子我们可以看出，我们可以使用“PRE"类型的Filter做很多的验证工作，在实际使用中我们可以结合shiro、oauth2.0等技术去做鉴权、验证。
 
@@ -244,7 +244,7 @@ public class ProducerFallback implements FallbackProvider {
 
 当服务出现异常时，打印相关异常信息，并返回"The service is unavailable."。
 
-启动项目spring-cloud-producer-2，这时候服务中心会有两个spring-cloud-producer项目，我们重启Zuul项目。再手动关闭spring-cloud-producer-2项目，多次访问地址：`http://localhost:8888/spring-cloud-producer/hello?name=neo&token=xx`，会交替返回：
+启动项目spring-cloud-producer-2，这时候服务中心会有两个spring-cloud-producer项目，我们重启Zuul项目。再手动关闭spring-cloud-producer-2项目，多次访问地址：`https://localhost:8888/spring-cloud-producer/hello?name=neo&token=xx`，会交替返回：
 
 ```
 hello neo，this is first messge
@@ -305,7 +305,7 @@ public String index(@RequestParam String name) {
 
 重启 spring-cloud-producer-2和spring-cloud-zuul项目。
 
-访问地址：`http://localhost:8888/spring-cloud-producer/hello?name=neo&token=xx`，当页面返回：`The service is unavailable.`时查看项目spring-cloud-producer-2后台日志如下：
+访问地址：`https://localhost:8888/spring-cloud-producer/hello?name=neo&token=xx`，当页面返回：`The service is unavailable.`时查看项目spring-cloud-producer-2后台日志如下：
 
 ```
 2018-01-22 19:50:32.401  INFO 19488 --- [io-9001-exec-14] o.s.c.n.z.f.route.FallbackProvider       : request two name is neo
@@ -335,7 +335,6 @@ public String index(@RequestParam String name) {
 
 **参考：**
 
-[Spring Cloud（七）服务网关 Zuul Filter 使用](http://www.ymq.io/2017/12/11/spring-cloud-zuul-filter/)       
-[Spring Cloud技术分析（4）- spring cloud zuul](http://tech.lede.com/2017/05/16/rd/server/SpringCloudZuul/)     
+[Spring Cloud（七）服务网关 Zuul Filter 使用](https://www.ymq.io/2017/12/11/spring-cloud-zuul-filter/)       
+[Spring Cloud技术分析（4）- spring cloud zuul](https://tech.lede.com/2017/05/16/rd/server/SpringCloudZuul/)     
 [Zuul 路由使用](https://xli1224.github.io/2017/09/09/use-zuul/)    
- 

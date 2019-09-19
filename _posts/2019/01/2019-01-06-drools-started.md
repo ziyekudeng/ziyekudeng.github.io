@@ -230,8 +230,8 @@ kmodule.xml内容如下：
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
-<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://www.drools.org/xsd/kmodule">
+<kmodule xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://www.drools.org/xsd/kmodule">
 
     <kbase name="point-rulesKB" packages="rules">
         <ksession name="point-rulesKS"/>
@@ -294,6 +294,6 @@ end
 > 本篇文章算是对drools的简单介绍，后续文章将详细介绍drools的使用。
 
 参考：  
-[专栏：drools规则引擎](http://blog.csdn.net/column/details/16183.html)
+[专栏：drools规则引擎](https://blog.csdn.net/column/details/16183.html)
 
 

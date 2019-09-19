@@ -365,9 +365,9 @@ no
 
 需要了解Maven及GAV，参见：
 
-[http://blog.csdn.net/smallfish25/article/details/12420913](http://blog.csdn.net/smallfish25/article/details/12420913)
+[https://blog.csdn.net/smallfish25/article/details/12420913](https://blog.csdn.net/smallfish25/article/details/12420913)
 
-[http://blog.csdn.net/wanghantong/article/details/36427165](http://blog.csdn.net/wanghantong/article/details/36427165)
+[https://blog.csdn.net/wanghantong/article/details/36427165](https://blog.csdn.net/wanghantong/article/details/36427165)
 
 表11.4\. 示例
 

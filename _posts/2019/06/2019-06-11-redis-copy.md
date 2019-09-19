@@ -9,7 +9,7 @@ tags: [redis]
 
 ## Redis 主从复制以及主从复制原理
 
-来源：http://t.cn/Efr5fc0
+来源：https://t.cn/Efr5fc0
 
 > *   概述
 >     

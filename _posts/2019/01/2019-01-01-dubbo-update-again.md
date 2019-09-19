@@ -7,7 +7,7 @@ tags: [dubbo]
 
 最近，开源社区发生了一件大事，那个全国 Java 开发者使用最广的开源服务框架 Dubbo 低调重启维护，并且 3 个月连续发布了 4 个维护版本。
 
-我上次在写[放弃Dubbo，选择最流行的Spring Cloud微服务架构实践与经验总结](http://mp.weixin.qq.com/s/bciSlKearaVFQg1QWOSn_g)这篇文章的时候，就有很多的网友给我留言说，Dubbo 又开始更新了。我当然是清楚的，我也一直在关注着 Dubbo 的走向，在几个月前技术圈里面就有一个消息说是 Dubbo 又开始更新了，大家议论纷纷不知真伪。我还专门跑到 GitHub 上面进行了留言询问，最后在 Dubbo 的 gitter 聊天室里面找到了确信的答案，说是正在组建团队。虽然稍稍有所期待，但也不知道阿里这次拿出了多少的诚意来做这件事，于是我昨天又到 GitHub 逛了一下，发现从 9 月开始，阿里三个月连着发布了四个版本，还是非常有诚意的，值得关注。
+我上次在写[放弃Dubbo，选择最流行的Spring Cloud微服务架构实践与经验总结](https://mp.weixin.qq.com/s/bciSlKearaVFQg1QWOSn_g)这篇文章的时候，就有很多的网友给我留言说，Dubbo 又开始更新了。我当然是清楚的，我也一直在关注着 Dubbo 的走向，在几个月前技术圈里面就有一个消息说是 Dubbo 又开始更新了，大家议论纷纷不知真伪。我还专门跑到 GitHub 上面进行了留言询问，最后在 Dubbo 的 gitter 聊天室里面找到了确信的答案，说是正在组建团队。虽然稍稍有所期待，但也不知道阿里这次拿出了多少的诚意来做这件事，于是我昨天又到 GitHub 逛了一下，发现从 9 月开始，阿里三个月连着发布了四个版本，还是非常有诚意的，值得关注。
 
 ## Dubbo简介
 
@@ -184,5 +184,5 @@ MonitorService初次调用，如遇zk不可达，当前版本会忽略monitor数
 
 最后，技术选型是一个综合的问题，需要考虑团队的情况、业务的发展以及公司的产品特征。最炫最酷的技术并不一定是最好的，选择适合自己团队、符合公司业务的框架才是最佳方案。技术的发展永远没有尽头，因此我们对技术也要保持空杯、保持饥饿、保持敬畏！
 
-原文出处[阿里Dubbo疯狂更新，关Spring Cloud什么事？](http://mp.weixin.qq.com/s/aYlHAXNbwiXq7DPFOYTK6A)
+原文出处[阿里Dubbo疯狂更新，关Spring Cloud什么事？](https://mp.weixin.qq.com/s/aYlHAXNbwiXq7DPFOYTK6A)
 

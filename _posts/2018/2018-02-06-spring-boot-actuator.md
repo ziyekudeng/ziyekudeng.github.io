@@ -123,7 +123,7 @@ info:
 
 Spring Boot的自动配置功能非常便利，但有时候也意味着出问题比较难找出具体的原因。使用 autoconfig 可以在应用运行时查看代码了某个配置在什么条件下生效，或者某个自动配置为什么没有生效。
 
-启动示例项目，访问：`http://localhost:8088/monitor/autoconfig`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/autoconfig`返回部分信息如下：
 
 ``` json
 {
@@ -159,7 +159,7 @@ Spring Boot的自动配置功能非常便利，但有时候也意味着出问题
 
 查看配置文件中设置的属性内容，以及一些配置属性的默认值。
 
-启动示例项目，访问：`http://localhost:8088/monitor/configprops`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/configprops`返回部分信息如下：
 
 ``` json
 {
@@ -199,7 +199,7 @@ Spring Boot的自动配置功能非常便利，但有时候也意味着出问题
 
 根据示例就可以看出，展示了bean的别名、类型、是否单例、类的地址、依赖等信息。
 
-启动示例项目，访问：`http://localhost:8088/monitor/beans`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/beans`返回部分信息如下：
 
 
 ``` json
@@ -241,7 +241,7 @@ Spring Boot的自动配置功能非常便利，但有时候也意味着出问题
 /dump 接口会生成当前线程活动的快照。这个功能非常好，方便我们在日常定位问题的时候查看线程的情况。
 主要展示了线程名、线程ID、线程的状态、是否等待锁资源等信息。
 
-启动示例项目，访问：`http://localhost:8088/monitor/dump`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/dump`返回部分信息如下：
 
 ``` json
 [
@@ -337,7 +337,7 @@ Spring Boot的自动配置功能非常便利，但有时候也意味着出问题
 
 展示了系统环境变量的配置信息，包括使用的环境变量、JVM 属性、命令行参数、项目使用的jar包等信息。和configprops不同的是，configprops关注于配置信息，env关注运行环境信息。
 
-启动示例项目，访问：`http://localhost:8088/monitor/env`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/env`返回部分信息如下：
 
 ``` json
 {
@@ -358,7 +358,7 @@ Spring Boot的自动配置功能非常便利，但有时候也意味着出问题
     "sun.boot.library.path": "C:\\Program Files\\Java\\jdk1.8.0_101\\jre\\bin",
     "java.vm.version": "25.101-b13",
     "java.vm.vendor": "Oracle Corporation",
-    "java.vendor.url": "http://java.oracle.com/",
+    "java.vendor.url": "https://java.oracle.com/",
     "java.rmi.server.randomIDs": "true",
     "path.separator": ";",
     "java.vm.name": "Java HotSpot(TM) 64-Bit Server VM",
@@ -378,14 +378,14 @@ Spring Boot的自动配置功能非常便利，但有时候也意味着出问题
 
 **/env/{name}**用法
 
-就是env的扩展 可以获取指定配置信息，比如：`http://localhost:8088/monitor/env/java.vm.version`,返回：`{"java.vm.version":"25.101-b13"}`
+就是env的扩展 可以获取指定配置信息，比如：`https://localhost:8088/monitor/env/java.vm.version`,返回：`{"java.vm.version":"25.101-b13"}`
 
 
 ###  health
 
 可以看到 HealthEndPoint 给我们提供默认的监控结果，包含 磁盘检测和数据库检测
 
-启动示例项目，访问：`http://localhost:8088/monitor/health`返回部分信息，下面的JSON响应是由状态、磁盘空间和db。描述了应用程序的整体健康状态,UP 表明应用程序是健康的。磁盘空间描述总磁盘空间,剩余的磁盘空间和最小阈值。`application.properties`阈值是可配置的
+启动示例项目，访问：`https://localhost:8088/monitor/health`返回部分信息，下面的JSON响应是由状态、磁盘空间和db。描述了应用程序的整体健康状态,UP 表明应用程序是健康的。磁盘空间描述总磁盘空间,剩余的磁盘空间和最小阈值。`application.properties`阈值是可配置的
 
 ``` json
 {
@@ -419,7 +419,7 @@ info:
 ```
 
 
-启动示例项目，访问：`http://localhost:8088/monitor/info`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/info`返回部分信息如下：
 
 ``` json
 {
@@ -434,7 +434,7 @@ info:
 
 描述全部的URI路径，以及它们和控制器的映射关系
 
-启动示例项目，访问：`http://localhost:8088/monitor/mappings`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/mappings`返回部分信息如下：
 
 ``` json
 {
@@ -457,7 +457,7 @@ info:
 
 最重要的监控内容之一，主要监控了JVM内容使用、GC情况、类加载信息等。
 
-启动示例项目，访问：`http://localhost:8088/monitor/metrics`返回部分信息如下：
+启动示例项目，访问：`https://localhost:8088/monitor/metrics`返回部分信息如下：
 
 ``` json
 {
@@ -515,7 +515,7 @@ info:
 
 - 这里还有几个特殊的值需要注意。root路径指向的是根路径或/。star-star代表了那些Spring 认为是静态资源的路径，包括图片、JavaScript和样式表，其中还包含了那些找不到的资源。这就是为什么你经常会看到 counter.status.404.star-star，这是返回了HTTP 404 (NOT FOUND) 状态的请求数。　　
 
-- `/metrics`接口会返回所有的可用度量值，但你也可能只对某个值感兴趣。要获取单个值，请求时可以在URL后加上对应的键名。例如，要查看空闲内存大小,可以向`/metrics/mem.free`发一 个GET请求。例如访问：`http://localhost:8088/monitor/metrics/mem.free`，返回：`{"mem.free":178123}`。
+- `/metrics`接口会返回所有的可用度量值，但你也可能只对某个值感兴趣。要获取单个值，请求时可以在URL后加上对应的键名。例如，要查看空闲内存大小,可以向`/metrics/mem.free`发一 个GET请求。例如访问：`https://localhost:8088/monitor/metrics/mem.free`，返回：`{"mem.free":178123}`。
 
 
 ### shutdown
@@ -528,7 +528,7 @@ endpoints:
     enabled: true
 ```
 
-配置完成之后，启动示例项目，访问：`http://localhost:8088/monitor/shutdown`返回部分信息如下：
+配置完成之后，启动示例项目，访问：`https://localhost:8088/monitor/shutdown`返回部分信息如下：
 
 ``` json
 {
@@ -543,7 +543,7 @@ endpoints:
 
 /trace 接口能报告所有Web请求的详细信息，包括请求方法、路径、时间戳以及请求和响应的头信息，记录每一次请求的详细信息。
 
-启动示例项目，先访问一次：`http://localhost:8080/hello`，再到浏览器执行：`http://localhost:8088/monitor/trace`查看返回信息：
+启动示例项目，先访问一次：`https://localhost:8080/hello`，再到浏览器执行：`https://localhost:8088/monitor/trace`查看返回信息：
 
 ``` json
 [
@@ -616,7 +616,7 @@ endpoints.metrics.enabled = true
 ## 参考
 
 [Spring Boot Actuator: Production-ready features](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready)  
-[对没有监控的微服务Say No！](http://mp.163.com/v2/article/detail/D7SQCHGT0511FQO9.html)    
+[对没有监控的微服务Say No！](https://mp.163.com/v2/article/detail/D7SQCHGT0511FQO9.html)    
 [Spring Boot Actuator 使用](https://www.jianshu.com/p/af9738634a21)
 
 

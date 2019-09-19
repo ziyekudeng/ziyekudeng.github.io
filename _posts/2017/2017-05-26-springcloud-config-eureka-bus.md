@@ -74,7 +74,7 @@ spring.rabbitmq.password=123456
  
 ![](https://ziyekudeng.github.io/assets/images/2017/springcloud/configbus3.jpg)
 
-我们先分别测试一下服务端和客户端是否正确运行，访问：```http://localhost:8001/neo-config/dev```，返回信息：
+我们先分别测试一下服务端和客户端是否正确运行，访问：```https://localhost:8001/neo-config/dev```，返回信息：
 
 ```
 {
@@ -98,15 +98,15 @@ spring.rabbitmq.password=123456
 
 说明server端都正常读取到了配置信息。
 
-依次访问：```http://localhost:8002/hello```、```http://localhost:8003/hello```、```http://localhost:8004/hello```，返回：```hello im dev```。说明客户端都已经读取到了server端的内容。
+依次访问：```https://localhost:8002/hello```、```https://localhost:8003/hello```、```https://localhost:8004/hello```，返回：```hello im dev```。说明客户端都已经读取到了server端的内容。
 
-现在我们更新```neo-config-dev.properties``` 中```neo.hello```的值为```hello im dev update```并提交到代码库中，访问：```http://localhost:8002/hello``` 依然返回```hello im dev```。我们对端口为8002的客户端发送一个```/bus/refresh```的post请求。在win下使用下面命令来模拟webhook.
+现在我们更新```neo-config-dev.properties``` 中```neo.hello```的值为```hello im dev update```并提交到代码库中，访问：```https://localhost:8002/hello``` 依然返回```hello im dev```。我们对端口为8002的客户端发送一个```/bus/refresh```的post请求。在win下使用下面命令来模拟webhook.
 
 ```
-curl -X POST http://localhost:8002/bus/refresh
+curl -X POST https://localhost:8002/bus/refresh
 ```
 
-执行完成后，依次访问：```http://localhost:8002/hello```、```http://localhost:8003/hello```、```http://localhost:8004/hello```，返回：```hello im dev update```。说明三个客户端均已经拿到了最新配置文件的信息，这样我们就实现了图一中的示例。
+执行完成后，依次访问：```https://localhost:8002/hello```、```https://localhost:8003/hello```、```https://localhost:8004/hello```，返回：```hello im dev update```。说明三个客户端均已经拿到了最新配置文件的信息，这样我们就实现了图一中的示例。
 
 
 ## 改进版本
@@ -182,7 +182,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
+      defaultZone: https://localhost:8000/eureka/   ## 注册中心eurka地址
 
 
 management:
@@ -200,10 +200,10 @@ management:
 按照上面的测试方式，访问server端和三个客户端测试均可以正确返回信息。同样修改```neo-config-dev.properties``` 中```neo.hello```的值为```hello im dev update```并提交到代码库中。在win下使用下面命令来模拟webhook触发server端```bus/refresh```.
 
 ```
-curl -X POST http://localhost:8001/bus/refresh
+curl -X POST https://localhost:8001/bus/refresh
 ```
 
-执行完成后，依次访问：```http://localhost:8002/hello```、```http://localhost:8003/hello```、```http://localhost:8004/hello```，返回：```hello im dev update```。说明三个客户端均已经拿到了最新配置文件的信息，这样我们就实现了上图中的示例。
+执行完成后，依次访问：```https://localhost:8002/hello```、```https://localhost:8003/hello```、```https://localhost:8004/hello```，返回：```hello im dev update```。说明三个客户端均已经拿到了最新配置文件的信息，这样我们就实现了上图中的示例。
 
 
 
@@ -297,9 +297,9 @@ BUG的讨论和解决过程可以看github上面这两个issue:
 参考：
 
 
-[Config Server——使用Spring Cloud Bus自动刷新配置](http://www.itmuch.com/spring-cloud/spring-cloud-bus-auto-refresh-configuration/)
+[Config Server——使用Spring Cloud Bus自动刷新配置](https://www.itmuch.com/spring-cloud/spring-cloud-bus-auto-refresh-configuration/)
 
-[Spring Cloud构建微服务架构（七）消息总线](http://blog.didispace.com/springcloud7/)
+[Spring Cloud构建微服务架构（七）消息总线](https://blog.didispace.com/springcloud7/)
 
 
 **[示例代码-github](https://github.com/ityouknow/spring-cloud-examples)**

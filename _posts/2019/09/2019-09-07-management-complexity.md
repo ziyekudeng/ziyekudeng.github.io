@@ -9,7 +9,7 @@ tags: [life]
 
 # 高级人才的价值在于管理复杂性的能力
 
-[文章转载自公众号 ![敏于思 捷于行](http://wx.qlogo.cn/mmhead/Q3auHgzwzM7YE6Qmfgtq5cwpRH9cNlcJm22su7IC9jCibpibpmRQJOhw/0)  敏于思 捷于行 ，  作者 刘华Kenneth](##) 
+[文章转载自公众号 ![敏于思 捷于行](https://wx.qlogo.cn/mmhead/Q3auHgzwzM7YE6Qmfgtq5cwpRH9cNlcJm22su7IC9jCibpibpmRQJOhw/0)  敏于思 捷于行 ，  作者 刘华Kenneth](##) 
 
 
 

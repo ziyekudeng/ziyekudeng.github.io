@@ -12,7 +12,7 @@ keywords: 架构
 ## 35个可以飞快提高千倍效率的Java语言代码小技巧，你值得拥有！
 
 
-### _来源:http://atjf.top/3WLPmG  _
+### _来源:https://atjf.top/3WLPmG  _
 
 ### 前言
 

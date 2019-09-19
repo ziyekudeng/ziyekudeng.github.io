@@ -19,7 +19,7 @@ tags: [tools]
 
 4、Java人员正确使用 IntelliJ IDEA的方式
 
-[http://tengj.top/2017/02/22/idea1-1/](http://tengj.top/2017/02/22/idea1-1/)
+[https://tengj.top/2017/02/22/idea1-1/](https://tengj.top/2017/02/22/idea1-1/)
 
 5、Intellij IDEA代码框使用自定义背景图片
 

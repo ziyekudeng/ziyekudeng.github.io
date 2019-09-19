@@ -74,7 +74,7 @@ tomcatEmbedded这段代码是为了解决，上传文件大于10M出现连接重
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springboot/connect_rest.png)
 
-详细内容参考：[Tomcat large file upload connection reset](http://www.mkyong.com/spring/spring-file-upload-and-connection-reset-issue/)
+详细内容参考：[Tomcat large file upload connection reset](https://www.mkyong.com/spring/spring-file-upload-and-connection-reset-issue/)
 
 ## 3、编写前端页面
 
@@ -82,7 +82,7 @@ tomcatEmbedded这段代码是为了解决，上传文件大于10M出现连接重
 
 ``` html
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org">
 <body>
 <h1>Spring Boot file upload example</h1>
 <form method="POST" action="/upload" enctype="multipart/form-data">
@@ -101,7 +101,7 @@ tomcatEmbedded这段代码是为了解决，上传文件大于10M出现连接重
 
 ``` html
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <body>
 <h1>Spring Boot - Upload Status</h1>
 <div th:if="${message}">
@@ -196,7 +196,7 @@ public class GlobalExceptionHandler {
 
 **参考**：
 
-[Spring Boot file upload example](http://www.mkyong.com/spring-boot/spring-boot-file-upload-example/)
+[Spring Boot file upload example](https://www.mkyong.com/spring-boot/spring-boot-file-upload-example/)
 
 **[示例代码-github](https://github.com/ityouknow/spring-boot-examples)**
 

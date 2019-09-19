@@ -100,13 +100,13 @@ public interface HelloRemote {
 
 依次启动spring-cloud-eureka、spring-cloud-producer、spring-cloud-consumer三个项目。
 
-浏览器中输入：```http://localhost:9001/hello/neo```  
+浏览器中输入：```https://localhost:9001/hello/neo```  
 
 返回：```hello neo，this is first messge``` 
 
 说明加入熔断相关信息后，不影响正常的访问。接下来我们手动停止spring-cloud-producer项目再次测试：
 
-浏览器中输入：```http://localhost:9001/hello/neo```  
+浏览器中输入：```https://localhost:9001/hello/neo```  
 
 返回：```hello neo, this messge send failed``` 
 
@@ -122,7 +122,7 @@ public interface HelloRemote {
 
 [使用Spring Cloud与Docker实战微服务](https://www.gitbook.com/book/eacdy/spring-cloud-book/details)
 
-[微服务框架Spring Cloud介绍 Part5: 在微服务系统中使用Hystrix, Hystrix Dashboard与Turbine](http://skaka.me/blog/2016/09/04/springcloud5/)
+[微服务框架Spring Cloud介绍 Part5: 在微服务系统中使用Hystrix, Hystrix Dashboard与Turbine](https://skaka.me/blog/2016/09/04/springcloud5/)
 
 -------------
 **作者：纯洁的微笑**  

@@ -7,7 +7,7 @@ tags: [java]
 
 
 
-和同学接了个外包的活，由于项目中很多地方要用到poi导出excel，而每次导出都要写很多相同的代码，因为poi的cell.setCellValue();每次设置的都是不同实体bean的属性值，导致代码里很多重复的值，我在想有没有可以自动装载bean的属性及属性值的方法。首先想到的肯定是反射，但是自己写了一下没写出来，so上网查了一下，发现了这个方法，感觉不错，就记录下来了。原文链接[http://blog.csdn.net/dongzhouzhou/article/details/8446782](http://blog.csdn.net/dongzhouzhou/article/details/8446782)
+和同学接了个外包的活，由于项目中很多地方要用到poi导出excel，而每次导出都要写很多相同的代码，因为poi的cell.setCellValue();每次设置的都是不同实体bean的属性值，导致代码里很多重复的值，我在想有没有可以自动装载bean的属性及属性值的方法。首先想到的肯定是反射，但是自己写了一下没写出来，so上网查了一下，发现了这个方法，感觉不错，就记录下来了。原文链接[https://blog.csdn.net/dongzhouzhou/article/details/8446782](https://blog.csdn.net/dongzhouzhou/article/details/8446782)
 
 原文的代码如下
     

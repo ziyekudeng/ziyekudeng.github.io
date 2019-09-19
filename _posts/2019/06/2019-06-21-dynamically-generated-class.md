@@ -65,13 +65,13 @@ Java是一门静态语言，通常，我们需要的class在编译的时候就�
 
 现在问题来了，动态生成字节码，难度有多大？
 
-如果我们要自己直接输出二进制格式的字节码，在完成这个任务前，必须先认真阅读[JVM规范第4章](http://docs.oracle.com/javase/specs/jvms/se7/html/jvms-4.html)，详细了解class文件结构。估计读完规范后，两个月过去了。
+如果我们要自己直接输出二进制格式的字节码，在完成这个任务前，必须先认真阅读[JVM规范第4章](https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-4.html)，详细了解class文件结构。估计读完规范后，两个月过去了。
 
 所以，第一种方法，自己动手，从零开始创建字节码，理论上可行，实际上很难。
 
 第二种方法，使用已有的一些能操作字节码的库，帮助我们创建class。
 
-目前，能够操作字节码的开源库主要有[CGLib](https://github.com/cglib/cglib)和[Javassist](http://jboss-javassist.github.io/javassist/)两种，它们都提供了比较高级的API来操作字节码，最后输出为class文件。
+目前，能够操作字节码的开源库主要有[CGLib](https://github.com/cglib/cglib)和[Javassist](https://jboss-javassist.github.io/javassist/)两种，它们都提供了比较高级的API来操作字节码，最后输出为class文件。
 
 比如CGLib，典型的用法如下：
 

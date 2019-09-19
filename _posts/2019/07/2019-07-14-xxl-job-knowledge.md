@@ -29,7 +29,7 @@ keywords: 架构
 ****现已开放源代码并接入多家公司线上产品线，开箱即用。****
 
 
-[中文文档地址](http://www.xuxueli.com/xxl-job/#/)
+[中文文档地址](https://www.xuxueli.com/xxl-job/#/)
 
 ****XXL-JOB****
 

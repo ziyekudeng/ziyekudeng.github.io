@@ -74,9 +74,9 @@ tags: [tools]
 
 ![](https://images2018.cnblogs.com/blog/1303698/201803/1303698-20180306164039223-1396985426.png)
 
-然后就可以访问项目了  http://IP:PORT/ProjectName
+然后就可以访问项目了  https://IP:PORT/ProjectName
 
-http://172.150.13.24:7001/jenkins_webdemo
+https://172.150.13.24:7001/jenkins_webdemo
 
  ![](../skins/gray/images/speech.gif) posted on 2018-03-06 16:43 [阿叮339](https://www.cnblogs.com/DFX339/) 阅读(...) 评论(...) [编辑](https://i.cnblogs.com/EditPosts.aspx?postid=8515200) [收藏](#)
 

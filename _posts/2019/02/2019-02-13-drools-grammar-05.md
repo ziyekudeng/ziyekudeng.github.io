@@ -86,6 +86,6 @@ end template</code>**完整的规则模板的说明**
 
  row/col表示行/列，引用xls的话 该值是不能省略的。
 
-还有一种不通过 xls引用的方式来实现 规则模板 请参考：http://blog.csdn.net/u013115157/article/details/52029258
+还有一种不通过 xls引用的方式来实现 规则模板 请参考：https://blog.csdn.net/u013115157/article/details/52029258
 
 

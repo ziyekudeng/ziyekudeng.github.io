@@ -100,7 +100,7 @@ Message(status==0 || (status > 1 && status <=100))
 RHS中对Fact对象private属性的操作必须使用getter和setter方法，而RHS中则必须要直接用.的方法去使用，比如
 
   $order:Order(name=="qu")
-  $message:Message(status==0 && orders contains $order && $[order.name](http://order.name/)=="qu")
+  $message:Message(status==0 && orders contains $order && $[order.name](https://order.name/)=="qu")
 
 特别的是，如果条件全部是 &&关系，可以使用“,”来替代，但是两者不能混用
 

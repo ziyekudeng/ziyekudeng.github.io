@@ -10,10 +10,10 @@ tags: [drools]
 其实Drools6有挺多优秀的入门学习资料了，按理说没必要在重复别人的内容了。不过由于项目的需要，需要对Drools有个透彻的了解甚至说现有的中文资料都没法支持我把需求做出来，所以还是把基础打扎实把。
 所以什么是规则引擎，什么是Drools，就都先参考下以下资料吧。
 
-Drools5官方中文文档（供参考）：[http://pan.baidu.com/s/1sj6uoQp](http://pan.baidu.com/s/1sj6uoQp)
-Drools6的入门资料：[http://blog.xiongzhijun.com/?cat=48](http://blog.xiongzhijun.com/?cat=48)
-Drools-6.1.0.Final 入门文档：[http://pan.baidu.com/s/1bnuB4fl](http://pan.baidu.com/s/1bnuB4fl)
-Drools6官方文档：[http://docs.jboss.org/drools/release/6.1.0.Final/drools-docs/html_single/index.html](http://docs.jboss.org/drools/release/6.1.0.Final/drools-docs/html_single/index.html)
+Drools5官方中文文档（供参考）：[https://pan.baidu.com/s/1sj6uoQp](https://pan.baidu.com/s/1sj6uoQp)
+Drools6的入门资料：[https://blog.xiongzhijun.com/?cat=48](https://blog.xiongzhijun.com/?cat=48)
+Drools-6.1.0.Final 入门文档：[https://pan.baidu.com/s/1bnuB4fl](https://pan.baidu.com/s/1bnuB4fl)
+Drools6官方文档：[https://docs.jboss.org/drools/release/6.1.0.Final/drools-docs/html_single/index.html](https://docs.jboss.org/drools/release/6.1.0.Final/drools-docs/html_single/index.html)
 
 个人认为Drools6与Drools5使用上的差距还是很大的，很多用法都已经被统一与简化了，所以Drools5的资料可以作为参考但是相应的例子估计都跑不起来了。
 Drools6的官方文档很强大，不过个人认为作为进阶学习的资料不错。
