@@ -34,17 +34,6 @@ var windowScroll = function () {
  });
 };
 
-function headerSubmenu() {
-    $('.site-header-nav').find('.site-header-nav-item').each(function() {
-        $(this).hover(function() {
-            $(this).find('.submenu').show()
-        }, function() {
-            $(this).find('.submenu').hide()
-        })
-    })
-};
-
 $( document ).ready(function() {
     windowScroll();
-    headerSubmenu();
 });
