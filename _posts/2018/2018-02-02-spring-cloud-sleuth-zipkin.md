@@ -86,7 +86,7 @@ public class ZipkinApplication {
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 server:
   port: 9000
 spring:
@@ -94,7 +94,7 @@ spring:
     name: zipkin-server
 ```
 
-配置完成后依次启动示例项目：`spring-cloud-eureka`、`zipkin-server`项目。刚问地址:`https://localhost:9000/zipkin/`可以看到Zipkin后台页面
+配置完成后依次启动示例项目：`spring-cloud-eureka`、`zipkin-server`项目。刚问地址:`http://localhost:9000/zipkin/`可以看到Zipkin后台页面
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springcloud/tracing3.png)
 
@@ -116,7 +116,7 @@ Spring应用在监测到Java依赖包中有sleuth和zipkin后，会自动在Rest
 ``` xml
 spring:
   zipkin:
-    base-url: https://localhost:9000
+    base-url: http://localhost:9000
   sleuth:
     sampler:
       percentage: 1.0
@@ -132,8 +132,8 @@ Spring Cloud Sleuth有一个Sampler策略，可以通过这个实现类来控制
 
 这样我们就模拟了这样一个场景，通过外部请求访问Zuul网关，Zuul网关去调用`spring-cloud-producer`对外提供的服务。
 
-四个项目均启动后，在浏览器中访问地址：`https://localhost:8888/producer/hello?name=neo` 两次，然后再打开地址：
-`https://localhost:9000/zipkin/`点击对应按钮进行查看。
+四个项目均启动后，在浏览器中访问地址：`http://localhost:8888/producer/hello?name=neo` 两次，然后再打开地址：
+`http://localhost:9000/zipkin/`点击对应按钮进行查看。
 
 点击查找看到有两条记录
 
@@ -155,4 +155,4 @@ Spring Cloud Sleuth有一个Sampler策略，可以通过这个实现类来控制
 
 **参考：**
 
-[分布式服务跟踪及Spring Cloud的实现](https://daixiaoyu.com/distributed-tracing.html)       
+[分布式服务跟踪及Spring Cloud的实现](http://daixiaoyu.com/distributed-tracing.html)       

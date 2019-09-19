@@ -221,7 +221,7 @@ Q1：Dubbo Ecosystem会有独立的官网么？
 
 
 
-A1：Dubbo Ecosystem目前不会单独设立官网，我们会在 https://dubbo.apache.org 上线一个入口，介绍Dubbo Ecosystem的所有组件、各自的关系及推荐的整合方案。
+A1：Dubbo Ecosystem目前不会单独设立官网，我们会在 http://dubbo.apache.org 上线一个入口，介绍Dubbo Ecosystem的所有组件、各自的关系及推荐的整合方案。
 
 
 

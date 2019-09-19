@@ -30,7 +30,7 @@ tags: [mongodb]
 
 ![](https://img-blog.csdn.net/20171226153025925)
 
-4、在浏览器中输入[https://localhost:27017/](https://localhost:27017/)即可看到显示信息为：
+4、在浏览器中输入[http://localhost:27017/](http://localhost:27017/)即可看到显示信息为：
 
 ![](https://img-blog.csdn.net/20171226153156099)
 

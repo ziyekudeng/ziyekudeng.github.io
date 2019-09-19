@@ -205,7 +205,7 @@ public class SessionConfig {
 t<spring:session:sessions:db031986-8ecc-48d6-b471-b137a3ed6bc4
 t(spring:session:expirations:1472976480000
 ```
-其中 1472976480000为失效时间，意思是这个时间后session失效，``` db031986-8ecc-48d6-b471-b137a3ed6bc4 ``` 为sessionId,登录https://localhost:8080/uid 发现会一致，就说明session 已经在redis里面进行有效的管理了。
+其中 1472976480000为失效时间，意思是这个时间后session失效，``` db031986-8ecc-48d6-b471-b137a3ed6bc4 ``` 为sessionId,登录http://localhost:8080/uid 发现会一致，就说明session 已经在redis里面进行有效的管理了。
 
 
 ### 如何在两台或者多台中共享session
@@ -219,7 +219,7 @@ t(spring:session:expirations:1472976480000
 
 ## 参考
 
-[Redis的两个典型应用场景](https://emacoo.cn/blog/spring-redis)<br/>
+[Redis的两个典型应用场景](http://emacoo.cn/blog/spring-redis)<br/>
 [SpringBoot应用之分布式会话](https://segmentfault.com/a/1190000004358410)
 
 

@@ -15,7 +15,7 @@ KIE目前包括以下子项目：
 
 Figure 4.1\. KIE 全貌
 
-![KIE Anatomy](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KIE Anatomy](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 OptaPlanner，本地搜索和优化工具，已经从Drools Planner剥离出来，现在是Drools和jBPM的一个顶级项目。OptaPlanner是自然演变出来的，一直以来都相对Drools独立，又能与Drools非常强的整合在一起。
 
@@ -51,7 +51,7 @@ Utilize（使用，利用）
 
 加载一个JAR，提供一个KIE session（KieSession），这样的话，程序就可以与之交互
 
-在运行时通过KIE [Container](https://lib.csdn.net/base/4 "Docker知识库")（KieContainer）解压JAR包。
+在运行时通过KIE [Container](http://lib.csdn.net/base/4 "Docker知识库")（KieContainer）解压JAR包。
 
 用于运行时交互的KieSession，是从KieContainer中创建的。
 
@@ -73,7 +73,7 @@ Manage（管理）
 
 6.0引入新的配置和约定方法，用于构建知识基础，替代5.X中的使用的代码构建方式。构建者依然可以回退，因为它是用于工具集成。
 
-现在使用Maven构建，用法与Maven实践一致。一个KIE项目或模块，同时也是一个Maven [Java](https://lib.csdn.net/base/17 "Java EE知识库")项目或模块；增加一个额外的元数据文件，名称为META-INF/kmodule.xml。这个kmodule.xml文件用于指定知识基础（knowledge base）对应的资源文件，并配置知识对应的base和session。这个配置也可以选择[spring](https://lib.csdn.net/base/17 "Java EE知识库")和OSCi BluePrints的XML。
+现在使用Maven构建，用法与Maven实践一致。一个KIE项目或模块，同时也是一个Maven [Java](http://lib.csdn.net/base/17 "Java EE知识库")项目或模块；增加一个额外的元数据文件，名称为META-INF/kmodule.xml。这个kmodule.xml文件用于指定知识基础（knowledge base）对应的资源文件，并配置知识对应的base和session。这个配置也可以选择[spring](http://lib.csdn.net/base/17 "Java EE知识库")和OSCi BluePrints的XML。
 
 标准的Maven可以构建并打包KIE资源，但并不在构建时校验。有一个Maven插件可以提供建构时的校验，建议使用。该插件还可以生成很多类，使得运行时加载快更快。
 
@@ -81,7 +81,7 @@ Manage（管理）
 
 Figure 4.2\. Example project layout and MavenPOM
 
-![Example project layout and Maven POM](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![Example project layout and Maven POM](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 为减少配置，KIE使用很多默认配置。使用一个空的kmodule.xml文件是最简单的配置。一定要有一个kmodule.xml文件，即便是空的，因为它用于查找JAR和它的内容。
 
@@ -89,7 +89,7 @@ Figure 4.2\. Example project layout and MavenPOM
 
 Figure 4.3\. Example project layout and MavenPOM
 
-![Example project layout and Maven POM](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![Example project layout and Maven POM](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 JAR文件有两种部署方式。其一是加入到classpath中，就像Maven的依赖列表的中其他JAR文件一样；其二是在运行时动态加载。KIE可以扫描所有包含kmodule.xml的JAR包。每个找到的JAR都用KieModule接口表示。术语Classpath KieModule和动态KieModule指代两种不同的加载方式。动态模块支持并行版本，classpath则不支持。而且一旦有一个模块在classpath中，就无法动态加载其他版本了。
 
@@ -99,7 +99,7 @@ JAR文件有两种部署方式。其一是加入到classpath中，就像Maven的
 
 Figure 4.4\. org.kie.api.core.builder
 
-![org.kie.api.core.builder](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![org.kie.api.core.builder](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 **4.2.2.1\. 创建并构建一个****KIE****项目**
 
@@ -109,13 +109,13 @@ Figure 4.4\. org.kie.api.core.builder
 
 Example 4.1. An empty kmodule.xml file
 
-**<?xml version="1.0"encoding="UTF-8"?>**  <kmodule xmlns="https://jboss.org/kie/6.0.0/kmodule"/>
+**<?xml version="1.0"encoding="UTF-8"?>**  <kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule"/>
 
 这种方式下，kmodule将包含一个默认的KieBase。在resources目录及子目录下的所有元素都会被编译，并添加进来。创建一个KieContainer，就足以触发这些组件的构建。
 
 Figure 4.5. KieContainer
 
-![KieContainer](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieContainer](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 这种简单的情况下，下面的代码可以创建一个KieContainer，用来从classpath读取文件并构建：**Example** **4.2.** **Creating a KieContainer from the classpath**
 
@@ -126,7 +126,7 @@ KieServices是一个接口，可以用来访问几乎所有的关于KIE构建和
 
 Figure 4.6. KieServices
 
-![KieServices](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieServices](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 这种方式下，所有 的Java源代码和KIE资源都被编译并部署到KieContainer中。
 
@@ -138,19 +138,19 @@ Figure 4.6. KieServices
 
 Figure 4.7. KieBase
 
-![KieBase](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieBase](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 想反的，KieSession在运行时内存中保存并执行。它可以从KieBase中创建。还有一种更简单的方式是从KieContainer中创建，前提是它已在kmodule.xml文件中定义。
 
 Figure 4.8. KieSession
 
-![KieSession](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieSession](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 kmodule.xml文件允许定义并配置一个或多个KieBase，不同的KieSession都可以从每个KieBase中创建出来。下面是例子：
 
 Example 4.3. A sample kmodule.xml file
 
-<kmodule xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"  xmlns="https://jboss.org/kie/6.0.0/kmodule">  <configuration>  <property key="drools.evaluator.supersetOf" value="org.mycompany.SupersetOfEvaluatorDefinition"/>  </configuration>  <kbase name="KBase1" default="true" eventProcessingMode="cloud" equalsBehavior="equality"declarativeAgenda="enabled" packages="org.domain.pkg1">  <ksession name="KSession2_1" type="stateful" default="true"/>  <ksession name="KSession2_2" type="stateless" default="false" beliefSystem="jtms"/>  </kbase>  <kbase name="KBase2" default="false" eventProcessingMode="stream" equalsBehavior="equality"declarativeAgenda="enabled" packages="org.domain.pkg2, org.domain.pkg3" includes="KBase1">  <ksession name="KSession3_1" type="stateful" default="false" clockType="realtime">  <fileLogger file="drools.log" threaded="true" interval="10"/>  <workItemHandlers>  <workItemHandler name="name" type="org.domain.WorkItemHandler"/>  </workItemHandlers>  <listeners>  <ruleRuntimeEventListener type="org.domain.RuleRuntimeListener"/>  <agendaEventListener type="org.domain.FirstAgendaListener"/>  <agendaEventListener type="org.domain.SecondAgendaListener"/>  <processEventListener type="org.domain.ProcessListener"/>  </listeners>  </ksession>  </kbase>  </kmodule>
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://jboss.org/kie/6.0.0/kmodule">  <configuration>  <property key="drools.evaluator.supersetOf" value="org.mycompany.SupersetOfEvaluatorDefinition"/>  </configuration>  <kbase name="KBase1" default="true" eventProcessingMode="cloud" equalsBehavior="equality"declarativeAgenda="enabled" packages="org.domain.pkg1">  <ksession name="KSession2_1" type="stateful" default="true"/>  <ksession name="KSession2_2" type="stateless" default="false" beliefSystem="jtms"/>  </kbase>  <kbase name="KBase2" default="false" eventProcessingMode="stream" equalsBehavior="equality"declarativeAgenda="enabled" packages="org.domain.pkg2, org.domain.pkg3" includes="KBase1">  <ksession name="KSession3_1" type="stateful" default="false" clockType="realtime">  <fileLogger file="drools.log" threaded="true" interval="10"/>  <workItemHandlers>  <workItemHandler name="name" type="org.domain.WorkItemHandler"/>  </workItemHandlers>  <listeners>  <ruleRuntimeEventListener type="org.domain.RuleRuntimeListener"/>  <agendaEventListener type="org.domain.FirstAgendaListener"/>  <agendaEventListener type="org.domain.SecondAgendaListener"/>  <processEventListener type="org.domain.ProcessListener"/>  </listeners>  </ksession>  </kbase>  </kmodule>
 
 这里'<configuration>'是一些由'键-值对'组成的配置项，用来配置在KieBase创建过程中用到的配置项。这些配置项都是可选的。比如上面的例子中配置了一个superSetOf并通过org.mycompany.SupersetOfEvaluatorDefinition类来实现自定义操作。
 
@@ -449,13 +449,13 @@ Example 4.7. Adding the KIE plugin to a Maven pom.xml
 
 Figure 4.9. KieFileSystem
 
-![KieFileSystem](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieFileSystem](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 像Kie的其他组件一样，你也可以从KieServices类中获取KieFileSystem的实例。首先必须将kmodule.xml配置文件添加到这个虚拟的文件系统中。Kie提供一个方便流畅的API来创建kmodule.xml文件，由KieModuleModel类提供实现。
 
 Figure 4.10. KieModuleModel
 
-![KieModuleModel](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieModuleModel](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 实际上，你需要先用KieServices创建 KieModuleModel，再根据需要配置相应的KieBase和KieSession，并将它们转换成XML再添加到虚拟文件系统中。下面是例子：
 
@@ -489,7 +489,7 @@ kieServices.getResources().newInputStreamResource( dtableFileStream ) );
 
 Figure 4.11. KieResources
 
-![KieResources](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieResources](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 通常情况下，在添加文件到KieFileSystem中时，可以从文件的后缀推断Resource的类型。然而，有时候后缀可能与文件类型无关。这时，就需要显式指定ResourceType，示例如下：
 
@@ -504,13 +504,13 @@ kieServices.getResources().newInputStreamResource( drlStream)
 
 Figure 4.12. KieBuilder
 
-![KieBuilder](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieBuilder](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 当KieFileSystem的内容被成功地构建后，产生的KieModule被自动添加到Kie库。该库是充当所有可用KieModules仓库里的单例。
 
 Figure 4.13. KieRepository
 
-![KieRepository](https://blog.csdn.net/buxulianxiang/article/details/45132689)
+![KieRepository](http://blog.csdn.net/buxulianxiang/article/details/45132689)
 
 之后，可以通过使用KieServices为之前添加的KieMoudle创建一个新的KieContainer，需要使用它的ReleaseId。然而，这种情况下，KieFileSystem不包含的pom.xml文件（可以使用KieFileSystem.writePomXML文件创建一个），Kie并不知道它的ReleaseId，所以会赋给它一个默认的ReleaseId。这个默认的ReleaseId可以从KieModule中获取，并用来在KieRepository内部唯一标识这个KieModule。下面的例子说明整个过程：
 

@@ -128,7 +128,7 @@ pause
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springcloud/consol_cmd.png)
 
-启动成功之后访问：`https://localhost:8500`，可以看到 Consul 的管理界面
+启动成功之后访问：`http://localhost:8500`，可以看到 Consul 的管理界面
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springcloud/consol_manage.png)
 
@@ -243,7 +243,7 @@ public class HelloController {
 
 为了模拟注册均衡负载复制一份上面的项目重命名为 spring-cloud-consul-producer-2 ,修改对应的端口为 8502，修改 hello 方法的返回值为："helle consul two"，修改完成后依次启动两个项目。
 
-这时候我们再次在浏览器访问地址：https://localhost:8500，显示如下：
+这时候我们再次在浏览器访问地址：http://localhost:8500，显示如下：
 
 ![](https://ziyekudeng.github.io/assets/images/2018/springcloud/consol_producer.png)
 
@@ -319,20 +319,20 @@ public class ServiceController {
 
 Controller 中有俩个方法，一个是获取所有服务名为`service-producer`的服务信息并返回到页面，一个是随机从服务名为`service-producer`的服务中获取一个并返回到页面。
 
-添加完 ServiceController 之后我们启动项目，访问地址：`https://localhost:8503/services`，返回：
+添加完 ServiceController 之后我们启动项目，访问地址：`http://localhost:8503/services`，返回：
 
 
 ```
-[{"serviceId":"service-producer","host":"windows10.microdone.cn","port":8501,"secure":false,"metadata":{"secure":"false"},"uri":"https://windows10.microdone.cn:8501","scheme":null},{"serviceId":"service-producer","host":"windows10.microdone.cn","port":8502,"secure":false,"metadata":{"secure":"false"},"uri":"https://windows10.microdone.cn:8502","scheme":null}]
+[{"serviceId":"service-producer","host":"windows10.microdone.cn","port":8501,"secure":false,"metadata":{"secure":"false"},"uri":"http://windows10.microdone.cn:8501","scheme":null},{"serviceId":"service-producer","host":"windows10.microdone.cn","port":8502,"secure":false,"metadata":{"secure":"false"},"uri":"http://windows10.microdone.cn:8502","scheme":null}]
 ```
 
 发现我们刚才创建的端口为 8501 和 8502 的两个服务端都存在。
 
-多次访问地址：`https://localhost:8503/discover`，页面会交替返回下面信息：
+多次访问地址：`http://localhost:8503/discover`，页面会交替返回下面信息：
 
 ```
-https://windows10.microdone.cn:8501
-https://windows10.microdone.cn:8502
+http://windows10.microdone.cn:8501
+http://windows10.microdone.cn:8502
 ...
 ```
 
@@ -363,7 +363,7 @@ public class CallHelloController {
 }
 ```
 
-使用 RestTemplate 进行远程调用。添加完之后重启 spring-cloud-consul-consumer 项目。在浏览器中访问地址：`https://localhost:8503/call`，依次返回结果如下：
+使用 RestTemplate 进行远程调用。添加完之后重启 spring-cloud-consul-consumer 项目。在浏览器中访问地址：`http://localhost:8503/call`，依次返回结果如下：
 
 ```
 helle consul

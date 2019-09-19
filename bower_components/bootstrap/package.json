@@ -11,7 +11,7 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com",
+  "homepage": "http://getbootstrap.com",
   "author": "Twitter, Inc.",
   "scripts": {
     "change-version": "node grunt/change-version.js",

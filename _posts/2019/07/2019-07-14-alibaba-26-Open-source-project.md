@@ -86,7 +86,7 @@ TaobaoJVM 基于 OpenJDK HotSpot VM，是国内第一个优化、定制且开源
 
 地址：
 
-https://jvm.taobao.org 
+http://jvm.taobao.org 
 
 **10\. Java 图片处理类库 SimpleImage**
 

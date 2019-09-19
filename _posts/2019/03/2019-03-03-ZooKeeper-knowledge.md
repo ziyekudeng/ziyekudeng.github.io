@@ -26,7 +26,7 @@ ZooKeeper是一种用于分布式应用程序的分布式开源协调服务。�
 
 **集群模型**
 
-![](https://p.qpic.cn/pic_wework/3435926283/6066b36f8190da431f9a3ac171f4957ecfc646b7f23d8a9b/0)
+![](http://p.qpic.cn/pic_wework/3435926283/6066b36f8190da431f9a3ac171f4957ecfc646b7f23d8a9b/0)
 
 Leader服务器是整个ZooKeeper集群工作机制中的核心，其主要工作有以下两个：
 
@@ -46,7 +46,7 @@ Observer充当了一个观察者的角色，在工作原理上基本和Follower�
 
 **数据结构**
 
-![](https://p.qpic.cn/pic_wework/3435926283/5553865a5d8a986804b7f4e90c1c9a584aa761d897a0bce1/0)
+![](http://p.qpic.cn/pic_wework/3435926283/5553865a5d8a986804b7f4e90c1c9a584aa761d897a0bce1/0)
 
 **树形结构**
 
@@ -54,7 +54,7 @@ Observer充当了一个观察者的角色，在工作原理上基本和Follower�
 
 **节点操作流程**
 
-![](https://p.qpic.cn/pic_wework/3435926283/4a4c99451b770be53824802fa7aec7051fa60cb721d56d34/0)
+![](http://p.qpic.cn/pic_wework/3435926283/4a4c99451b770be53824802fa7aec7051fa60cb721d56d34/0)
 
 1. 在Client向Follower发出一个写请求。
 
@@ -88,7 +88,7 @@ Observer充当了一个观察者的角色，在工作原理上基本和Follower�
 
 **整体架构**
 
-![](https://p.qpic.cn/pic_wework/3435926283/3f39ec306ac84a7c3ef25158a9e3380be29fd164b37fb5a7/0)
+![](http://p.qpic.cn/pic_wework/3435926283/3f39ec306ac84a7c3ef25158a9e3380be29fd164b37fb5a7/0)
 
 **ServerCnxnFactory**
 
@@ -102,7 +102,7 @@ ZooKeeper服务端会话管理器。创建时，会初始化expirationInterval�
 
 ZooKeeper的请求处理方式是典型的责任链模式，在服务端，会有多个请求处理器依次来处理一个客户的请求。在服务器启动的时候，会将这些请求处理器串联起来形成一个请求处理链。基本的请求处理链如下：
 
-![](https://p.qpic.cn/pic_wework/3435926283/6563b66a320d9a223717592447d2373236125cfd9ba6f2ba/0)
+![](http://p.qpic.cn/pic_wework/3435926283/6563b66a320d9a223717592447d2373236125cfd9ba6f2ba/0)
 
 **LearnerCnxAcceptor**
 

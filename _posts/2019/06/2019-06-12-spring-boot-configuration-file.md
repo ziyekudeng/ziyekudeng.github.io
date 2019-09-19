@@ -8,7 +8,7 @@ tags: [springboot]
 
 
 
-在[**快速入门**](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247487116&idx=1&sn=64aa80bb8bc4c4df5f2b42b521794169&chksm=9bd0a314aca72a0201d764b60f528213681c55f3db8d41c47c5159ec5614ebc75f21831f06af&scene=21#wechat_redirect)一节中，我们轻松的实现了一个简单的RESTful API应用，体验了一下Spring Boot给我们带来的诸多优点，我们用非常少的代码量就成功的实现了一个Web应用，这是传统的Spring应用无法办到的，虽然我们在实现Controller时用到的代码是一样的，但是在配置方面，相信大家也注意到了，在上面的例子中，除了Maven的配置之后，就没有引入任何的配置。
+在[**快速入门**](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247487116&idx=1&sn=64aa80bb8bc4c4df5f2b42b521794169&chksm=9bd0a314aca72a0201d764b60f528213681c55f3db8d41c47c5159ec5614ebc75f21831f06af&scene=21#wechat_redirect)一节中，我们轻松的实现了一个简单的RESTful API应用，体验了一下Spring Boot给我们带来的诸多优点，我们用非常少的代码量就成功的实现了一个Web应用，这是传统的Spring应用无法办到的，虽然我们在实现Controller时用到的代码是一样的，但是在配置方面，相信大家也注意到了，在上面的例子中，除了Maven的配置之后，就没有引入任何的配置。
 
 这就是之前我们所提到的，Spring Boot针对我们常用的开发场景提供了一系列自动化配置来减少原本复杂而又几乎很少改动的模板化配置内容。但是，我们还是需要去了解如何在Spring Boot中修改这些自动化的配置内容，以应对一些特殊的场景需求，比如：我们在同一台主机上需要启动多个基于Spring Boot的web应用，若我们不为每个应用指定特别的端口号，那么默认的8080端口必将导致冲突。
 
@@ -16,7 +16,7 @@ tags: [springboot]
 
 ## 配置基础
 
-在[**快速入门**](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247487116&idx=1&sn=64aa80bb8bc4c4df5f2b42b521794169&chksm=9bd0a314aca72a0201d764b60f528213681c55f3db8d41c47c5159ec5614ebc75f21831f06af&scene=21#wechat_redirect)示例中，我们介绍Spring Boot的工程结构时，有提到过 `src/main/resources`目录是Spring Boot的配置目录，所以我们要为应用创建配置个性化配置时，就是在该目录之下。
+在[**快速入门**](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247487116&idx=1&sn=64aa80bb8bc4c4df5f2b42b521794169&chksm=9bd0a314aca72a0201d764b60f528213681c55f3db8d41c47c5159ec5614ebc75f21831f06af&scene=21#wechat_redirect)示例中，我们介绍Spring Boot的工程结构时，有提到过 `src/main/resources`目录是Spring Boot的配置目录，所以我们要为应用创建配置个性化配置时，就是在该目录之下。
 
 Spring Boot的默认配置文件位置为： `src/main/resources/application.properties`。关于Spring Boot应用的配置内容都可以集中在该文件中了，根据我们引入的不同Starter模块，可以在这里定义诸如：容器端口名、数据库链接信息、日志级别等各种配置信息。比如，我们需要自定义web模块的服务端口号，可以在 `application.properties`中添加 `server.port=8888`来指定服务端口为8888，也可以通过 `spring.application.name=hello`来指定应用名（该名字在Spring Cloud应用中会被注册为服务名）。
 
@@ -30,22 +30,22 @@ YAML采用的配置格式不像properties的配置那样以单纯的键值对形
 
     dev:
 
-        url:https://dev.bar.com
+        url:http://dev.bar.com
 
         name:Developer Setup
 
     prod: 
-        url:https://foo.bar.com
+        url:http://foo.bar.com
 
         name:My Cool App
 
 与其等价的properties配置如下。
 
-    environments.dev.url=https://dev.bar.com
+    environments.dev.url=http://dev.bar.com
     
     environments.dev.name=Developer Setup
     
-    environments.prod.url=https://foo.bar.com
+    environments.prod.url=http://foo.bar.com
     
     environments.prod.name=My Cool App
 
@@ -275,13 +275,13 @@ Spring Boot为了能够更合理的重写各属性的值，使用了下面这种
 在properties文件中使用 `[]`来定位列表类型，比如：
 
 
-      spring.my-example.url[0]=https://example.com
+      spring.my-example.url[0]=http://example.com
     
-      spring.my-example.url[1]=https://spring.io
+      spring.my-example.url[1]=http://spring.io
 
 也支持使用**逗号**分割的配置方式，上面与下面的配置是等价的：
 
-    spring.my-example.url=https://example.com,https://spring.io
+    spring.my-example.url=http://example.com,http://spring.io
 
 而在yaml文件中使用可以使用如下配置：
 
@@ -292,9 +292,9 @@ Spring Boot为了能够更合理的重写各属性的值，使用了下面这种
     
         url:
     
-             - https://example.com
+             - http://example.com
     
-             - https://spring.io
+             - http://spring.io
 
 也支持**逗号**分割的方式：
 
@@ -302,7 +302,7 @@ Spring Boot为了能够更合理的重写各属性的值，使用了下面这种
     
         my-example:
     
-            url: https://example.com, https://spring.io
+            url: http://example.com, http://spring.io
 
 **注意：在Spring Boot 2.0中对于List类型的配置必须是连续的，不然会抛出 `UnboundConfigurationPropertiesException`异常，所以如下配置是不允许的：**
 
@@ -378,13 +378,13 @@ Map类型在properties和yaml中的标准配置方式如下：
 
 系统属性的绑定也与文件属性的绑定类似，通过 `[]`来标示，比如：
 
-1.  `-D"spring.my-example.url[0]=https://example.com"`
+1.  `-D"spring.my-example.url[0]=http://example.com"`
 
-2.  `-D"spring.my-example.url[1]=https://spring.io"`
+2.  `-D"spring.my-example.url[1]=http://spring.io"`
 
 同样的，他也支持逗号分割的方式，比如：
 
-1.  `-Dspring.my-example.url=https://example.com,https://spring.io`
+1.  `-Dspring.my-example.url=http://example.com,http://spring.io`
 
 ### 属性的读取
 
@@ -500,9 +500,9 @@ Map类型在properties和yaml中的标准配置方式如下：
 
 ### **相关阅读**
 
-*   [Spring Boot 1.x：属性配置文件详解](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247484062&idx=2&sn=fdd853832540a0e962e75ceec92154a9&chksm=9bd0af06aca7261033569a006b96a6b5d996dcad227bee64e41045ea6f6fe28b55aa82f84028&scene=21#wechat_redirect)
+*   [Spring Boot 1.x：属性配置文件详解](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247484062&idx=2&sn=fdd853832540a0e962e75ceec92154a9&chksm=9bd0af06aca7261033569a006b96a6b5d996dcad227bee64e41045ea6f6fe28b55aa82f84028&scene=21#wechat_redirect)
 
-*   [Spring Boot 2.0：配置绑定 2.0 全解析](https://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247484889&idx=1&sn=63c79b267ec60ece579b42acf5fca961&chksm=9bd0a841aca72157c4dcad3e2c85a5d18481d08ea58b7e241395b340819ab793f4fa5e018bd7&scene=21#wechat_redirect)
+*   [Spring Boot 2.0：配置绑定 2.0 全解析](http://mp.weixin.qq.com/s?__biz=MzAxODcyNjEzNQ==&mid=2247484889&idx=1&sn=63c79b267ec60ece579b42acf5fca961&chksm=9bd0a841aca72157c4dcad3e2c85a5d18481d08ea58b7e241395b340819ab793f4fa5e018bd7&scene=21#wechat_redirect)
 
 
 

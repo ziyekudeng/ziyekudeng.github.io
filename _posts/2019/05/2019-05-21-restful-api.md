@@ -10,7 +10,7 @@ keywords: 架构
 
 ## 前后端分离后，RESTful API 最佳实践
 
-来源：https://t.cn/EhVCDAW
+来源：http://t.cn/EhVCDAW
 
 > *   一、URL 设计
 >     

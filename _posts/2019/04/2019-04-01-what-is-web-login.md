@@ -13,13 +13,13 @@ tags: [life]
 
 > 作者：letcafe
 > 
-> 出处：https://www.cnblogs.com/letcafe/
+> 出处：http://www.cnblogs.com/letcafe/
 
 ## 1\. 一个简单的HTML例子看看用户信息安全
 
 标准的HTML语法中，支持在form表单中使用<input></input>标签来创建一个HTTP提交的属性，现代的WEB登录中，常见的是下面这样的表单：
 
-`<form action = "https://localhost:8080/Application/login" method = "POST">` `用户名：<input id="username" name="username" type="text" />``    密码：<input id="password" name="password" type="password" />    ``    <button type="submit">登陆</button>``</form>`
+`<form action = "http://localhost:8080/Application/login" method = "POST">` `用户名：<input id="username" name="username" type="text" />``    密码：<input id="password" name="password" type="password" />    ``    <button type="submit">登陆</button>``</form>`
 
 form表单会在提交请求时,会获取form中input标签存在name的属性，作为HTTP请求的body中的参数传递给后台，进行登录校验。 
 例如我的账号是user1，密码是123456，那么我在提交登录的时候会给后台发送的HTTP请求如下（Chrome或者FireFox开发者工具捕获，需开启Preserve log）： 

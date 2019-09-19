@@ -8,7 +8,7 @@ tags: [tools]
 
 ## Java 程序员常用资源工具集合
 
-来源：https://rrd.me/emdDq
+来源：http://rrd.me/emdDq
 
 *   搜索资源网站
 
@@ -172,7 +172,7 @@ Runoob: https://c.runoob.com/front-end/61
 
 JSON 解析器: https://c.runoob.com/front-end/53
 
-在线 PS: https://www.kantu.com/
+在线 PS: http://www.kantu.com/
 
 表格转换工具: https://tableconvert.com/
 
@@ -202,7 +202,7 @@ MindMeister：https://www.mindmeister.com/zh
 
 在线思维导图工具，已有超过1000万个用户。
 
-百度脑图：https://naotu.baidu.com/ 简洁的在线思维导图工具
+百度脑图：http://naotu.baidu.com/ 简洁的在线思维导图工具
 
 Gliffy：https://www.gliffy.com/
 

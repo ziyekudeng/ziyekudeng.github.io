@@ -7,7 +7,7 @@ tags: [tools]
 
 
 
-转：https://blog.csdn.net/Daybreak1209/article/details/51549031
+转：http://blog.csdn.net/Daybreak1209/article/details/51549031
 
 一、代理服务器
 
@@ -62,7 +62,7 @@ Nginx作为近年来较火的反向代理服务器，安装在目的主机端，
 
 3、配置nginx.conf
 
- **[html]** [view plain](https://blog.csdn.net/Daybreak1209/article/details/51549031 "view plain") [copy](https://blog.csdn.net/Daybreak1209/article/details/51549031 "copy")
+ **[html]** [view plain](http://blog.csdn.net/Daybreak1209/article/details/51549031 "view plain") [copy](http://blog.csdn.net/Daybreak1209/article/details/51549031 "copy")
 
 1.  upstream tomcatserver1 {
 2.  server 192.168.72.49:8081;
@@ -79,7 +79,7 @@ Nginx作为近年来较火的反向代理服务器，安装在目的主机端，
 13.  #access_log logs/host.access.log main;
 
 15.  location / {
-16.  proxy_pass https://tomcatserver1;
+16.  proxy_pass http://tomcatserver1;
 17.  index index.html index.htm;
 18.  }
 19.  }
@@ -92,7 +92,7 @@ Nginx作为近年来较火的反向代理服务器，安装在目的主机端，
 26.  #access_log logs/host.access.log main;
 
 28.  location / {
-29.  proxy_pass https://tomcatserver2;
+29.  proxy_pass http://tomcatserver2;
 30.  index index.html index.htm;
 31.  }
 32.  }

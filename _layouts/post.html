@@ -3,7 +3,7 @@ layout: default
 css: ['sidebar-post-nav.css']
 ---
 {% include jumbotron.html %}
-<article class="post container" itemscope itemtype="https://schema.org/BlogPosting">
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="row">
 
@@ -12,9 +12,10 @@ css: ['sidebar-post-nav.css']
 
             {{ content }}
 
+            <!-- copyright -->
             {% include copyright.html %}
-
             <!-- Comments -->
+      
            <div class="comment">
              {% include comments.html %}
            </div>
@@ -25,12 +26,12 @@ css: ['sidebar-post-nav.css']
 
             {{ content }}
 
+            <!-- copyright -->
             {% include copyright.html %}
-
             <!-- Comments -->
-            <div class="comment">
+          <div class="comment">
              {% include comments.html %}
-            </div>
+           </div>
         </div>
 
         <div class="col-md-3">

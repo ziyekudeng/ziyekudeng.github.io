@@ -114,21 +114,21 @@ Session 是客户端与服务器通讯会话跟踪技术，服务器与客户端
     }
     #修改server中的local
     location / {
-                proxy_pass  https://backserver;
+                proxy_pass  http://backserver;
                 index  index.html index.htm;
             }
 
-我们直接通过轮询机制来访问首先向Session中存入一个姓名，https://www.hello.com/createSession?name=SimpleWu
+我们直接通过轮询机制来访问首先向Session中存入一个姓名，http://www.hello.com/createSession?name=SimpleWu
 
     当前项目端口：8081 当前sessionId :0F20F73170AE6780B1EC06D9B06210DB在Session中存入成功！
 
-因为我们使用的是默认的轮询机制那么下次肯定访问的是8080端口，我们直接获取以下刚才存入的值https://www.hello.com/getSession
+因为我们使用的是默认的轮询机制那么下次肯定访问的是8080端口，我们直接获取以下刚才存入的值http://www.hello.com/getSession
 
     当前项目端口：8080 当前sessionId :C6663EA93572FB8DAE27736A553EAB89 获取的姓名:null
 
 这个时候发现8080端口中并没有我们存入的值，并且sessionId也是与8081端口中的不同。
 
-别急继续访问，因为轮询机制这个时候我们是8081端口的服务器，那么之前我们是在8081中存入了一个姓名。那么我们现在来访问以下看看是否能够获取到我们存入的姓名：SimpleWu,继续访问：https://www.hello.com/getSession
+别急继续访问，因为轮询机制这个时候我们是8081端口的服务器，那么之前我们是在8081中存入了一个姓名。那么我们现在来访问以下看看是否能够获取到我们存入的姓名：SimpleWu,继续访问：http://www.hello.com/getSession
 
     当前项目端口：8081 当前sessionId :005EE6198C30D7CD32FBD8B073531347 获取的姓名:null
 
@@ -231,11 +231,11 @@ spring已经给我们想好了问题并且已经提供出解决方案：spring-s
 
 **然后我们继续启动8080,8081来进行测试：**
 
-首先存入一个姓名https://www.hello.com/createSession?name=SimpleWu：
+首先存入一个姓名http://www.hello.com/createSession?name=SimpleWu：
 
     当前项目端口：8080 当前sessionId :cf5c029a-2f90-4b7e-8345-bf61e0279254在Session中存入成功！
 
-应该轮询机制那么下次一定是8081，竟然已经解决session共享问题了那么肯定能够获取到了，竟然这样那么我们直接来获取下姓名https://www.hello.com/getSession：
+应该轮询机制那么下次一定是8081，竟然已经解决session共享问题了那么肯定能够获取到了，竟然这样那么我们直接来获取下姓名http://www.hello.com/getSession：
 
     当前项目端口：8081 当前sessionId :cf5c029a-2f90-4b7e-8345-bf61e0279254 获取的姓名:SimpleWu
 

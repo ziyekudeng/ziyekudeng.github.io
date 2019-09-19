@@ -6,7 +6,7 @@ tags: [arch]
 keywords: 架构
 ---
  
-来源：https://t.cn/Ai9iAJ4t
+来源：http://t.cn/Ai9iAJ4t
 
 # 1. 如何做分离
 

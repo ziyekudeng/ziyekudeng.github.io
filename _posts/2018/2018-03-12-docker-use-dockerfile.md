@@ -43,7 +43,7 @@ FROM ubuntu
 MAINTAINER docker_user docker_user@email.com
  
 # 3、镜像操作指令
-RUN echo "deb https://archive.ubuntu.com/ubuntu/ raring main universe" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu/ raring main universe" >> /etc/apt/sources.list
 RUN apt-get update && apt-get install -y nginx
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
  
@@ -198,7 +198,7 @@ nginx                           v1                  8c92471de2cc        6 minute
 docker run  --name docker_nginx_v1   -d -p 80:80 nginx:v1
 ```
 
-这条命令会用 nginx 镜像启动一个容器，命名为`docker_nginx_v1`，并且映射了 80 端口，这样我们可以用浏览器去访问这个 nginx 服务器：`https://192.168.0.54/`，页面返回信息：
+这条命令会用 nginx 镜像启动一个容器，命名为`docker_nginx_v1`，并且映射了 80 端口，这样我们可以用浏览器去访问这个 nginx 服务器：`http://192.168.0.54/`，页面返回信息：
 
 ![](https://ziyekudeng.github.io/assets/images/2018/docker/1.png)
 

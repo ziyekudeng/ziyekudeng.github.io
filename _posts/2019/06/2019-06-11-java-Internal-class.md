@@ -513,7 +513,7 @@ keywords: 架构
 
 **在Java中，类与类之间的关系通常是一对一的，也就是单项继承原则，那么在接口中，类与接口之间的关系是一对多的，也就是说一个类可以实现多个接口，而接口和内部类结合可以实现"多重继承"，并不是说用extends关键字来实现，而是接口和内部类的对多重继承的模拟实现。**
 
-**参考chenssy的文章 https://www.cnblogs.com/chenssy/p/3389027.html 已经写的很不错了。**
+**参考chenssy的文章 http://www.cnblogs.com/chenssy/p/3389027.html 已经写的很不错了。**
 
 
     public class Food {

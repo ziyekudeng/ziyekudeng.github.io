@@ -256,7 +256,7 @@ URL在Web应用模板中占据着十分重要的地位，需要特别注意的�
 如果需要Thymeleaf对URL进行渲染，那么务必使用th:href，th:src等属性，下面是一个例子
 
 ``` html
-<!-- Will produce 'https://localhost:8080/standard/unread' (plus rewriting) -->
+<!-- Will produce 'http://localhost:8080/standard/unread' (plus rewriting) -->
  <a  th:href="@{/standard/{type}(type=${type})}">view</a>
 
 <!-- Will produce '/gtvg/order/3/details' (plus rewriting) -->
@@ -443,7 +443,7 @@ th:include 和 th:replace区别，include只是加载，replace是替换
 
  任何页面想使用这样的布局值只需要替换中见的 content模块即可
 ``` html
- <html xmlns:th="https://www.thymeleaf.org" layout:decorator="layout">
+ <html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout">
    <body>
       <section layout:fragment="content">
     ...
@@ -471,12 +471,12 @@ htmlhead 是指定义的代码片段 如 ```th:fragment="copy"```
 
 ## 参考 
 
-[thymeleaf官方指南](https://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html#integrating-thymeleaf-with-spring)  
-[新一代Java模板引擎Thymeleaf](https://www.tianmaying.com/tutorial/using-thymeleaf)  
-[Thymeleaf基本知识](https://www.webinno.cn/blog/article/view/131)   
-[thymeleaf总结文章](https://v8en.com/news/list/47/0)  
-[Thymeleaf 模板的使用](https://www.cnblogs.com/lazio10000/p/5603955.html)  
-[thymeleaf 学习笔记](https://www.blogjava.net/bjwulin/archive/2013/02/07/395234.html)  
+[thymeleaf官方指南](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html#integrating-thymeleaf-with-spring)  
+[新一代Java模板引擎Thymeleaf](http://www.tianmaying.com/tutorial/using-thymeleaf)  
+[Thymeleaf基本知识](http://www.webinno.cn/blog/article/view/131)   
+[thymeleaf总结文章](http://v8en.com/news/list/47/0)  
+[Thymeleaf 模板的使用](http://www.cnblogs.com/lazio10000/p/5603955.html)  
+[thymeleaf 学习笔记](http://www.blogjava.net/bjwulin/archive/2013/02/07/395234.html)  
 
 
 -------------

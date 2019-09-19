@@ -11,7 +11,7 @@ tags: [tools]
 
 # [linux下重启weblogic（关闭和启动）](https://www.cnblogs.com/yadongliang/p/8097433.html)
 
-本文转自:[https://blog.sina.com.cn/s/blog_4b5bc011010110nq.html](https://blog.sina.com.cn/s/blog_4b5bc011010110nq.html)
+本文转自:[http://blog.sina.com.cn/s/blog_4b5bc011010110nq.html](http://blog.sina.com.cn/s/blog_4b5bc011010110nq.html)
 
 ssh远程连接Linux服务器！
 

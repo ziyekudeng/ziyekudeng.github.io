@@ -34,7 +34,7 @@ tags: [drools]
 
 **第一章：关于drools**
 
-drools官网：https://drools.org/
+drools官网：http://drools.org/
 
 从这里可以下载最新的drools版本和drools workbench。我在这里只下载了drools workbench。实际是把drools workbench当成一个drl规则的编辑、管理、maven版本服务器。
 
@@ -120,9 +120,9 @@ java -cp h2-1.3.161.jar org.h2.tools.Shell -url jdbc:h2:~/jbpm2 -user sa -passwo
 特别注意一点：由于资源有限，我尝试把风控系统与drools workbench部署到同一台机器，这个会出现问题。理由是：风控系统需要依赖本地的maven服务，需要配置~/.m2目录下的settting.xml，需要把setting.xml的url指向drools workbench的机器。但如果drools workbench启动时，它也会检查本地的setting.xml，而这个setting.xml需要指向自身，最终会导致drools workbench无法启动。因此：drools workbench必须部署在一台远程机器上。~/.m2/setting.xml配置如下：
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <settings xmlns="https://maven.apache.org/SETTINGS/1.0.0"
-    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <servers>
     <server>
     <id>guvnor-m2-repo</id>
@@ -145,7 +145,7 @@ java -cp h2-1.3.161.jar org.h2.tools.Shell -url jdbc:h2:~/jbpm2 -user sa -passwo
     <repository>
     <id>guvnor-m2-repo</id>
     <name>BRMS Repository</name>
-    <url>https://xxx.xxx.xxx.xxx:8080/guvnor/maven2/</url>
+    <url>http://xxx.xxx.xxx.xxx:8080/guvnor/maven2/</url>
     <layout>default</layout>
     <releases>
     <enabled>true</enabled>
@@ -183,7 +183,7 @@ java -cp h2-1.3.161.jar org.h2.tools.Shell -url jdbc:h2:~/jbpm2 -user sa -passwo
     <bean id="kiePostProcessor"
     class="org.kie.spring.annotations.KModuleAnnotationPostProcessor"/> 
 
-引入的目的是实现动态刷新规则jar包的规则。配置的时间是5分钟刷新一遍，最终实现业务规则的更新，不需要重启机器。加入以上配置后，eclipse报错，无法辨认kie:import等标签，需要在xml中加入：xmlns:kie="https://drools.org/schema/kie-spring" 还有：https://drools.org/schema/kie-spring https://raw.githubusercontent.com/droolsjbpm/droolsjbpm-integration/master/kie-spring/src/main/resources/org/kie/spring/kie-spring-6.0.0.xsd
+引入的目的是实现动态刷新规则jar包的规则。配置的时间是5分钟刷新一遍，最终实现业务规则的更新，不需要重启机器。加入以上配置后，eclipse报错，无法辨认kie:import等标签，需要在xml中加入：xmlns:kie="http://drools.org/schema/kie-spring" 还有：http://drools.org/schema/kie-spring https://raw.githubusercontent.com/droolsjbpm/droolsjbpm-integration/master/kie-spring/src/main/resources/org/kie/spring/kie-spring-6.0.0.xsd
 
 这里碰到一个非常烦人的问题，就是kie-spring-6.0.0.xsd无法下载，想尝试使用classpath的kie-spring-6.0.0.xsd，但不成功。官方正式xsd的地址无效，最后使用上面的github的地址，不过该地址有时候会发傻，用不了。
 
@@ -279,7 +279,7 @@ spring启动时，会自动到drools workbench服务器下载对应的jar包，�
 
 第九章：Spring无法启动。
 
-参考我在另外网站写的两个问题：https://stackoverflow.com/questions/34916936/spring-integration-with-drools和https://stackoverflow.com/questions/34890616/kie-workbench-integration-in-spring-throw-exception
+参考我在另外网站写的两个问题：http://stackoverflow.com/questions/34916936/spring-integration-with-drools和http://stackoverflow.com/questions/34890616/kie-workbench-integration-in-spring-throw-exception
 
 报错：
 

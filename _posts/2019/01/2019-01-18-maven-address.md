@@ -12,7 +12,7 @@ tags: [tools]
     <id>aliyun</id>  
     <mirrorOf>central</mirrorOf>    
     <name>Nexus aliyun</name>  
-    <url>https://maven.aliyun.com/nexus/content/groups/public</url>  
+    <url>http://maven.aliyun.com/nexus/content/groups/public</url>  
     </mirror> 
  
  `

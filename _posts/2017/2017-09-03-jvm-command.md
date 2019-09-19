@@ -457,13 +457,13 @@ $ jhat -J-Xmx512m dump.hprof
   Server is ready.
 ```
 
-中间的-J-Xmx512m是在dump快照很大的情况下分配512M内存去启动HTTP服务器，运行完之后就可在浏览器打开https://localhost:7000进行快照分析
+中间的-J-Xmx512m是在dump快照很大的情况下分配512M内存去启动HTTP服务器，运行完之后就可在浏览器打开Http://localhost:7000进行快照分析
 堆快照分析主要在最后面的Heap Histogram里，里面根据class列出了dump的时候所有存活对象。
 
 **分析同样一个dump快照，MAT需要的额外内存比jhat要小的多的多，所以建议使用MAT来进行分析，当然也看个人偏好。**
 
 ### 分析
-打开浏览器https://localhost:7000，该页面提供了几个查询功能可供使用：
+打开浏览器Http://localhost:7000，该页面提供了几个查询功能可供使用：
 
 ```  xml
 All classes including platform
@@ -477,9 +477,9 @@ Execute Object Query Language (OQL) query
 
 一般查看堆异常情况主要看这个两个部分：
 Show instance counts for all classes (excluding platform)，平台外的所有对象信息。如下图：
-![](https://ityouknow.com/assets/images/2016/jvm-jhat-excluding-paltform.png) <br/>
+![](http://ityouknow.com/assets/images/2016/jvm-jhat-excluding-paltform.png) <br/>
 Show heap histogram 以树状图形式展示堆情况。如下图：
-![](https://ityouknow.com/assets/images/2016/jvm-jhat-heap-histogram.png) <br/>
+![](http://ityouknow.com/assets/images/2016/jvm-jhat-heap-histogram.png) <br/>
 具体排查时需要结合代码，观察是否大量应该被回收的对象在一直被引用或者是否有占用内存特别大的对象无法被回收。<br/>
 **一般情况，会down到客户端用工具来分析**
 
@@ -535,7 +535,7 @@ Full thread dump Java HotSpot(TM) 64-Bit Server VM (24.71-b01 mixed mode):
 ### 分析
 
 这里有一篇文章解释的很好
-[分析打印出的文件内容](https://www.hollischuang.com/archives/110) 
+[分析打印出的文件内容](http://www.hollischuang.com/archives/110) 
 
 
 ## jinfo

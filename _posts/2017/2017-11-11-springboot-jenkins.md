@@ -34,7 +34,7 @@ maven 3.5‘
 软件下载
 
 ``` sh
-wget https://mirror.bit.edu.cn/apache/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
+wget http://mirror.bit.edu.cn/apache/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
 ```
 
 安装
@@ -87,7 +87,7 @@ service iptables status
 
 ``` sh
 cd /opt
-wget https://mirrors.jenkins.io/war/2.83/jenkins.war
+wget http://mirrors.jenkins.io/war/2.83/jenkins.war
 ```
 
 启动服务
@@ -121,7 +121,7 @@ This may also be found at: /root/.jenkins/secrets/initialAdminPassword
 ```
 
 访问
-浏览器访问：```https://localhost:8080/```
+浏览器访问：```http://localhost:8080/```
 
 ![](https://ziyekudeng.github.io/assets/images/2017/jenkins/1.png)
 
@@ -255,7 +255,7 @@ Remote Directory 不填
 
 ![](https://ziyekudeng.github.io/assets/images/2017/jenkins/11.png)
 
-svn地址：https://192.168.0.xx/svn/xxx@HEAD,```@HEAD```意思取最新版本
+svn地址：http://192.168.0.xx/svn/xxx@HEAD,```@HEAD```意思取最新版本
 
 构建环境中勾选“Add timestamps to the Console Output”，代码构建的过程中会将日志打印出来
 

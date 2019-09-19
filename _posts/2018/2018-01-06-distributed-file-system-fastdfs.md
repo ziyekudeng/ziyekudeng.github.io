@@ -7,7 +7,7 @@ excerpt: 分布式文件系统FastDFS快速入门、设计、原理、实践
 keywords: FastDFS, 分布式文件系统、图片服务器
 ---
 
-上一篇文章《[一次FastDFS并发问题的排查经历](https://mp.weixin.qq.com/s/EFsK3yOtb7maDNqgaHjQow)》介绍了一次生产排查并发问题的经历，可能有些人对FastDFS不是特别的了解，因此计划写几篇文章完整的介绍一下这个软件。
+上一篇文章《[一次FastDFS并发问题的排查经历](http://mp.weixin.qq.com/s/EFsK3yOtb7maDNqgaHjQow)》介绍了一次生产排查并发问题的经历，可能有些人对FastDFS不是特别的了解，因此计划写几篇文章完整的介绍一下这个软件。
 
 ## 为什么要使用分布式文件系统呢？
 
@@ -198,5 +198,5 @@ storage的同步进度会作为元数据的一部分汇报到tracker上，tracke
 [官方网站](https://github.com/happyfish100/)  
 [配置文档](https://github.com/happyfish100/fastdfs/wiki/)  
 [Java客户端](https://github.com/happyfish100/fastdfs-client-java)  
-[分布式文件系统FastDFS设计原理](https://blog.chinaunix.net/uid-20196318-id-4058561.html)  
+[分布式文件系统FastDFS设计原理](http://blog.chinaunix.net/uid-20196318-id-4058561.html)  
 [FASTDFS](https://www.jianshu.com/p/1c71ae024e5e)  

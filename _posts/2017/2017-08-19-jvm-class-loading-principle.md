@@ -345,8 +345,8 @@ public class MyClassLoader extends ClassLoader {
 
 ## 参考：
 
-[【深入Java虚拟机】之四：类加载机制](https://blog.csdn.net/ns_code/article/details/17881581)  
+[【深入Java虚拟机】之四：类加载机制](http://blog.csdn.net/ns_code/article/details/17881581)  
 [JAVA类加载机制全解析](https://segmentfault.com/a/1190000005608960)  
-[Java虚拟机类加载机制](https://www.importnew.com/18548.html)  
-[深入研究Java类加载机制](https://zyjustin9.iteye.com/blog/2092131)  
-[Java 类加载机制详解](https://www.codeceo.com/article/java-class-loader-learn.html)  
+[Java虚拟机类加载机制](http://www.importnew.com/18548.html)  
+[深入研究Java类加载机制](http://zyjustin9.iteye.com/blog/2092131)  
+[Java 类加载机制详解](http://www.codeceo.com/article/java-class-loader-learn.html)  

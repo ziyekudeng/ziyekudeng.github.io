@@ -101,7 +101,7 @@ xml层
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.neo.mapper.test1.User1Mapper" >
     <resultMap id="BaseResultMap" type="com.neo.entity.UserEntity" >
         <id column="id" property="id" jdbcType="BIGINT" />

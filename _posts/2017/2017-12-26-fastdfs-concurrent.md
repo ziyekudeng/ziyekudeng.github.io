@@ -87,11 +87,11 @@ pkgInfo是封装好的文件流信息，ProtoCommon是fastdfs-client-java中封�
 
 
 ``` java
-[ INFO] [https://*:8083-69096 2017-09-25 14:07:32] (FileManager.java:upload:92) upload_file time used:76 ms
-[ INFO] [https://*:8083-69096 2017-09-25 14:07:32] (FileManager.java:upload:103) upload file successfully!!!group_name:group2, remoteFileName: M00/3C/A8/wKg5Z1nInSOAaHSNAAAdNipAyrQ611.jpg
+[ INFO] [http://*:8083-69096 2017-09-25 14:07:32] (FileManager.java:upload:92) upload_file time used:76 ms
+[ INFO] [http://*:8083-69096 2017-09-25 14:07:32] (FileManager.java:upload:103) upload file successfully!!!group_name:group2, remoteFileName: M00/3C/A8/wKg5Z1nInSOAaHSNAAAdNipAyrQ611.jpg
 upload file successfully!!!group_name:group2, remoteFileName: M00/3C/A8/wKg5Z1nInSOAaHSNAAAdNipAyrQ611.jpg
 [Ljava.lang.String;@17584701
-[ERROR] [https://*:8083-69087 2017-09-25 14:07:32] (FileManager.java:upload:90) Non IO Exception when uploadind the file:520
+[ERROR] [http://*:8083-69087 2017-09-25 14:07:32] (FileManager.java:upload:90) Non IO Exception when uploadind the file:520
 java.lang.NullPointerException
 	at org.csource.fastdfs.StorageClient.do_upload_file(StorageClient.java:842)
 	at org.csource.fastdfs.StorageClient.upload_file(StorageClient.java:208)
@@ -186,7 +186,7 @@ private static void latchTest() throws InterruptedException {
 public static void testLoad() {
     String filePath="C:\\Users\\xxx\\Pictures\\xz.jpg";
     File file=new File(filePath);
-    String serverUrl="https://localhost:8080/uploadSign";
+    String serverUrl="http://localhost:8080/uploadSign";
     for (int i=0;i<10000;i++){
         HttpClientUtils.uploadFile(file,serverUrl);
     }

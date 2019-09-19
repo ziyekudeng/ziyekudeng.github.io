@@ -163,7 +163,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 | jta-1.1.jar |
 | 数据库驱动（mysql-connector-java-5.1.38.jar） |
 
- 以上12个依赖文件如果读者一时搜不到，不要紧我都把它们上传在此了：[droos6.3.0在tomcat布署时的缺失包.zip](https://download.csdn.net/detail/lifetragedy/9491249)
+ 以上12个依赖文件如果读者一时搜不到，不要紧我都把它们上传在此了：[droos6.3.0在tomcat布署时的缺失包.zip](http://download.csdn.net/detail/lifetragedy/9491249)
 
 ## <a name="t25"></a>开始安装
 
@@ -173,9 +173,9 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
 ### <a name="t27"></a>2\. 打开eclipse后按照Help->install new software输入以下地址
 
- **[plain]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[plain]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
-1.  https://download.jboss.org/drools/release/6.3.0.Final/org.drools.updatesite/
+1.  http://download.jboss.org/drools/release/6.3.0.Final/org.drools.updatesite/
 
 ![](https://img-blog.csdn.net/20160413163437526?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
@@ -195,7 +195,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  把该项目原来使用的**H2Dialect**改成**MySQL5Dialect**
 
- **[plain]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[plain]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  <properties>
 2.  <!--property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/-->
@@ -212,7 +212,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  使内容如下：
 
- **[plain]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[plain]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  bitronix.tm.serverId=tomcat-btm-node0
 2.  bitronix.tm.journal.disk.logPart1Filename=${btm.root}/work/btm1.tlog
@@ -221,7 +221,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
 ### <a name="t32"></a>7\. 在tomcat的conf目录下增加一个文件名为：resources.properties的文件
 
- **[plain]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[plain]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  resource.ds1.className=bitronix.tm.resource.jdbc.lrc.LrcXADataSource
 2.  resource.ds1.uniqueName=jdbc/jbpm
@@ -237,7 +237,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  增加如下内容：
 
- **[html]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[html]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  <Resource name="jdbc/jbpm" auth="Container" type="javax.sql.DataSource"
 2.  driverClassName="com.mysql.jdbc.Driver"
@@ -252,7 +252,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
 增加如下内容：
 
- **[html]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[html]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  <Valve className="org.kie.integration.tomcat.JACCValve" />
 
@@ -262,7 +262,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  增加如下内容：
 
- **[html]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[html]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  <user username="tomcat" password="tomcat" roles="admin,manager,manager-gui"/>
 
@@ -278,7 +278,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  增加如下内容
 
- **[plain]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[plain]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  export CATALINA_HOME="/opt/tomcat1"
 2.  export CATALINA_OPTS="-Dbtm.root=$CATALINA_HOME \
@@ -302,7 +302,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  ![](https://img-blog.csdn.net/20160413165027425?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
-打开一个IE，输入如下地址：[https://192.168.0.101:8080/kie-drools](https://192.168.0.101:8080/kie-drools)即可看到kie-drools的主界面了
+打开一个IE，输入如下地址：[http://192.168.0.101:8080/kie-drools](http://192.168.0.101:8080/kie-drools)即可看到kie-drools的主界面了
 
 ## <a name="t39"></a>KIE的使用
 
@@ -350,7 +350,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  你可以在eclipse里把这个POJO写好后直接复制到KIE-DROOLS的Data Object编辑界面中去：
 
- **[java]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[java]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  package org.sky.threshholdrulz;
 
@@ -391,7 +391,7 @@ Jboss Rulz最早是只有基于.drools的规则文件的一个内嵌式规则引
 
  规则内容如下：
 
- **[plain]** [view plain](https://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](https://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
+ **[plain]** [view plain](http://blog.csdn.net/lifetragedy/article/details/51143914 "view plain") [copy](http://blog.csdn.net/lifetragedy/article/details/51143914 "copy") [![在CODE上查看代码片](https://code.csdn.net/assets/CODE_ico.png)](https://code.csdn.net/snippets/1646176 "在CODE上查看代码片")[![派生到我的代码片](https://code.csdn.net/assets/ico_fork.svg)](https://code.csdn.net/snippets/1646176/fork "派生到我的代码片")
 
 1.  package org.sky.threshholdrulz;
 

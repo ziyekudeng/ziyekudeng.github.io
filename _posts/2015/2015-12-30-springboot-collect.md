@@ -8,7 +8,7 @@ tags: [springboot]
 收集Spring Boot相关的学习资料，[Spring Cloud点这里](https://ziyekudeng.github.io/springcloud/2016/12/30/springcloud-collect.html)
 
 
-**重点推荐：[Spring Boot 中文索引](https://springboot.fun/)**
+**重点推荐：[Spring Boot 中文索引](http://springboot.fun/)**
 
 
 ## 推荐博客
@@ -16,32 +16,32 @@ tags: [springboot]
 
 - [子夜枯灯](https://ziyekudeng.github.io/spring-boot.html)
 
-- [程序猿DD](https://blog.didispace.com/categories/Spring-Boot/) 
+- [程序猿DD](http://blog.didispace.com/categories/Spring-Boot/) 
 
-- [liaokailin的专栏](https://blog.csdn.net/liaokailin/article/category/5765237)
+- [liaokailin的专栏](http://blog.csdn.net/liaokailin/article/category/5765237)
 
-- [Spring Boot 揭秘与实战 系列](https://blog.720ui.com/columns/springboot_all/)
+- [Spring Boot 揭秘与实战 系列](http://blog.720ui.com/columns/springboot_all/)
 
-- [catoop的专栏](https://blog.csdn.net/column/details/spring-boot.html)
+- [catoop的专栏](http://blog.csdn.net/column/details/spring-boot.html)
 
-- [简书Spring Boot专题](https://www.jianshu.com/c/f0cf6eae1754)
+- [简书Spring Boot专题](http://www.jianshu.com/c/f0cf6eae1754)
 
-- [方志朋Spring Boot 专栏](https://blog.csdn.net/column/details/15397.html)
+- [方志朋Spring Boot 专栏](http://blog.csdn.net/column/details/15397.html)
 
-- [Spring-boot集成](https://lihao312.iteye.com/)
+- [Spring-boot集成](http://lihao312.iteye.com/)
 
 
 ## 推荐网站
 
-- [Spring boot 官网](https://projects.spring.io/spring-boot/)
+- [Spring boot 官网](http://projects.spring.io/spring-boot/)
 
 - [Spring Boot参考指南-中文版](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/)
 
 - [Gradle 中文参考指南](https://dongchuan.gitbooks.io/gradle-user-guide-/content/tutorials/)
 
-- [慕课网视频](https://www.imooc.com/learn/767)
+- [慕课网视频](http://www.imooc.com/learn/767)
 
-- [spring-boot-tutorials](https://www.mkyong.com/tutorials/spring-boot-tutorials/)  
+- [spring-boot-tutorials](http://www.mkyong.com/tutorials/spring-boot-tutorials/)  
 
 - [开源书籍-微服务：从设计到部署](https://github.com/oopsguy/microservices-from-design-to-deployment-chinese)  
 

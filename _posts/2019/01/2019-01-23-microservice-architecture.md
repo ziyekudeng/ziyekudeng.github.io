@@ -159,11 +159,11 @@ tags: [springcloud]
 
 目前微服务的开发框架，最常用的有以下四个：
 
-Spring Cloud：https://projects.spring.io/spring-cloud（现在非常流行的微服务架构）
+Spring Cloud：http://projects.spring.io/spring-cloud（现在非常流行的微服务架构）
 
 Dubbo：http：//dubbo.io
 
-Dropwizard：https://www.dropwizard.io （关注单个微服务的开发）
+Dropwizard：http://www.dropwizard.io （关注单个微服务的开发）
 
 Consul、etcd&etc.（微服务的模块）
 

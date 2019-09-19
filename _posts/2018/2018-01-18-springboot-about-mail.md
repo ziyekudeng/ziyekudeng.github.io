@@ -152,4 +152,4 @@ public void simpleSend() {
 
 参考：
 
-[邮件发送的原理](https://www.cnblogs.com/xiaoxiangfeizi/archive/2012/04/17/2453026.html) 
+[邮件发送的原理](http://www.cnblogs.com/xiaoxiangfeizi/archive/2012/04/17/2453026.html) 

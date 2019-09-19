@@ -127,7 +127,7 @@ tags: [springcloud]
 
 *   `eureka.client.enabled` 设置为 `false`，停止各服务的eureka注册
 *   `ribbon.eureka.enabled` 设置为 `false`，让ribbon不从eureka获取服务列表
-*   以服务foo为例，`foo.ribbon.listofservers` 设置为 [`https://foo:8080`](https://foo:8080)，那么当一个服务需要使用服务foo的时候，就会直接调用到[`https://foo:8080`](https://foo:8080)
+*   以服务foo为例，`foo.ribbon.listofservers` 设置为 [`http://foo:8080`](http://foo:8080)，那么当一个服务需要使用服务foo的时候，就会直接调用到[`http://foo:8080`](http://foo:8080)
 
 ## CI的改造
 

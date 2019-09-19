@@ -149,7 +149,7 @@ tags: [nginx]
     
         server {
             location /ops-coffee/ { 
-                proxy_pass https://tomcats; 
+                proxy_pass http://tomcats; 
     
                 proxy_set_header Host $host;
                 proxy_set_header X-Real-IP $remote_addr;
@@ -160,27 +160,27 @@ tags: [nginx]
     
     } 
 
-稍不注意可能会落入一个`proxy_pass`加杠不加杠的陷阱，这里详细说下`proxy_pass https://tomcats`与`proxy_pass https://tomcats/`的区别：
+稍不注意可能会落入一个`proxy_pass`加杠不加杠的陷阱，这里详细说下`proxy_pass http://tomcats`与`proxy_pass http://tomcats/`的区别：
 
 虽然只是一个/的区别但结果确千差万别。分为以下两种情况：
 
-1.  目标地址中不带uri（`proxy_pass https://tomcats`）。此时新的目标url中，匹配的uri部分不做修改，原来是什么就是什么。
+1.  目标地址中不带uri（`proxy_pass http://tomcats`）。此时新的目标url中，匹配的uri部分不做修改，原来是什么就是什么。
     
     location /ops-coffee/ {
-        proxy_pass  https://192.168.106.135:8181;
+        proxy_pass  http://192.168.106.135:8181;
     }
     
-    https://domain/ops-coffee/   -->     https://192.168.106.135:8181/ops-coffee/
-    https://domain/ops-coffee/action/abc   -->     https://192.168.106.135:8181/ops-coffee/action/abc 
+    http://domain/ops-coffee/   -->     http://192.168.106.135:8181/ops-coffee/
+    http://domain/ops-coffee/action/abc   -->     http://192.168.106.135:8181/ops-coffee/action/abc 
 
-2.  目标地址中带uri（`proxy_pass https://tomcats/`，/也是uri）,此时新的目标url中，匹配的uri部分将会被修改为该参数中的uri。
+2.  目标地址中带uri（`proxy_pass http://tomcats/`，/也是uri）,此时新的目标url中，匹配的uri部分将会被修改为该参数中的uri。
 
     location /ops-coffee/ {
-        proxy_pass  https://192.168.106.135:8181/;
+        proxy_pass  http://192.168.106.135:8181/;
     }
     
-    https://domain/ops-coffee/   -->     https://192.168.106.135:8181
-    https://domain/ops-coffee/action/abc   -->     https://192.168.106.135:8181/action/abc 
+    http://domain/ops-coffee/   -->     http://192.168.106.135:8181
+    http://domain/ops-coffee/action/abc   -->     http://192.168.106.135:8181/action/abc 
 
 ## nginx upstream开启keepalive
     
@@ -194,7 +194,7 @@ tags: [nginx]
             proxy_http_version 1.1;
             proxy_set_header Connection "";
     
-            proxy_pass https://tomcat;
+            proxy_pass http://tomcat;
         }
     } 
 

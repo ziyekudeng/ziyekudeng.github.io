@@ -643,7 +643,7 @@ ERROR: child process failed, exited with error number 1
 
 这个问题卡了我们半天，找了很多的资料，不是说清理lock文件，就是说清理log文件总无解，最后看到这个网站的提示
 
-[ERROR: child process failed, exited with error number 1](https://www.kriblog.com/bigdata/NoSQL/MongoDb/error-child-process-failed-exited-with-error-number-1.html)
+[ERROR: child process failed, exited with error number 1](http://www.kriblog.com/bigdata/NoSQL/MongoDb/error-child-process-failed-exited-with-error-number-1.html)
 
 去掉了配置文件中  --fork，才将真正的错误日志打印了出来，是我们的配置文件中的路径写错了，本来是log写成了logs
 

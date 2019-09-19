@@ -558,4 +558,4 @@ docker-machine rm manager1 worker1 worker2
 
 [Getting started with swarm mode](https://docs.docker.com/engine/swarm/swarm-tutorial/)  
 [Docker — 从入门到实践](https://www.kancloud.cn/docker_practice/docker_practice/469763)  
-[关于Docker Swarm的用途详细介绍](https://www.10tiao.com/html/592/201604/2656800406/1.html)  
+[关于Docker Swarm的用途详细介绍](http://www.10tiao.com/html/592/201604/2656800406/1.html)  

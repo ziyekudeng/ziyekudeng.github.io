@@ -16,9 +16,9 @@ tags: [tools]
 
 ## 1.2 nginx下载
 
-下载页面地址：[https://nginx.org/en/download.html](https://nginx.org/en/download.html)
+下载页面地址：[http://nginx.org/en/download.html](http://nginx.org/en/download.html)
 稳定版本nignx 1.8.0为例
-[https://nginx.org/download/nginx-1.8.0.tar.gz](https://nginx.org/download/nginx-1.8.0.tar.gz)
+[http://nginx.org/download/nginx-1.8.0.tar.gz](http://nginx.org/download/nginx-1.8.0.tar.gz)
 
 ## 1.3 linux下安装nginx
 
@@ -154,7 +154,7 @@ kill –HUP nginx主进程号
           proxy_set_header Host  $host;   
           proxy_set_header X-Real-IP $remote_addr;   
           proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;   
-          proxy_pass https://tomcat_server;   
+          proxy_pass http://tomcat_server;   
           expires      3d;   
         }   
       }   
@@ -221,7 +221,7 @@ Nginx默认设置的DH算法（译注：Diffie-Hellman key exchange algorithm）
     ssl_session_timeout 10m;
 
 参考资料：
-[Nginx SSL性能调优](https://blog.jobbole.com/44844/)
-[nginx使用ssl模块配置HTTPS支持](https://www.cnblogs.com/yanghuahui/archive/2012/06/25/2561568.html)
-[nginx实现ssl反向代理实战](https://www.cnblogs.com/yanghuahui/p/3641195.html)
+[Nginx SSL性能调优](http://blog.jobbole.com/44844/)
+[nginx使用ssl模块配置HTTPS支持](http://www.cnblogs.com/yanghuahui/archive/2012/06/25/2561568.html)
+[nginx实现ssl反向代理实战](http://www.cnblogs.com/yanghuahui/p/3641195.html)
 

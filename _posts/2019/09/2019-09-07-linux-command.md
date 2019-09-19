@@ -6,7 +6,7 @@ tags: [tools]
 
 ---
  
-来源：https://suo.im/5fwUCy
+来源：http://suo.im/5fwUCy
 
 # 1. 查找文件
 

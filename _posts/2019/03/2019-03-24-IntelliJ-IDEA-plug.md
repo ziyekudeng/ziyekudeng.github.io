@@ -303,7 +303,7 @@ IntelliJ IDEA 上的 SmartIM 插件，可以在 IDEA 中使用 QQ,微信 聊天
 
 自定义类、方法、doc、变量注释模板
 
-https://plugins.jetbrains.com/plugin/2170?pr=idea
+http://plugins.jetbrains.com/plugin/2170?pr=idea
 
 ### Settings Repository
 

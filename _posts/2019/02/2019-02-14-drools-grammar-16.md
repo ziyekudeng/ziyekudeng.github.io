@@ -39,7 +39,7 @@ kmodule.xml 位于 src/main/resources/META-INF 目录下，定义了规则引擎
 一个空的 kmodule.xml 文件如下所示：
 
 <code class="language-html"><?xml version="1.0" encoding="UTF-8"?>  
-<kmodule xmlns="https://www.drools.org/xsd/kmodule"/></code> 
+<kmodule xmlns="http://www.drools.org/xsd/kmodule"/></code> 
 ## 定义 kbase
 
 *   name KIEBase 名称
@@ -49,7 +49,7 @@ kmodule.xml 位于 src/main/resources/META-INF 目录下，定义了规则引擎
 示例：
 
 <code class="language-html"><?xml version="1.0" encoding="UTF-8"?>  
-<kmodule xmlns="https://jboss.org/kie/6.0.0/kmodule">  
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">  
     <kbase name="rules" packages="rules.xxx">
     </kbase>
 </kmodule></code> 
@@ -62,7 +62,7 @@ kmodule.xml 位于 src/main/resources/META-INF 目录下，定义了规则引擎
 示例：
 
 <code class="language-html"><?xml version="1.0" encoding="UTF-8"?>  
-<kmodule xmlns="https://jboss.org/kie/6.0.0/kmodule">  
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">  
     <kbase name="rules" packages="rules.xxx">
         <ksession default="true"/>
     </kbase>

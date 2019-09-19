@@ -57,10 +57,10 @@ About Feature 致力于分享原创高质量干货，包括但不限于：渗透
 
 *   fortify：静态代码扫描工具。
 
-    https://www.fortify.net/
+    http://www.fortify.net/
 *   RIPS：用于PHP脚本漏洞的静态源代码分析器。
 
-    https://rips-scanner.sourceforge.net/
+    http://rips-scanner.sourceforge.net/
 *   OpenStack Bandit：基于Python AST的静态分析器，用来查找Python代码中存在的通用安全问题的工具。
 
     https://github.com/openstack/bandit/releases/
@@ -81,10 +81,10 @@ About Feature 致力于分享原创高质量干货，包括但不限于：渗透
     https://rasp.baidu.com/
 *   ModSecurity：一个入侵侦测与防护引擎。
 
-    https://www.modsecurity.org/
+    http://www.modsecurity.org/
 *   锦衣盾：基于openresty(nginx+lua)开发的下一代web应用防火墙。
 
-    https://www.jxwaf.com/
+    http://www.jxwaf.com/
 
 **堡垒机**
 
@@ -111,7 +111,7 @@ About Feature 致力于分享原创高质量干货，包括但不限于：渗透
     https://www.ossec.net/
 *   Wazuh：一个免费的，开源的企业级安全监控解决方案，用于威胁检测，完整性监控，事件响应和合规性。
 
-    https://wazuh.com/
+    http://wazuh.com/
 *   Suricata：一个免费的开源，成熟，快速和强大的网络威胁检测引擎。
 
     https://suricata-ids.org/
@@ -123,7 +123,7 @@ About Feature 致力于分享原创高质量干货，包括但不限于：渗透
     https://www.la-samhna.de/
 *   Firestorm：一种极高性能的网络入侵检测系统（NIDS）。
 
-    https://www.scaramanga.co.uk/firestorm/
+    http://www.scaramanga.co.uk/firestorm/
 *   MozDef：Mozilla防御平台,一套实时集成化平台，能够实现监控、反应、协作并改进相关保护功能。
 
     https://github.com/mozilla/MozDef
@@ -135,7 +135,7 @@ About Feature 致力于分享原创高质量干货，包括但不限于：渗透
     https://github.com/DianrongSecurity/AgentSmith-HIDS
 *   Sobek-Hids：一个基于python的HostIDS系统。
 
-    https://www.codeforge.cn/article/331327
+    http://www.codeforge.cn/article/331327
 
 **网络流量分析**
 
@@ -162,10 +162,10 @@ About Feature 致力于分享原创高质量干货，包括但不限于：渗透
     https://owncloud.com/products/
 *   iBarn：基于PHP的开源网盘。
 
-    https://www.godeye.org/code/ibarn
+    http://www.godeye.org/code/ibarn
 *   Cloudreve：以最低的成本快速搭建公私兼备的网盘系统。
 
-    https://cloudreve.org/
+    http://cloudreve.org/
 *   Filebrowser：一个基于GO的轻量级文件管理系统。
 
     https://github.com/filebrowser/filebrowser/releases/latest
@@ -210,7 +210,7 @@ About Feature 致力于分享原创高质量干货，包括但不限于：渗透
     https://github.com/p1r06u3/opencanary_web
 *   Honeyd：一个小型守护进程，可以在网络上创建虚拟主机。
 
-    https://www.honeyd.org/
+    http://www.honeyd.org/
 *   Glastopf：Python Web应用程序蜜罐。
 
     https://github.com/mushorg/glastopf

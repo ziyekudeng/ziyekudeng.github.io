@@ -1,6 +1,6 @@
 /*!
  * Bootstrap Grunt task for parsing Less docstrings
- * https://getbootstrap.com
+ * http://getbootstrap.com
  * Copyright 2014-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */

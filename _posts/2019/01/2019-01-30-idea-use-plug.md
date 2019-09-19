@@ -11,7 +11,7 @@ IntelliJ IDEA 默认安装并提供了非常多的工具，比如 Git Integratio
 
 ### 1. REST client
 
-在日常开发过程中，我们或多或少都涉及到 API 接口的测试。例如，有的小伙伴使用 Chrome 的 Postman 插件，或者使用火狐的 restclient 等工具。事实上，这些工具是测试 API 接口非常有效的方式之一，笔者之前也一直使用 Postman 完成 API 接口的测试工作。今天，笔者推荐另外一个非常好用的小工具，能够帮助读者快速测试 API 接口。这个工具就是 IDEA 的 Editor REST Client。IDEA 的 Editor REST Client 在 IntelliJ IDEA 2017.3 版本就开始支持，在 2018.1 版本添加了很多的特性。事实上，它是 IntelliJ IDEA 的 HTTP Client 插件。详细使用文档，参考：https://blog.720ui.com/2018/restclient_use/
+在日常开发过程中，我们或多或少都涉及到 API 接口的测试。例如，有的小伙伴使用 Chrome 的 Postman 插件，或者使用火狐的 restclient 等工具。事实上，这些工具是测试 API 接口非常有效的方式之一，笔者之前也一直使用 Postman 完成 API 接口的测试工作。今天，笔者推荐另外一个非常好用的小工具，能够帮助读者快速测试 API 接口。这个工具就是 IDEA 的 Editor REST Client。IDEA 的 Editor REST Client 在 IntelliJ IDEA 2017.3 版本就开始支持，在 2018.1 版本添加了很多的特性。事实上，它是 IntelliJ IDEA 的 HTTP Client 插件。详细使用文档，参考：http://blog.720ui.com/2018/restclient_use/
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0130/idea-plug/1.jpg)
 
@@ -114,7 +114,7 @@ https://plugins.jetbrains.com/plugin/8321-free-mybatis-plugin。此外，收费�
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0130/idea-plug/6.gif)
 
-对于 Mybatis 的工具还有很多，比如 mybatis-log-plugin、codehelper.generator。此外，非 IDEA的工具有： Mybatis 分页插件 Mybatis-PageHelper、Mybatis 代码生成工具 mybatis-generator 等。地址：https://www.mybatis.org/generator/
+对于 Mybatis 的工具还有很多，比如 mybatis-log-plugin、codehelper.generator。此外，非 IDEA的工具有： Mybatis 分页插件 Mybatis-PageHelper、Mybatis 代码生成工具 mybatis-generator 等。地址：http://www.mybatis.org/generator/
 
 #### 7. Maven辅助神器：Maven Helper
 

@@ -992,7 +992,7 @@ docker run --name nginx_web -d -p 8080:80   angelkitty/nginx_web:v1
 
 这条命令会用 Nginx 镜像启动一个容器，命名为 nginx_web ，并且映射了 8080 端口。
 
-这样我们可以用浏览器去访问这个 Nginx 服务器：https://localhost:8080/ 或者 https://本机的 IP 地址：8080/，页面返回信息： 
+这样我们可以用浏览器去访问这个 Nginx 服务器：http://localhost:8080/ 或者 http://本机的 IP 地址：8080/，页面返回信息： 
 
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0115/dockerCatalog/25.webp.jpg)

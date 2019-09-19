@@ -262,7 +262,7 @@ Thymeleaf: <p th:text="${message}">Hello World!</p>
 URL在Web应用模板中占据着十分重要的地位，需要特别注意的是Thymeleaf对于URL的处理是通过语法@{...}来处理的。Thymeleaf支持绝对路径URL：
 
 ``` html 
-<a th:href="@{https://www.thymeleaf.org}">Thymeleaf</a>
+<a th:href="@{http://www.thymeleaf.org}">Thymeleaf</a>
 ```
 
 ### 条件求值
@@ -299,7 +299,7 @@ spring 项目建议使用Gradle进行构建项目，相比maven来讲 Gradle更�
 ``` properties
 buildscript {
     repositories {
-        maven { url "https://repo.spring.io/libs-snapshot" }
+        maven { url "http://repo.spring.io/libs-snapshot" }
         mavenLocal()
     }
     dependencies {
@@ -323,7 +323,7 @@ targetCompatibility = 1.7  //目标兼容版本 JDK1.7
 repositories {     //  Maven 仓库
     mavenLocal()        //使用本地仓库
     mavenCentral()      //使用中央仓库
-    maven { url "https://repo.spring.io/libs-snapshot" } //使用远程仓库
+    maven { url "http://repo.spring.io/libs-snapshot" } //使用远程仓库
 }
  
 dependencies {   // 各种 依赖的jar包
@@ -361,7 +361,7 @@ bootRun {
 
 ###  如何使用
 
-1、 [WebJars主官网](https://www.webjars.org/bower) 查找对于的组件，比如Vuejs 
+1、 [WebJars主官网](http://www.webjars.org/bower) 查找对于的组件，比如Vuejs 
 
 ``` xml
 <dependency>
@@ -385,7 +385,7 @@ bootRun {
 
 ## 参考：
 
-[新一代Java模板引擎Thymeleaf](https://www.tianmaying.com/tutorial/using-thymeleaf)
+[新一代Java模板引擎Thymeleaf](http://www.tianmaying.com/tutorial/using-thymeleaf)
 
 [Spring Boot参考指南-中文版](https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/)
 

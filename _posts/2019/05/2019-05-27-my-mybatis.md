@@ -11,7 +11,7 @@ keywords: 架构
 
 ## 从 0 开始手写一个 Mybatis 框架，三步搞定！
 
-来源：https://t.cn/E99ZCPo
+来源：http://t.cn/E99ZCPo
 
 > *   一、Mybatis框架流程简介
 >     

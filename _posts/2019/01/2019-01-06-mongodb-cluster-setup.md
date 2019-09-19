@@ -464,9 +464,9 @@ killall mongos
 
 参考：
 
-[搭建高可用mongodb集群（四）—— 分片](https://www.lanceyan.com/category/tech/mongodb)  
+[搭建高可用mongodb集群（四）—— 分片](http://www.lanceyan.com/category/tech/mongodb)  
 [MongoDB3.4副本集分片集群搭建](https://zhuanlan.zhihu.com/p/25594963)  
-[Mongodb高可用集群（四）——分片](https://www.xiamujun.cn/forum.php?mod=viewthread&tid=373)
+[Mongodb高可用集群（四）——分片](http://www.xiamujun.cn/forum.php?mod=viewthread&tid=373)
 
 
 

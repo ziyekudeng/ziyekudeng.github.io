@@ -15,7 +15,7 @@ tags: [tools]
 
 ### 2\. oracle安装包
 
-官方下载地址：[https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html](https://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html)
+官方下载地址：[http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html)
 
 根据自己服务器的情况选择对应的安装包下载，以我的为例，是64位操作系统的。下载完成后，有两个压缩文件linux.x64_11gR2_database_1of2.zip 和 linux.x64_11gR2_database_2of2.zip。
 
@@ -48,8 +48,8 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
     [root@iz8vb8edqeyilgy4r9zci6z ~]# cd /etc
     [root@iz8vb8edqeyilgy4r9zci6z etc]# mv yum.repos.d yum.repos.d.bak
     [root@iz8vb8edqeyilgy4r9zci6z etc]# mkdir yum.repos.d
-    [root@iz8vb8edqeyilgy4r9zci6z etc]# wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
-    --2019-01-25 09:15:40--  https://mirrors.aliyun.com/repo/Centos-7.repo
+    [root@iz8vb8edqeyilgy4r9zci6z etc]# wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+    --2019-01-25 09:15:40--  http://mirrors.aliyun.com/repo/Centos-7.repo
     Resolving mirrors.aliyun.com (mirrors.aliyun.com)... 101.37.183.142, 101.37.183.145, 101.37.183.169, ...
     Connecting to mirrors.aliyun.com (mirrors.aliyun.com)|101.37.183.142|:80... connected.
     HTTP request sent, awaiting response... 200 OK
@@ -107,13 +107,13 @@ oracle尽量安装在剩余空间充足的位置，因此首先要查看服务�
 
 通过wget命令直接下载pdksh的rpm包，我下载到了/tmp/，然后安装
 
-    [root@bogon ~]# wget -O /tmp/pdksh-5.2.14-37.el5_8.1.x86_64.rpm https://vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm
-    --2019-01-25 09:31:23--  https://vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm
+    [root@bogon ~]# wget -O /tmp/pdksh-5.2.14-37.el5_8.1.x86_64.rpm http://vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm
+    --2019-01-25 09:31:23--  http://vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm
     Resolving vault.centos.org (vault.centos.org)... 208.100.23.71, 2607:f128:40:1600:225:90ff:fe00:bde6
     Connecting to vault.centos.org (vault.centos.org)|208.100.23.71|:80... connected.
     HTTP request sent, awaiting response... 302 Found
-    Location: https://120.52.51.16/vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm [following]
-    --2019-01-25 09:31:24--  https://120.52.51.16/vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm
+    Location: http://120.52.51.16/vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm [following]
+    --2019-01-25 09:31:24--  http://120.52.51.16/vault.centos.org/5.11/os/x86_64/CentOS/pdksh-5.2.14-37.el5_8.1.x86_64.rpm
     Connecting to 120.52.51.16:80... connected.
     HTTP request sent, awaiting response... 200 OK
     Length: 210877 (206K) [application/x-rpm]

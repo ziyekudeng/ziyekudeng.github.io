@@ -24,7 +24,7 @@ Windows： cmd startup.cmd-m standalone
 
 startup.sh脚本位于Nacos解压后的bin目录下。这里主要介绍Spring Cloud与Nacos的集成使用，对于Nacos的高级配置，后续再补充。所以，持续关注我的博客或者公众号吧！
 
-启动完成之后，访问： https://127.0.0.1:8848/nacos/，可以进入Nacos的服务管理页面，具体如下；
+启动完成之后，访问： http://127.0.0.1:8848/nacos/，可以进入Nacos的服务管理页面，具体如下；
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0117/springcloudAlibabaNacos/1.webp.jpg)
 
@@ -329,7 +329,7 @@ NacosServiceRegistry
 8001
  register finished
 
-在启动都ok之后，我们可以访问Nacos的管理页面https://127.0.0.1:8848/nacos/来查看服务列表，此时可以看到如下内容：
+在启动都ok之后，我们可以访问Nacos的管理页面http://127.0.0.1:8848/nacos/来查看服务列表，此时可以看到如下内容：
 
 ![](https://ziyekudeng.github.io/assets/images/2019/0117/springcloudAlibabaNacos/2.webp.jpg)
 
@@ -490,7 +490,7 @@ $ curl localhost:
 /test
 
 Invoke
- : https:
+ : http:
 //10.123.18.216:8001/hello?name=didi, return : hello didi
 
 $ curl localhost:
@@ -498,7 +498,7 @@ $ curl localhost:
 /test
 
 Invoke
- : https:
+ : http:
 //10.123.18.216:8002/hello?name=didi, return : hello didi
 
 可以看到，两次不同请求的时候，真正实际调用的服务提供者实例是不同的，也就是说，通过 LoadBalancerClient接口在获取服务实例的时候，已经实现了对服务提供方实例的负载均衡。但是很明显，这样的实现还是比较繁琐，预告下后面的几篇，关于服务消费的几种不同姿势。
@@ -506,7 +506,7 @@ Invoke
 参考资料
 Nacos官方文档: https://nacos.io/zh-cn/docs/what-is-nacos.html
 
-Nacos源码分析: https://www.iocoder.cn/Nacos/good-collection/?vip
+Nacos源码分析: http://www.iocoder.cn/Nacos/good-collection/?vip
 
 代码示例
 本文示例读者可以通过查看下面仓库的中的 alibaba-nacos-discovery-server和 alibaba-nacos-discovery-client-common项目：

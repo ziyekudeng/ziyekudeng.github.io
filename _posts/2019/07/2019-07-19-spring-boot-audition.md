@@ -23,7 +23,7 @@ tags: [springboot]
 
 问：Spring Boot 中 “约定优于配置“的具体产品体现在哪里。
 
-答：Spring Boot Starter、Spring Boot Jpa 都是“约定优于配置“的一种体现。都是通过“约定优于配置“的设计思路来设计的，Spring Boot Starter 在启动的过程中会根据约定的信息对资源进行初始化；Spring Boot Jpa 通过约定的方式来自动生成 Sql ，避免大量无效代码编写。具体详细可以参考：[Spring Boot 为什么这么火？](https://mp.weixin.qq.com/s?__biz=MzI4NDY5Mjc1Mg==&mid=2247488190&idx=1&sn=abfe8e95c863f188b0b284293062a99a&chksm=ebf6cac1dc8143d7628d79186b30280ce332acb5af83c9e69177d5b329440fda9bf9cec2e4ed&scene=21#wechat_redirect)
+答：Spring Boot Starter、Spring Boot Jpa 都是“约定优于配置“的一种体现。都是通过“约定优于配置“的设计思路来设计的，Spring Boot Starter 在启动的过程中会根据约定的信息对资源进行初始化；Spring Boot Jpa 通过约定的方式来自动生成 Sql ，避免大量无效代码编写。具体详细可以参考：[Spring Boot 为什么这么火？](http://mp.weixin.qq.com/s?__biz=MzI4NDY5Mjc1Mg==&mid=2247488190&idx=1&sn=abfe8e95c863f188b0b284293062a99a&chksm=ebf6cac1dc8143d7628d79186b30280ce332acb5af83c9e69177d5b329440fda9bf9cec2e4ed&scene=21#wechat_redirect)
 
 问：Spring Boot Starter 的工作原理是什么？
 
