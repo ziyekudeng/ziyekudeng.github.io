@@ -70,6 +70,8 @@ permalink: /link
 
 - [MD工具](http://relatos.top/md/) - markdown转发html在线工具  
 
+- [翻译工具](https://github.com/elliottzheng/CopyTranslator/blob/master/README_zh.md/) - 外文辅助阅读翻译解决方案 
+
 - [Bistoury](https://github.com/qunarcorp/bistoury/) 去哪儿网开源的对应用透明、无侵入的 Java 诊断工具
 
 - [科学上网软件不完全收录](https://gitee.com/www.iamooc.com/fq/) - 科学上网软件不完全收录
