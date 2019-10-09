@@ -84,6 +84,8 @@ permalink: /link
 
 - [云收藏](http://www.favorites.ren/) - 一个在线云端的网络收藏夹，可以分享和查看其它人分享
 
+- [谷歌浏览器翻译插件](https://github.com/Coande/co-trans-ext) - co-trans-ext 是一个集搜狗翻译、百度翻译、谷歌翻译、有道翻译、金山词霸于一体的翻译扩展。各平台可随时切换，取长补短，更适合于阅读各领域的文档。不止于翻译，解析详细，更利于对各门语言的深入学习与理解。支持划词翻译和网页翻译。
+
 - [Listen ](https://listen1.github.io/listen1/) - Listen 1可以搜索和播放来自网易云音乐，虾米，QQ音乐，酷狗音乐，酷我音乐网站的歌曲，让你的曲库更全面。
 
 
