@@ -84,6 +84,8 @@ permalink: /link
 
 - [云收藏](http://www.favorites.ren/) - 一个在线云端的网络收藏夹，可以分享和查看其它人分享
 
+- [Listen ](https://listen1.github.io/listen1/) - Listen 1可以搜索和播放来自网易云音乐，虾米，QQ音乐，酷狗音乐，酷我音乐网站的歌曲，让你的曲库更全面。
+
 
 
 
