@@ -13,11 +13,8 @@ permalink: /link
 
 - [程序员书架](https://anoyi.com/book/) - 程序员书架网站
 
-- [程序员导航网站](http://tooool.org/) - 程序员的导航网站 
-
 - [阿里巴巴开源镜像站](https://opsx.alibaba.com/mirror/) - 阿里巴巴开源镜像站
 
-- [jQuery API 中文文档](https://www.html.cn/jqapi-1.9/) - jQuery API 中文文档
 
 - [Spring Boot中文导航](http://springboot.fun/) - Spring Boot的资源导航网站    
 
@@ -35,7 +32,7 @@ permalink: /link
 
 - [觅元素（免抠素材）](http://www.51yuansu.com/) - 在国内算是相对良心的网站了，一天有5次免费下载机会，上面素材质量很高，简直是做 PPT 必备。
 
-- [wherebt](http://wherebt.com/) - 提供各种BT资源导航,主要收录了bt sync keys的分享网站
+- [wherebt](http://thepiratebay.ee/) - 提供BT资源
 
 - [建立简单的静态博客网站](https://jekyllcn.com/docs/home/) - Jekyll 是一个简单的博客形态的静态站点生产机器 中文网站
 
