@@ -34,6 +34,8 @@ permalink: /link
 
 - [wherebt](http://thepiratebay.ee/) - 提供BT资源
 
+- [不限速百度网盘工具](https://github.com/cool2528/baiduCDP/) - 不限速百度网盘工具
+
 - [建立简单的静态博客网站](https://jekyllcn.com/docs/home/) - Jekyll 是一个简单的博客形态的静态站点生产机器 中文网站
 
 
