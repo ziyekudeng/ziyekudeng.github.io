@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 业务代码解构利器--SWAK--捋直代码
+title: 业务代码解构利器--SWAK-1
 category: tools
 tags: [tools]
 ---
