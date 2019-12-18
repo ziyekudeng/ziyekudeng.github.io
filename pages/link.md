@@ -48,7 +48,9 @@ permalink: /link
 
 ## 推荐博客工具网站
 
-- [htmlToMD工具](http://relatos.top/2md/) - 在线将页面转发为markdown工具  
+- [htmlToMD工具](http://relatos.top/2md/) - 在线将页面转发为markdown工具  \
+
+- [htmlToMD工具](http://www.atoolbox.net/Tool.php?Id=715/) - 在线将页面转发为markdown工具  
 
 - [Markdown table](https://tableconvert.com/) - 在线Markdown table生成工具  
 
@@ -56,7 +58,7 @@ permalink: /link
 
 - [翻译工具](https://github.com/elliottzheng/CopyTranslator/blob/master/README_zh.md/) - 外文辅助阅读翻译解决方案 
 
-- [科学上网软件不完全收录](https://gitee.com/www.iamooc.com/fq/) - 科学上网软件不完全收录
+- [科学上网软件不完全收录](https://gitee.com/SuiYuLingTing/fq/) - 科学上网软件不完全收录
 
 - [SCI-HUB](http://sci-hub.tw/) - 科研论文免费下载全文
 
