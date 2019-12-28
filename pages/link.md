@@ -48,7 +48,7 @@ permalink: /link
 
 ## 推荐博客工具网站
 
-- [htmlToMD工具](http://relatos.top/2md/) - 在线将页面转发为markdown工具  \
+- [htmlToMD工具](http://relatos.top/2md/) - 在线将页面转发为markdown工具
 
 - [htmlToMD工具](http://www.atoolbox.net/Tool.php?Id=715/) - 在线将页面转发为markdown工具  
 
