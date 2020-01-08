@@ -65,7 +65,7 @@ tags: [tools]
 
 用一张图来体验一下：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/1.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/1.png)
 
 此时，使用Java提供的Synchronized、ReentrantLock、ReentrantReadWriteLock...，仅能在单个JVM进程内对多线程对共享资源保证线程安全，在分布式系统环境下统统都不好使，心情是不是拔凉呀。
 
@@ -119,7 +119,7 @@ tags: [tools]
 
 分布式锁家族实现者一览：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/2.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/2.png)
 
 
 思维导图做了一个简单分类，不一定特别准确，几乎包含了分布式锁各个组件实现者。
@@ -356,7 +356,7 @@ Spring强大之处在于此，对`Lock`分布式锁做了全局抽象。
 
 抽象结构如下所示：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/3.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/3.png)
     
     `LockRegistry` 作为顶层抽象接口：
     
@@ -405,7 +405,7 @@ JdbcLockRegistry 里obtain()方法实现类为 `JdbcLock`，JdbcLock内部基�
 
 RedisLockRegistry$RedisLock类lock()加锁流程：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/4.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/4.png)
 
 加锁步骤：
 
@@ -421,7 +421,7 @@ RedisLockRegistry$RedisLock类lock()加锁流程：
 
 RedisLock#lock()加锁源码实现：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/5.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/5.png)
 
 大家可以对照上面的流程图配合你理解。
     
@@ -730,7 +730,7 @@ lock()加锁流程：
 
 **加锁执行的lua脚本：**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/7a.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/7a.png)
 
 Redis里的Hash散列结构存储的。
 
@@ -752,9 +752,9 @@ protected String getLockName(long threadId) {
 
 开启WatchDog源码：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/7.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/7.png)
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/8.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/8.png)
 
 3）客户端C1相同线程再次加锁，如果key存在，判断Redis里Hash中的lockName跟当前线程lockName相同，则将Hash中的lockName的值加1，代表支持可重入加锁。
 
@@ -764,7 +764,7 @@ protected String getLockName(long threadId) {
 
 重试源码：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/9.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/9.png)
 
 Redisson这样的实现就解决了，当业务处理时间比过期时间长的问题。
 
@@ -786,7 +786,7 @@ unlock()解锁过程也是同样的，通过lua脚本执行一大坨指令的。
 
 解锁lua脚本：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/10.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/10.png)
 
 根据刚刚对加锁过程的分析，大家可以自行看下脚本分析下。
 
@@ -810,7 +810,7 @@ ZooKeeper 允许用户在指定节点上注册一些 Watcher，并且在一些�
 
 图解Zookeeper实现分布式锁：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/11.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/11.png)
 
 首先，我们需要建立一个父节点，节点类型为持久节点（PERSISTENT）如图中的 `/locks/lock_name1` 节点 ，每当需要访问共享资源时，就会在父节点下建立相应的顺序子节点，节点类型为临时节点（EPHEMERAL），且标记为有序性（SEQUENTIAL），并且以临时节点名称 + 父节点名称 + 顺序号组成特定的名字，如图中的 `/0000000001 /0000000002 /0000000003` 作为临时有序节点。
 
@@ -889,7 +889,7 @@ InterProcessMutex 是 Curator 实现的可重入锁，可重入锁源码过程�
 
 解锁流程：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/6.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/6.png)
 
 1）如果可重入锁次数减1后，加锁次数不为 0 直接返回，减1后加锁次数为0，继续。
 
@@ -903,7 +903,7 @@ InterProcessMutex 是 Curator 实现的可重入锁，可重入锁源码过程�
 
 基本都涵盖了如下的方式实现：
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/12.png)
+![](https://ziyekudeng.github.io/assets/images/2020/0108/lock/12.png)
 
 当然，Redisson和Curator都是自己定义的分布式锁接口实现的，易于扩展。
 
