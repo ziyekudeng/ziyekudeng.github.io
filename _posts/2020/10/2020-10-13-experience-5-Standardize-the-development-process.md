@@ -17,6 +17,8 @@ keywords: 一线团队管理经验
 
 规范是死的，人是活的，希望自己定的规范，不要被打脸。
 
+![](https://ziyekudeng.github.io/assets/images/2020/1013/Standardize-development-process/1.webp)
+
 接下来从以上六个阶段进行逐一拆解。
 
 ## 1 需求评审
@@ -31,7 +33,7 @@ keywords: 一线团队管理经验
 
 #### 评审前
 
-不要听产品同学说，该需求是大老板跟进的、非常重要、非常紧急之类的，就问产品三个问题：
+`不要听产品同学说，该需求是大老板跟进的、非常重要、非常紧急之类的，就问产品三个问题：`
 
 1.  解决了什么问题？
 2.  提升了什么指标？
@@ -66,15 +68,17 @@ keywords: 一线团队管理经验
 
 排期模板如下：
 
+![](https://ziyekudeng.github.io/assets/images/2020/1013/Standardize-development-process/2.webp)
+
 ## 2 技术评审
 
 #### 评审前
 
-开发人员一定要重视技术设计！
-
-开发人员一定要重视技术设计！
-
-开发人员一定要重视技术设计！
+    开发人员一定要重视技术设计！
+    
+    开发人员一定要重视技术设计！
+    
+    开发人员一定要重视技术设计！
 
 重要事情说三遍！
 
@@ -155,6 +159,8 @@ keywords: 一线团队管理经验
 出现问题后开发人员及时修复，修复完了就完事了。仅仅做到这些还远远不够。
 
 建议使用如下模板进行复盘。
+
+![](https://ziyekudeng.github.io/assets/images/2020/1013/Standardize-development-process/3.webp)
 
 ## 小结
 
