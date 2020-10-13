@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Git 分支设计规范
-category: tools
-tags: [tools]
+category: life
+tags: [life]
+keywords: 个人生活感悟
 ---
 
  
