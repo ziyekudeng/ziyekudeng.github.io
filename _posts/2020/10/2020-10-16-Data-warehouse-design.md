@@ -96,8 +96,6 @@ keywords: 严选技术分享文章
 
 近期的一些思考跟大家做一个交流，一家之言，欢迎拍砖。
 
- ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/7.png)
-
 
 **基本要求**
 
@@ -106,6 +104,10 @@ keywords: 严选技术分享文章
 **评价体系**
 
 下图是近期整理的严选数据仓库的6个评价角度
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/7.png)
+
+
 
 **1.数据规范**
 
