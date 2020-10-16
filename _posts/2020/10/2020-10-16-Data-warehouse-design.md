@@ -24,6 +24,9 @@ keywords: 严选技术分享文章
  **数据仓库基本架构**
  
  这里概览讲一下严选数据仓库的分层逻辑，下面是严选数仓的框架图：
+ 
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/1.png)
+ 
  数据仓库分层没有绝对的规范，适合的就是最好的，特别是企业已经有一个初版的数仓的时候，
  需要做好改造成本和可理解性之间的平衡。以业务数据的流向划分，目前严选数据把模型分为三层，ods，dw和dm层。
  其中ods是操作数据层，保留最原始的数据；dw包含dwd和dws层，这两层共同组成中间层；dm是应用层，
@@ -48,7 +51,13 @@ keywords: 严选技术分享文章
 离线部分由猛犸提供支持。猛犸是网易杭州研究院研发的一站式数据管理和应用开发平台，覆盖了大规模数据存储和计算、
 数据集成、应用开发及数据管理等企业大数据应用场景。
 
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/2.png)
+
+
 实时部分由Atom平台提供支持，Atom是严选产技自研的一款实时数据管理和开发平台。
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/3.png)
+
 
 **严选数据仓库规范**
 
@@ -60,15 +69,24 @@ keywords: 严选技术分享文章
 参考了阿里巴巴的Onedata建模理论，核心框架由三个规范组成：《严选-指标定义规范》 ，《严选-模型设计规范》和《严选-数据开发规范》，
 外层由辅助规范落地的若干工具、平台组成：仓颉-指标管理系统、燧人-指标地图系统、UDS-数据质量中心、EasyDesign-模型设计中心等。
 
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/4.png)
+
+
 **1、指标定义规范**
 
 指标定义规范，目的是统一开发&产品对指标的定义。通过对原子指标的命名规则、派生指标的命名规则和派生词的定义来完成。
 
 指标定义体系，是数据建设体系的基础和内核，为了杜绝产品经理命名引起的歧义，以及后续带来的使用和维护以及解释成本。
 
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/5.png)
+
+
 **2、模型设计规范**
 
 模型设计规范，目的是统一数据开发对模型的命名定义。通过域+更新方式，域+维度+更新周期的方式来完成。
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/6.png)
+
 
 **3、数据开发规范**
 
@@ -77,6 +95,9 @@ keywords: 严选技术分享文章
 **数据仓库评价体系**
 
 近期的一些思考跟大家做一个交流，一家之言，欢迎拍砖。
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/7.png)
+
 
 **基本要求**
 
@@ -99,6 +120,9 @@ keywords: 严选技术分享文章
 **3.数据质量**
 
 数据质量由**数据本身的质量**和**数据建设质量**两部分组成：
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/8.png)
+
 
 *   数据本身质量：数据开发对数据质量负责，保持对数据的敬畏心，结合《严选-线上故障定义规范》，
 通过故障等级和次数指标来量化考核。
@@ -134,11 +158,20 @@ keywords: 严选技术分享文章
 
 下图是依托Easydesign实现的模型设计线上化产品界面。
 
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/9.png)
+
+
 衡量数仓建设水平可以通过以下3个指标：**总ods表被跨层依赖率**，**被跨层依赖的ods表数量**，**有下游ods表被跨层依赖率**三个指标来完成。
 
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/10.png)
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/10-1.png)
+ 
 **2.数据安全**
 
 每年有很多因数据导致的资损问题产生，我们从数据的上线流程、测试工具、测试环境等三个方面入手，让过程合规，结果合法。
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/11.png)
 
 **3.数据稳定性**
 
@@ -156,6 +189,8 @@ keywords: 严选技术分享文章
 
 迭代更新、持续建设，这是衡量一个数据仓库活力的一个重要机制，我们通过指标一致性项目，梳理了数仓持续建设机制，数据紧跟业务成长，
 数据仓库才会保持活力。
+
+ ![](https://ziyekudeng.github.io/assets/images/2020/1016/Data-warehouse-design/12.png)
 
 通过和杭研一起推动Easycost升级，通过梳理存储相关规则、规范相关规则、计算相关规则、质量相关规则，上半年一共下线3.4w张表，
 节约了1.2PB的存储。
