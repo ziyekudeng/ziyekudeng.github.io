@@ -5,7 +5,7 @@ titlebar: QLExpress
 subtitle: 
 menu: QLExpress
 css: ['blog-page.css']
-permalink: /redis
+permalink: /QLExpress
 keywords: QLExpress分析
 ---
 {% include QLExpress.html %}
