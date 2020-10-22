@@ -8,9 +8,7 @@ keywords: 项目管理反思
 ---
 ## **写在前面**
 
-以下文章来源于zer0black
-
- [zer0black](https://www.cnblogs.com/zer0Black/p/11819696.html/)
+以下文章来源于[zer0black](https://www.cnblogs.com/zer0Black/p/11819696.html/)
  
  ##正文
  

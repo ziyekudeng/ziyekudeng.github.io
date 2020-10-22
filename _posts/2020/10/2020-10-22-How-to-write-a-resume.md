@@ -8,9 +8,7 @@ keywords: 个人生活感悟
 ---
 ## **写在前面**
 
-以下文章来源于四猿外，作者四猿外
-
- [四猿外](http://wx.qlogo.cn/mmhead/Q3auHgzwzM54Ze6CDdicUtDEbKoPxq7GlciaY1yVSzJYXBWibzFc4EyZg/0/)
+以下文章来源于[四猿外](http://wx.qlogo.cn/mmhead/Q3auHgzwzM54Ze6CDdicUtDEbKoPxq7GlciaY1yVSzJYXBWibzFc4EyZg/0/)
  
  
 # 1\. 简历篇
