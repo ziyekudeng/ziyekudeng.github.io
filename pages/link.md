@@ -11,6 +11,8 @@ permalink: /link
 
 ## 推荐程序员网站
 
+- [源码搜索引擎](https://searchcode.com/) - 支持从 Github、Bitbucket、Google Code、CodePlex、SourceForge 和 Fedora Project 平台搜索公开的源码
+
 - [程序员书架](https://anoyi.com/book/) - 程序员书架网站
 
 - [阿里巴巴开源镜像站](https://opsx.alibaba.com/mirror/) - 阿里巴巴开源镜像站
@@ -31,6 +33,11 @@ permalink: /link
 
 - [伯乐在线](http://hao.jobbole.com/) - 伯乐在线资源收录各种开发、设计、系统管理与安全相关的工具与资源。
 
+- [MySlide](https://myslide.cn/ ) - 是一个提供PPT分享服务的平台
+
+- [IT大咖说](https://www.itdks.com/ ) - 是IT垂直领域的大咖知识分享平台，分享行业TOP大咖干货，技术大会在线直播录播，在线直播知识分享平台
+
+
 - [觅元素（免抠素材）](http://www.51yuansu.com/) - 在国内算是相对良心的网站了，一天有5次免费下载机会，上面素材质量很高，简直是做 PPT 必备。
 
 - [wherebt](http://thepiratebay.ee/) - 提供BT资源
@@ -47,9 +54,11 @@ permalink: /link
 
 ## 推荐博客工具网站
 
-- [htmlToMD工具1](http://relatos.top/2md/) - 在线将页面转发为markdown工具
+- [htmlToMD工具](http://relatos.top/2md/) - 在线将页面转发为markdown工具
 
-- [htmlToMD工具2](http://www.atoolbox.net/Tool.php?Id=715/) - 在线将页面转发为markdown工具  
+- [在线corn生成工具](https://cron.qqe2.com/) - 在线corn生成工具
+
+- [正则表达式的生成工具](http://tool.chinaz.com/tools/regexgenerate/) - 正则表达式的生成工具
 
 - [Markdown table](https://tableconvert.com/) - 在线Markdown table生成工具  
 
@@ -58,7 +67,9 @@ permalink: /link
 - [翻译工具](https://github.com/elliottzheng/CopyTranslator/blob/master/README_zh.md/) - 外文辅助阅读翻译解决方案 
 
 
-- [SCI-HUB](http://sci-hub.tw/) - 科研论文免费下载全文
+- [SCI-HUB](http://sci-hub.tw/) - 科研论文免费下载全文 
+
+- [鸠摩搜书](https://www.jiumodiary.com/ ) - 国内一款强大的电子书搜索引擎，整合了大部分电子书平台的资源
 
 - [Excel转换成Json工具](https://blog.csdn.net/u013905264/article/details/80425136/) - Excel转换成Json工具
 
@@ -80,6 +91,8 @@ permalink: /link
 - [ssyer]( https://www.ssyer.com/home/)
 
 - [lifeofpix]( https://www.lifeofpix.com/)
+
+- [Unsplash]( https://unsplash.com/)
 
 
 
