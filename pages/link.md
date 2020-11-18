@@ -15,6 +15,7 @@ permalink: /link
 
 - [阿里巴巴开源镜像站](https://opsx.alibaba.com/mirror/) - 阿里巴巴开源镜像站
 
+- [Arthas 是Alibaba开源的Java诊](https://arthas.aliyun.com/doc/arthas-tutorials.html?language=cn/) - Arthas在线学习教程
 
 - [Spring Boot中文导航](http://springboot.fun/) - Spring Boot的资源导航网站    
 
@@ -33,8 +34,6 @@ permalink: /link
 - [觅元素（免抠素材）](http://www.51yuansu.com/) - 在国内算是相对良心的网站了，一天有5次免费下载机会，上面素材质量很高，简直是做 PPT 必备。
 
 - [wherebt](http://thepiratebay.ee/) - 提供BT资源
-
-- [不限速百度网盘工具](https://github.com/cool2528/baiduCDP/) - 不限速百度网盘工具
 
 - [建立简单的静态博客网站](https://jekyllcn.com/docs/home/) - Jekyll 是一个简单的博客形态的静态站点生产机器 中文网站
 
@@ -58,7 +57,6 @@ permalink: /link
 
 - [翻译工具](https://github.com/elliottzheng/CopyTranslator/blob/master/README_zh.md/) - 外文辅助阅读翻译解决方案 
 
-- [科学上网软件不完全收录](https://gitee.com/SuiYuLingTing/fq/) - 科学上网软件不完全收录
 
 - [SCI-HUB](http://sci-hub.tw/) - 科研论文免费下载全文
 
