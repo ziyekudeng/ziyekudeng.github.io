@@ -24,9 +24,24 @@ keywords: 个人生活感悟
 
 那么我们今天就用**一张图****全面****解析**：**如何做好成本管理？成本管理的每个步骤都要做什么？有什么工具可以应用？**
 
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/1.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/2.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/3.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/4.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/5.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/6.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/7.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/cost-management/8.webp.jpg)
+
+
+
 成本管理基本上是每个项目经理的难点，在这里，我们也收集了一些前辈的经验介绍给大家：
 
-1、设定控制目标，明确责任人：每项成本支出都落实到责任人，可以很好的控制成本。2、寻找成本费用的驱动因素，判断其是否合理。3、分析成本费用的价格，促使公平交易：最好能建立价格评估监督机制，特别是大宗材料的采购，更要关注价格的波动走势。4、提升管理能力，优化成本费用开支：如果针对每一项成本费用支出，管理层能尽心尽力管理到位，也能节省不少成本。5、把成本费用控制纳入绩效考核，跟绩效奖金挂钩，大家才有动力去控制成本费用。
+1、设定控制目标，明确责任人：每项成本支出都落实到责任人，可以很好的控制成本。
+2、寻找成本费用的驱动因素，判断其是否合理。
+3、分析成本费用的价格，促使公平交易：最好能建立价格评估监督机制，特别是大宗材料的采购，更要关注价格的波动走势。
+4、提升管理能力，优化成本费用开支：如果针对每一项成本费用支出，管理层能尽心尽力管理到位，也能节省不少成本。
+5、把成本费用控制纳入绩效考核，跟绩效奖金挂钩，大家才有动力去控制成本费用。
 
 需要特别指出的是，成本费用控制不是一味压低成本费用，而是寻找最适合、最优的策略。我们在做好成本管理的同时，也不能忘了做好团队管理哦！
 
