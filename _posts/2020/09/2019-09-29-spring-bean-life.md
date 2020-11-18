@@ -14,7 +14,7 @@ tags: [springboot]
 
 ## **一、获取Bean**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/1.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/1.webp)
 
 ### **第一阶段获取Bean**
 
@@ -27,7 +27,7 @@ tags: [springboot]
 
 ### **2.1 创建Bean之前**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/2.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/2.webp)
 
 ### **在真正创建Bean之前逻辑**
 
@@ -72,7 +72,7 @@ tags: [springboot]
 默认这里都不会调用的这些 `BeanPostProcessors`的实现方法。然后继续执行后面的 `doCreateBean`方法。
 ## **2.1 真正的创建Bean，doCreateBean**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/3.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/3.webp)
 
 ### **doCreateBean方法逻辑**
 
@@ -87,7 +87,7 @@ tags: [springboot]
  调用 `populateBean`方法进行属性填充，这里后面会讲解6、 调用 `initializeBean`方法对Bean进行初始化，这里后面会讲解
 ### **2.1.1 实例化Bean，createBeanInstance**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/4.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/4.webp)
 
 ### **实例化Bean**
 
@@ -171,7 +171,7 @@ tags: [springboot]
 **5、** 如果上面都没有合适的构造器，则直接使用无参构造器创建并返回Bean。
 ### **2.1.2 填充Bean，populateBean**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/5.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/5.webp)
 
 ### **填充Bean**
 
@@ -272,7 +272,7 @@ tags: [springboot]
 **4、** 进行参数填充
 ### **2.1.3 初始化Bean，initializeBean**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/6.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/6.webp)
 
 ### **初始化Bean**
 
@@ -406,23 +406,23 @@ Bean在创建完毕之后会检查用户是否指定了 `destroyMethodName`以�
 
 ### **最后来一个大的流程**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/7.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/7.webp)
 
 ### **实例化前的准备阶段**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/8.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/8.webp)
 
 ### **实例化前**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/9.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/9.webp)
 
 ### **实例化后**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/10.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/10.webp)
 
 ### **初始化前**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/springbean/11.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929//springbean/11.webp)
 
 （完）
 

@@ -30,7 +30,7 @@ QLExpress从一开始就是从复杂的阿里电商业务系统出发，并且�
 
 QLExpressRunner如下图所示，从语法树分析、上下文、执行过程三个方面提供二次定制的功能扩展。
 
-![](https://ziyekudeng.github.io/assets/images/2020/0929/QLExpress1/1.png)
+![](https://ziyekudeng.github.io/assets/images/2020/09/0929/QLExpress1/1.png)
 ## 1、属性开关
 
        /**

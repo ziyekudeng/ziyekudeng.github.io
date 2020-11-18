@@ -33,13 +33,13 @@ keywords: 个人生活感悟
 
 **所以，关于沟通，你可能需要重新思考。**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/1.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/1.webp)
 
 真理的世界如同泥泽地一般充满了陷阱。树立一个清晰的“概念”好比在这片泥泽地里打桩，树立一个“理论”好比在这些木桩上架桥。
 
 **PART1：沟通的定义？**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/2.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/2.webp)
 
 街头的大妈们家长里短地唠嗑，能不能叫“沟通”？大学课堂上教授口若悬河，滔滔不绝地讲课，能不能叫沟通？
 
@@ -63,7 +63,7 @@ keywords: 个人生活感悟
 
 一次成功的沟通，有什么样的特点呢？
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/3.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/3.webp)
 
 从情绪体验和信息匹配的维度上，可以把沟通划分成四个区域：
 
@@ -85,7 +85,7 @@ keywords: 个人生活感悟
 
 **PART2：沟通的作用**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/4.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/4.webp)
 
 人类是社会动物，人与人、人与群体通过“沟通”传递信息和情感。沟通的作用有如下几点：
 
@@ -101,7 +101,7 @@ Eg：你跟一个女孩一起喝咖啡，碰巧被你女朋友知道了。你准
 
 **PART3：沟通的方法：** 
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/5.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/5.webp)
 
 这里提供两个方法论，第一个“周哈里窗”模型。第二个“螺旋推进”模型。
 
@@ -109,7 +109,7 @@ Eg：你跟一个女孩一起喝咖啡，碰巧被你女朋友知道了。你准
 
 **“螺旋推进”模型侧重沟通的流程，是一个完备的沟通框架。**
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/6.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/6.webp)
 
 “周哈里窗”根据信息是否被“我”知道，以及是否被“对方”知道，分成四个区域：
 
@@ -143,7 +143,7 @@ ok，我们界定清楚了基本概念，那么这个“周哈里窗”到底有
 
 一个可以指导我们沟通流程的框架——“螺旋推进”模型，是时候出场了。
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/7.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/7.webp)
 
 是不是有点疑惑？
 
@@ -180,7 +180,7 @@ ok，我们界定清楚了基本概念，那么这个“周哈里窗”到底有
 
 那么“螺旋推进”模型具体步骤是什么呢?
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/8.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/8.webp)
 
 我们解读一下，“螺旋推进”共有5个步骤：
 
@@ -238,7 +238,7 @@ ok，我们界定清楚了基本概念，那么这个“周哈里窗”到底有
 “我刚刚观察到你的表情依然显得不太高兴，你觉得这件事情上我没有解释清楚还是因为其他事情不开心，可以聊聊么？”
 有时对方的状态非常消极，一次引导没有效果时，你可以换个方式继续，直到她愿意分享为止。
 
-![](https://ziyekudeng.github.io/assets/images/2020/0108/communicate/9.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/01/0108/communicate/9.webp)
 
 **4、交流解决方案**
 
