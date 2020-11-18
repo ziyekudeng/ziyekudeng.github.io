@@ -1,3 +1,4 @@
+---
 layout: post
 title: 如何选择分布式事务解决方案？
 category: arch
@@ -42,7 +43,7 @@ keywords: 架构
 
 *   混合式分布式事务
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/1.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/1.webp.jpg)
 
 分布式事务中涉及的参与者分布在异步网络中，参与者通过网络通信来达到分布式一致性，
 网络通信不可避免出现失败、超时的情况，因此分布式事务的实现比本地事务面临更多的困难。
@@ -70,7 +71,7 @@ Tuxedo 最早是为了电信领域的 OLTP 系统研发的分布式事务中间�
 事务参与者各自负责执行自己的事务分支。如果TM实例发起了对其他 TM 实例的服务调用，
 那么发起者就被成为 Superior，被调用这就被称之为 Subordinate 节点。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/2.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/2.webp.jpg)
 
 图源：《Distributed Transaction Processing:Reference Model, Version 3》 Page 32,Figure 3-2XA 
 规范中分布式事务是构建在 
@@ -105,7 +106,7 @@ redo log 和 undo log 的写入）。TM 收集 RM 的响应，记录事务准备
 
 *   如果 TM 收到所有 RM 的响应，则记录事务结束日志。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/3.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/3.webp.jpg)
 
 针对部分场景，XA 规范还定义了如下优化措施：
 
@@ -121,7 +122,7 @@ redo log 和 undo log 的写入）。TM 收集 RM 的响应，记录事务准备
 XA 规范中详细定义了各个核心组件之间的交互接口，以 TM 和 RM 的交互接口为例，
 如下图，一次完整的全局事务，TM 和 RM 之间的交互还是比较频繁的：
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/4.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/4.webp.jpg)
 
 事务的执行过程中，宕机和网络超时都有可能发生，针对这些异常场景，
 不同 XA 规范的实现，对异常处理做法可能不同，可参考如下：
@@ -189,7 +190,7 @@ XA 是出现最早的分布式事务规范，主流数据库 Oracle、MySQL、SQ
 
 *   cancel：取消执行业务操作，释放预留的资源，如果失败会一直重试。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/5.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/5.webp.jpg)
 
 TCC 模式中，事务的发起者和参与者都需要记录事务日志，
 事务的发起者需要记录全局事务和各个分支事务的状态和信息；
@@ -298,7 +299,7 @@ Saga 事务协调器负责按照顺序执行事务链中的分支事务，分支
 *   T1,T2,...,Ti (失败),Ti (重试),Ti (重试),...,Tn：适用于事务必须成功的场景，
 如果发生失败了就一直重试，不会执行补偿操作。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/6.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/6.webp.jpg)
 
 **举例**
 
@@ -310,7 +311,7 @@ Saga 事务协调器负责按照顺序执行事务链中的分支事务，分支
 用 Saga 模式编排服务的话，就如下图所示：任何一个环节失败的话，
 就通过补偿操作取消前面的行程预订。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/7.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/7.webp.jpg)
 
 **特点剖析**
 
@@ -394,7 +395,7 @@ Saga 模式非常适合于业务流程长的长事务的场景，实现上对业
 *   下游参与者收到消息后，执行本地事务，本地事务如果执行成功，
 则给 MQ 系统发送 ACK 消息；如果执行失败，则不发送 ACK 消息，MQ 系统会持续推送给消息。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/8.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/8.webp.jpg)
 
 **基于本地消息的分布式事务**
 
@@ -408,7 +409,7 @@ Saga 模式非常适合于业务流程长的长事务的场景，实现上对业
 并将其发送到 MQ 系统中，如果发送失败或者超时，则一直发送，知道发送成功后，
 从本地消息表中删除该记录。后续的消费订阅流程则与基于事务消息的模式雷同。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/9.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/9.webp.jpg)
 
 **特点剖析**
 
@@ -507,7 +508,7 @@ beforeImage 和 afterImage 共同构成了回滚日志，回滚日志记录在�
 如果决议是回滚事务，则 Seata Client 根据回滚日志进行补偿操作，
 补偿前会对比当前数据快照和 afterImage 是否一致，如果不一致则回滚失败，需要人工介入。
 
-![](https://ziyekudeng.github.io/assets/images/2020/11/how-to-choose-distributed-things/10.webp.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/11/1118/how-to-choose-distributed-things/10.webp.jpg)
 
 AT 模式通过自动生成回滚日志的方式，使得业务方接入成本低，对业务入侵度很低，
 但是应用 AT 模式也有一些限制：

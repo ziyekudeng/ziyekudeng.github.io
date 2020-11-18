@@ -1,3 +1,4 @@
+---
 layout: post
 title: Redis 实例对比工具之 Redis-full-check
 category: tools

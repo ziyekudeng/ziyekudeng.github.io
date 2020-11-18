@@ -30,9 +30,9 @@ tags: [tools]
 *   canal解析binary log对象(原始为byte流)
 
 
- ![](https://ziyekudeng.github.io/assets/images/2020/1022/mysql-binlog-tools/1.jpg)
+ ![](https://ziyekudeng.github.io/assets/images/2020/10/1022/mysql-binlog-tools/1.jpg)
  
- ![](https://ziyekudeng.github.io/assets/images/2020/1022/mysql-binlog-tools/2.jpg)
+ ![](https://ziyekudeng.github.io/assets/images/2020/10/1022/mysql-binlog-tools/2.jpg)
 
 
 整个parser过程大致可分为几步：
@@ -44,7 +44,7 @@ tags: [tools]
 *   传递给EventSink模块进行数据存储，是一个阻塞操作，直到存储成功
 *   存储成功后，定时记录Binary Log位置
 
- ![](https://ziyekudeng.github.io/assets/images/2020/1022/mysql-binlog-tools/3.jpg)
+ ![](https://ziyekudeng.github.io/assets/images/2020/10/1022/mysql-binlog-tools/3.jpg)
 
 *   数据过滤：支持通配符的过滤模式，表名，字段内容等
 *   数据路由/分发：解决1:n (1个parser对应多个store的模式)
@@ -57,7 +57,7 @@ tags: [tools]
 
 # Maxwell
 
- ![](https://ziyekudeng.github.io/assets/images/2020/1022/mysql-binlog-tools/4.jpg)
+ ![](https://ziyekudeng.github.io/assets/images/2020/10/1022/mysql-binlog-tools/4.jpg)
 
 canal 由Java开发，分为服务端和客户端，拥有众多的衍生应用，性能稳定，功能强大；canal 需要自己编写客户端来消费canal解析到的数据。
 
@@ -78,7 +78,7 @@ Databus提供以下功能：
 *   分区消费
 *   源一致性保存
 
- ![](https://ziyekudeng.github.io/assets/images/2020/1022/mysql-binlog-tools/5.jpg)
+ ![](https://ziyekudeng.github.io/assets/images/2020/10/1022/mysql-binlog-tools/5.jpg)
 
 # 阿里云的数据传输服务DTS
 

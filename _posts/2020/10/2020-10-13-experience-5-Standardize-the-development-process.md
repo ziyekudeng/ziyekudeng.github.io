@@ -17,7 +17,7 @@ keywords: 一线团队管理经验
 
 规范是死的，人是活的，希望自己定的规范，不要被打脸。
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/Standardize-development-process/1.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/Standardize-development-process/1.webp)
 
 接下来从以上六个阶段进行逐一拆解。
 
@@ -68,7 +68,7 @@ keywords: 一线团队管理经验
 
 排期模板如下：
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/Standardize-development-process/2.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/Standardize-development-process/2.webp)
 
 ## 2 技术评审
 
@@ -160,7 +160,7 @@ keywords: 一线团队管理经验
 
 建议使用如下模板进行复盘。
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/Standardize-development-process/3.webp)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/Standardize-development-process/3.webp)
 
 ## 小结
 

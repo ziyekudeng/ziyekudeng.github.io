@@ -28,7 +28,7 @@ keywords: 一线团队管理经验
 
 ## 时间管理四象限
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/time-management/1.png)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/time-management/1.png)
 
 
 **第一象限：重要 + 紧急**
@@ -62,7 +62,7 @@ keywords: 一线团队管理经验
 
 ## 时间管理九宫格
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/time-management/2.png)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/time-management/2.png)
 
 
 有研究显示，人们如若能将生活各方面平衡起来，将会拥有更多的精力。比如一个家庭关系良好、身体健康、精神愉悦的人，会比整天陷入工作的人表现出更高的工作效率。

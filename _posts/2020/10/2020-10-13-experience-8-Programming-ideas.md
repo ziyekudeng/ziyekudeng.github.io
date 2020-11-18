@@ -41,7 +41,7 @@ keywords: 一线团队管理经验
 
 举个例子，类A 通过 Interface1 依赖类B，方法1，方法2，方法3；类B 通过 Interface1 依赖D，方法1，方法4，方法5，看下未使用接口隔离原则和使用了接口隔离原则发生了什么变化。
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/Programming-ideas/1.png)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/Programming-ideas/1.png)
 
 ## 依赖倒置原则
 
@@ -55,7 +55,7 @@ keywords: 一线团队管理经验
 
 举个例子，类A 直接依赖 类B，假如要将 类A 改为依赖 类C，则必须通过修改 类A 的代码来达成。这种场景下，类A一般是高层模块，负责复杂的业务逻辑；类B 和类C 是低层模块，负责基本的原子操作；假如修改类A，会给程序带来不必要的风险。
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/Programming-ideas/2.png)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/Programming-ideas/2.png)
 
 解决方案：将 类A 修改为依赖 接口Interface1，类B 和 类C 各自实现 接口Interface1，类A 通过 接口Interface1 间接与 类B 或者 类C 发生联系，则会大大降低修改 类A 的几率。
 
@@ -93,7 +93,7 @@ keywords: 一线团队管理经验
 
 举个例子，我们通过 `手机` 阅读 `微信读书 APP` 内的 `书籍`，如何设计类的编写？
 
-![](https://ziyekudeng.github.io/assets/images/2020/1013/Programming-ideas/3.png)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1013/Programming-ideas/3.png)
 
 手机类 和 书籍类，这两个不能直接发生调用关系，需要 手机类 和 微信读书 APP 类先发生调用关系，然后微信读书 APP 类 再和 书籍 类可以发生调用关系，这样才遵循迪米特法则。
 

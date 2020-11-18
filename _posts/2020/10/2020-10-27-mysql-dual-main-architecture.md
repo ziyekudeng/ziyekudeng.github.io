@@ -25,7 +25,7 @@ MySQL最常见的集群架构，是**一主多从，主从同步，读写分离*
 
 举个栗子： 
 
-![](https://ziyekudeng.github.io/assets/images/2020/1027/mysql-dual-main-architecture/1.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1027/mysql-dual-main-architecture/1.jpg)
 
 如上图所述，假设主库使用了auto increment来作为自增主键：
 
@@ -47,7 +47,7 @@ MySQL最常见的集群架构，是**一主多从，主从同步，读写分离*
 
 （2）设置相同的增长步长；
 
-![](https://ziyekudeng.github.io/assets/images/2020/1027/mysql-dual-main-architecture/2.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1027/mysql-dual-main-architecture/2.jpg)
 
 如上图所示：
 
@@ -59,7 +59,7 @@ MySQL最常见的集群架构，是**一主多从，主从同步，读写分离*
 
 （4）数据双向同步后，两个主库会包含全部数据；
 
-![](https://ziyekudeng.github.io/assets/images/2020/1027/mysql-dual-main-architecture/3.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1027/mysql-dual-main-architecture/3.jpg)
 
 如上图所示，两个主库最终都将包含1/2/3/4/5/6/7/8所有数据，即使有一个主库挂了，另一个主库也能够保证写库的高可用。
 
@@ -67,7 +67,7 @@ MySQL最常见的集群架构，是**一主多从，主从同步，读写分离*
 
 答案是肯定的，应用程序使用统一的ID生成器，可以保证ID的生成不冲突。
 
-![](https://ziyekudeng.github.io/assets/images/2020/1027/mysql-dual-main-architecture/4.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1027/mysql-dual-main-architecture/4.jpg)
 
 如上图所示，调用方插入数据时，带入全局唯一ID，而不依赖于数据库的auto increment，也能解决这个问题。 
 
@@ -80,7 +80,7 @@ _画外音：如何生成全局唯一趋势递增的ID，不展开。_
 
 使用虚IP+keepalived的方式保证数据库主库的高可用，平时只有一台主库提供服务，也可能出现数据不一致。
 
-![](https://ziyekudeng.github.io/assets/images/2020/1027/mysql-dual-main-architecture/5.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1027/mysql-dual-main-architecture/5.jpg)
 
 如上图所示：
 
@@ -92,7 +92,7 @@ _画外音：如何生成全局唯一趋势递增的ID，不展开。_
 
 切换过程中，由于虚IP没有变化，所以切换过程对调用方是透明的，但在极限的情况下，仍可能引发数据不一致。
 
-![](https://ziyekudeng.github.io/assets/images/2020/1027/mysql-dual-main-architecture/6.jpg)
+![](https://ziyekudeng.github.io/assets/images/2020/10/1027/mysql-dual-main-architecture/6.jpg)
 
 如上图所示：
 
